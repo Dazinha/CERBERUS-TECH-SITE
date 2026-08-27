@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Brand */}
         <div className="flex flex-col gap-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/CERBERUSTECHLOGO.png" alt="Cerberus Tech Logo" style={{ height: '40px', objectFit: 'contain' }} />
+            <img src="/CERBERUSTECHLOGO.png" alt="Cerberus Tech Logo" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
           </Link>
           <p className="text-muted text-sm mt-4">
             Innovación y seguridad en soluciones tecnológicas corporativas.
