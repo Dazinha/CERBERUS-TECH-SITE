@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="glass" style={{ position: 'sticky', top: 0, zIndex: 50 }}>
       <div className="container flex justify-between items-center" style={{ padding: '1rem' }}>
         <Link to="/" className="flex items-center gap-2" style={{ zIndex: 51 }}>
-          <span className="font-bold text-2xl text-gradient">CERBERUS TECH</span>
+          <img src="/CERBERUSTECHLOGO.png" alt="Cerberus Tech Logo" style={{ height: '50px', width: 'auto', objectFit: 'contain' }} />
         </Link>
 
         {/* Desktop Menu */}
