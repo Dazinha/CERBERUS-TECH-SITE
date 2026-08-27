@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="section flex flex-col items-center justify-center text-center" style={{ minHeight: '60vh', position: 'relative', overflow: 'hidden', paddingBottom: 'var(--space-12)' }}>
+      <section className="section flex flex-col items-center justify-center text-center" style={{ minHeight: '90vh', position: 'relative', overflow: 'hidden' }}>
         {/* Background Logo */}
         <div style={{
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
@@ -14,7 +14,7 @@ const Home = () => {
           backgroundImage: 'url(/CERBERUSTECHLOGO.png)',
           backgroundSize: 'max(600px, 60vw)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center calc(50% + 50px)',
+          backgroundPosition: 'center calc(50% + 40px)',
           zIndex: -1, opacity: 0.15
         }}></div>
         {/* Background Glow */}
