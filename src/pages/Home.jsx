@@ -7,11 +7,21 @@ const Home = () => {
     <div className="w-full">
       {/* Hero Section */}
       <section className="section flex flex-col items-center justify-center text-center" style={{ minHeight: '80vh', position: 'relative', overflow: 'hidden' }}>
+        {/* Background Logo */}
+        <div style={{
+          position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+          width: '100%', height: '100%', 
+          backgroundImage: 'url(/CERBERUSTECHLOGO.png)',
+          backgroundSize: '600px',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          zIndex: -1, opacity: 0.15
+        }}></div>
         {/* Background Glow */}
         <div style={{
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-          width: '600px', height: '600px', background: 'radial-gradient(circle, var(--accent-glow) 0%, transparent 70%)',
-          zIndex: -1, opacity: 0.5
+          width: '800px', height: '800px', background: 'radial-gradient(circle, var(--accent-glow) 0%, transparent 70%)',
+          zIndex: -2, opacity: 0.3
         }}></div>
 
         <div className="container flex flex-col items-center gap-8 z-10">
