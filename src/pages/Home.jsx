@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="section flex flex-col items-center justify-center text-center" style={{ minHeight: '80vh', position: 'relative', overflow: 'hidden' }}>
+      <section className="section flex flex-col items-center justify-center text-center" style={{ minHeight: '60vh', position: 'relative', overflow: 'hidden', paddingBottom: 'var(--space-12)' }}>
         {/* Background Logo */}
         <div style={{
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
