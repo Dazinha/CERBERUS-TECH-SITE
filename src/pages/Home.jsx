@@ -14,7 +14,7 @@ const Home = () => {
           backgroundImage: 'url(/CERBERUSTECHLOGO.png)',
           backgroundSize: 'max(600px, 60vw)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center calc(50% + 100px)',
+          backgroundPosition: 'center 60%',
           zIndex: -1, opacity: 0.15
         }}></div>
         {/* Background Glow */}
@@ -41,7 +41,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Soluciones tecnológicas robustas, escalables y seguras. Cerberus Tech es su aliado estratégico en transformación digital e infraestructura cloud.
+            Soluciones tecnológicas robustas, escalables y seguras.<br />
+            Cerberus Tech es su aliado estratégico en transformación digital e infraestructura cloud.
           </motion.p>
 
           <motion.div
