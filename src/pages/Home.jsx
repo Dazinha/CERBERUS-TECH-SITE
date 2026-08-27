@@ -12,7 +12,7 @@ const Home = () => {
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
           width: '100%', height: '100%',
           backgroundImage: 'url(/CERBERUSTECHLOGO.png)',
-          backgroundSize: 'max(800px, 80vw)',
+          backgroundSize: 'max(600px, 60vw)',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           zIndex: -1, opacity: 0.15
