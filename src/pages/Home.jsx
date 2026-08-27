@@ -10,9 +10,9 @@ const Home = () => {
         {/* Background Logo */}
         <div style={{
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-          width: '100%', height: '100%', 
+          width: '100%', height: '100%',
           backgroundImage: 'url(/CERBERUSTECHLOGO.png)',
-          backgroundSize: '600px',
+          backgroundSize: 'max(800px, 80vw)',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           zIndex: -1, opacity: 0.15
@@ -25,17 +25,17 @@ const Home = () => {
         }}></div>
 
         <div className="container flex flex-col items-center gap-8 z-10">
-          <motion.h1 
+          <motion.h1
             className="text-5xl md:text-7xl font-bold max-w-3xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Asegurando el futuro <br/>
+            Asegurando el futuro <br />
             <span className="text-gradient">digital de su empresa</span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="text-xl text-secondary max-w-2xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,8 +43,8 @@ const Home = () => {
           >
             Soluciones tecnológicas robustas, escalables y seguras. Cerberus Tech es su aliado estratégico en transformación digital e infraestructura cloud.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             className="flex gap-4 mt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ const Home = () => {
       <section className="section" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div 
+            <motion.div
               className="card flex flex-col items-center text-center gap-4"
               whileHover={{ y: -10 }}
             >
@@ -75,7 +75,7 @@ const Home = () => {
               <p className="text-muted">Protegemos sus activos digitales más críticos con protocolos avanzados y cumplimiento normativo estricto.</p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="card flex flex-col items-center text-center gap-4"
               whileHover={{ y: -10 }}
             >
@@ -86,7 +86,7 @@ const Home = () => {
               <p className="text-muted">Despliegues en nube de alta disponibilidad con redundancia garantizada y métricas de uptime de 99.99%.</p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="card flex flex-col items-center text-center gap-4"
               whileHover={{ y: -10 }}
             >
