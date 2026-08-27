@@ -16,7 +16,7 @@ const Capacidades = () => {
             className="text-xl text-secondary max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
-            Infraestructura robusta, tecnologías de vanguardia y alianzas estratégicas para ofrecer soluciones de alto rendimiento.
+            Las 4 líneas de negocio fundamentales que concurren en el alcance de nuestros proyectos.
           </motion.p>
         </div>
       </section>
@@ -24,37 +24,27 @@ const Capacidades = () => {
       {/* Servicios y Soluciones */}
       <section className="section pt-0">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12 text-center">Servicios y Soluciones Ofrecidas</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold mb-12 text-center">Líneas de Negocio</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div className="card" whileHover={{ y: -5 }}>
               <ShieldCheck className="mb-4" size={32} style={{ color: 'var(--accent-primary)' }} />
-              <h3 className="text-xl font-bold mb-2">Ciberseguridad Avanzada</h3>
-              <p className="text-sm text-secondary">Defensa activa, pentesting, auditorías de seguridad y SOC 24/7 para infraestructuras críticas.</p>
-            </motion.div>
-            <motion.div className="card" whileHover={{ y: -5 }}>
-              <Cloud className="mb-4" size={32} style={{ color: 'var(--accent-primary)' }} />
-              <h3 className="text-xl font-bold mb-2">Arquitecturas Cloud-Native</h3>
-              <p className="text-sm text-secondary">Diseño y migración a infraestructuras en la nube altamente escalables y resilientes.</p>
-            </motion.div>
-            <motion.div className="card" whileHover={{ y: -5 }}>
-              <Code2 className="mb-4" size={32} style={{ color: 'var(--accent-primary)' }} />
-              <h3 className="text-xl font-bold mb-2">Desarrollo de Software Seguro</h3>
-              <p className="text-sm text-secondary">Prácticas DevSecOps integradas desde el día cero para desarrollo de aplicaciones empresariales.</p>
+              <h3 className="text-xl font-bold mb-2">Plataformas clínicas e identidad del paciente</h3>
+              <p className="text-sm text-secondary">Comprende el registro clínico electrónico, el índice maestro de pacientes, el agendamiento y la gestión de la demanda ambulatoria. Resuelve el problema de la ficha única y del reconocimiento inequívoco a lo largo de una red multisede.</p>
             </motion.div>
             <motion.div className="card" whileHover={{ y: -5 }}>
               <Database className="mb-4" size={32} style={{ color: 'var(--accent-primary)' }} />
-              <h3 className="text-xl font-bold mb-2">Gestión de Datos Críticos</h3>
-              <p className="text-sm text-secondary">Bases de datos distribuidas con replicación en tiempo real y estrategias de Disaster Recovery.</p>
+              <h3 className="text-xl font-bold mb-2">Interoperabilidad e ingeniería de datos</h3>
+              <p className="text-sm text-secondary">Abarca la integración bajo los estándares HL7 v2.x y HL7 FHIR R4, motores de mensajería clínica, gestión de terminologías como SNOMED CT y LOINC, y migración de datos históricos.</p>
+            </motion.div>
+            <motion.div className="card" whileHover={{ y: -5 }}>
+              <Cloud className="mb-4" size={32} style={{ color: 'var(--accent-primary)' }} />
+              <h3 className="text-xl font-bold mb-2">Ciberseguridad y operaciones defensivas</h3>
+              <p className="text-sm text-secondary">Diseño de arquitecturas bajo modelo Zero Trust, gestión de identidad y acceso, SOC permanente, gestión de vulnerabilidades, respuesta a incidentes y cumplimiento normativo de datos sensibles.</p>
             </motion.div>
             <motion.div className="card" whileHover={{ y: -5 }}>
               <Workflow className="mb-4" size={32} style={{ color: 'var(--accent-primary)' }} />
-              <h3 className="text-xl font-bold mb-2">Integración de Sistemas</h3>
-              <p className="text-sm text-secondary">APIs seguras y arquitecturas orientadas a eventos (EDA) para ecosistemas complejos.</p>
-            </motion.div>
-            <motion.div className="card" whileHover={{ y: -5 }}>
-              <Laptop className="mb-4" size={32} style={{ color: 'var(--accent-primary)' }} />
-              <h3 className="text-xl font-bold mb-2">Soporte y Operaciones IT</h3>
-              <p className="text-sm text-secondary">Administración delegada de servicios TI garantizando disponibilidad bajo estrictos SLAs.</p>
+              <h3 className="text-xl font-bold mb-2">Operación gestionada y confiabilidad</h3>
+              <p className="text-sm text-secondary">Mesa de servicio multinivel bajo ITIL 4, observabilidad de extremo a extremo, gestión de capacidad, pruebas de recuperación ante desastres y mantención preventiva, correctiva y evolutiva.</p>
             </motion.div>
           </div>
         </div>
@@ -98,26 +88,17 @@ const Capacidades = () => {
           </div>
 
           <div>
-            <h2 className="text-3xl font-bold mb-6">Alianzas Cloud</h2>
-            <p className="text-secondary mb-6">Mantenemos el estatus de Partner Avanzado con los principales proveedores de nube pública, garantizando acceso a soporte preferencial y arquitecturas optimizadas.</p>
-            <div className="grid grid-cols-2 gap-4 text-center">
-              <div className="card p-4 flex flex-col items-center justify-center">
-                <span className="font-bold text-xl mb-1">AWS</span>
-                <span className="text-xs text-muted">Advanced Tier Services Partner</span>
-              </div>
-              <div className="card p-4 flex flex-col items-center justify-center">
-                <span className="font-bold text-xl mb-1">Google Cloud</span>
-                <span className="text-xs text-muted">Premier Partner</span>
-              </div>
-              <div className="card p-4 flex flex-col items-center justify-center">
-                <span className="font-bold text-xl mb-1">Microsoft Azure</span>
-                <span className="text-xs text-muted">Gold Solutions Partner</span>
-              </div>
-              <div className="card p-4 flex flex-col items-center justify-center">
-                <span className="font-bold text-xl mb-1">Cloudflare</span>
-                <span className="text-xs text-muted">Certified MSP Partner</span>
-              </div>
-            </div>
+            <h2 className="text-3xl font-bold mb-6">Catálogo de Servicios Acreditables</h2>
+            <p className="text-secondary mb-6">Nuestros servicios prestados de forma habitual y acreditables mediante contratos vigentes o finalizados incluyen:</p>
+            <ul className="text-secondary flex flex-col gap-4 list-disc pl-5">
+              <li>Consultoría y arquitectura de solución.</li>
+              <li>Desarrollo de software a medida bajo prácticas DevSecOps.</li>
+              <li>Integración de sistemas heterogéneos y de plataformas heredadas.</li>
+              <li>Migración de datos clínicos.</li>
+              <li>Despliegue de infraestructura híbrida (nube pública, instalaciones propias del cliente y nodos de borde).</li>
+              <li>Operación continua bajo acuerdos de nivel de servicio contractuales.</li>
+              <li>Capacitación, implantación y gestión del cambio con usuarios operacionales.</li>
+            </ul>
           </div>
         </div>
       </section>

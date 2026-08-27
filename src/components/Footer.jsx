@@ -12,8 +12,7 @@ const Footer = () => {
             <img src="/CERBERUSTECHLOGO.png" alt="Cerberus Tech Logo" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
           </Link>
           <p className="text-muted text-sm mt-4">
-            Innovación y seguridad en soluciones tecnológicas corporativas.
-            Transformando el futuro digital desde hace más de 5 años.
+            Compañía chilena especializada en plataformas digitales de misión crítica para el sector sanitario.
           </p>
         </div>
 
@@ -29,17 +28,21 @@ const Footer = () => {
         {/* Contact */}
         <div className="flex flex-col gap-4" id="contacto">
           <h4 className="font-semibold text-lg">Contacto</h4>
+          <div className="flex flex-col gap-1 text-muted text-sm mb-2">
+            <span className="font-semibold text-white">Jorge Arancibia Valenzuela</span>
+            <span className="text-xs">Gerente Comercial y de Licitaciones</span>
+          </div>
           <div className="flex items-center gap-2 text-muted">
             <MapPin size={16} className="text-secondary" />
-            <span className="text-sm">Av. Providencia 1208, Santiago, Chile</span>
+            <span className="text-sm">Av. Errázuriz 1234, Oficina 801, Valparaíso</span>
           </div>
           <div className="flex items-center gap-2 text-muted">
             <Phone size={16} className="text-secondary" />
-            <span className="text-sm">+56 2 2345 6789</span>
+            <span className="text-sm">+56 9 8765 4321</span>
           </div>
           <div className="flex items-center gap-2 text-muted">
             <Mail size={16} className="text-secondary" />
-            <span className="text-sm">contacto@cerberustech.cl</span>
+            <span className="text-sm">licitaciones@cerberustech.cl</span>
           </div>
         </div>
 
@@ -57,9 +60,9 @@ const Footer = () => {
           <div className="mt-4">
             <span className="text-xs text-muted block mb-2">Certificados por:</span>
             <div className="flex gap-2">
-               {/* Simulación de logos de certificaciones */}
-               <div style={{ padding: '4px 8px', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', fontSize: '10px', border: '1px solid var(--border-color)' }}>ISO 27001</div>
-               <div style={{ padding: '4px 8px', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', fontSize: '10px', border: '1px solid var(--border-color)' }}>WCAG 2.2 AA</div>
+               <div style={{ padding: '4px 8px', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', fontSize: '10px', border: '1px solid var(--border-color)' }}>ISO 27001:2022</div>
+               <div style={{ padding: '4px 8px', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', fontSize: '10px', border: '1px solid var(--border-color)' }}>ISO 9001:2015</div>
+               <div style={{ padding: '4px 8px', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', fontSize: '10px', border: '1px solid var(--border-color)' }}>CMMI Nivel 3</div>
             </div>
           </div>
         </div>

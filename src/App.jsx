@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Nosotros from './pages/Nosotros';
@@ -11,6 +12,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col" style={{ minHeight: '100vh' }}>
+        <ScrollToTop />
         <Navbar />
         <main style={{ flexGrow: 1 }}>
           <Routes>

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ShieldCheck, Server, Cpu } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Server, Activity, Lock } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -41,7 +41,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Soluciones tecnológicas robustas, escalables y seguras.<br />
+            Compañía chilena especializada en el diseño, construcción y operación de plataformas digitales de misión crítica para el sector sanitario.<br />
             Cerberus Tech es su aliado estratégico en transformación digital e infraestructura cloud.
           </motion.p>
 
@@ -64,7 +64,7 @@ const Home = () => {
       {/* Features Quick Look */}
       <section className="section" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <motion.div
               className="card flex flex-col items-center text-center gap-4"
               whileHover={{ y: -10 }}
@@ -72,8 +72,8 @@ const Home = () => {
               <div style={{ padding: '1rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '50%', color: 'var(--accent-primary)' }}>
                 <ShieldCheck size={32} />
               </div>
-              <h3 className="text-xl">Seguridad de Grado Militar</h3>
-              <p className="text-muted">Protegemos sus activos digitales más críticos con protocolos avanzados y cumplimiento normativo estricto.</p>
+              <h3 className="text-lg font-bold">Seguridad por Diseño</h3>
+              <p className="text-sm text-muted">Controles de seguridad incorporados desde la definición de la arquitectura de cada solución.</p>
             </motion.div>
 
             <motion.div
@@ -83,8 +83,8 @@ const Home = () => {
               <div style={{ padding: '1rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '50%', color: 'var(--accent-primary)' }}>
                 <Server size={32} />
               </div>
-              <h3 className="text-xl">Infraestructura Resiliente</h3>
-              <p className="text-muted">Despliegues en nube de alta disponibilidad con redundancia garantizada y métricas de uptime de 99.99%.</p>
+              <h3 className="text-lg font-bold">Resiliencia Verificable</h3>
+              <p className="text-sm text-muted">Todo compromiso de disponibilidad y recuperación se somete a prueba periódica.</p>
             </motion.div>
 
             <motion.div
@@ -92,10 +92,21 @@ const Home = () => {
               whileHover={{ y: -10 }}
             >
               <div style={{ padding: '1rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '50%', color: 'var(--accent-primary)' }}>
-                <Cpu size={32} />
+                <Activity size={32} />
               </div>
-              <h3 className="text-xl">Transformación Ágil</h3>
-              <p className="text-muted">Modernización de sistemas legacy con metodologías comprobadas y un equipo técnico de élite.</p>
+              <h3 className="text-lg font-bold">Trazabilidad Íntegra</h3>
+              <p className="text-sm text-muted">Cada acceso, cambio y decisión estructural queda registrado y es auditable por el cliente.</p>
+            </motion.div>
+
+            <motion.div
+              className="card flex flex-col items-center text-center gap-4"
+              whileHover={{ y: -10 }}
+            >
+              <div style={{ padding: '1rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '50%', color: 'var(--accent-primary)' }}>
+                <Lock size={32} />
+              </div>
+              <h3 className="text-lg font-bold">Ética en Datos Sensibles</h3>
+              <p className="text-sm text-muted">Aplicamos minimización y gestión de consentimiento sobre la información clínica.</p>
             </motion.div>
           </div>
         </div>
