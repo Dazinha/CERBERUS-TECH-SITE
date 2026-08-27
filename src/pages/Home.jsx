@@ -14,7 +14,7 @@ const Home = () => {
           backgroundImage: 'url(/CERBERUSTECHLOGO.png)',
           backgroundSize: 'max(600px, 60vw)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center 60%',
           zIndex: -1, opacity: 0.15
         }}></div>
         {/* Background Glow */}
