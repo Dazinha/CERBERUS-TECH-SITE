@@ -14,7 +14,7 @@ const Home = () => {
           backgroundImage: 'url(/CERBERUSTECHLOGO.png)',
           backgroundSize: 'max(600px, 60vw)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center calc(50% + 40px)',
+          backgroundPosition: 'center calc(50% + 20px)',
           zIndex: -1, opacity: 0.15
         }}></div>
         {/* Background Glow */}
@@ -64,7 +64,7 @@ const Home = () => {
       {/* Features Quick Look */}
       <section className="section" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-4 md:grid-cols-1 gap-8">
             <motion.div
               className="card flex flex-col items-center text-center gap-4"
               whileHover={{ y: -10 }}

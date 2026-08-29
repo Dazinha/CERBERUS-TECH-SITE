@@ -7,13 +7,13 @@ const Nosotros = () => {
       {/* Header */}
       <section className="section text-center" style={{ paddingBottom: 'var(--space-12)' }}>
         <div className="container">
-          <motion.h1 
+          <motion.h1
             className="text-4xl md:text-6xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           >
             Sobre <span className="text-gradient">Nosotros</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-xl text-secondary max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
@@ -24,7 +24,7 @@ const Nosotros = () => {
 
       {/* Misión, Visión, Valores */}
       <section className="section" style={{ backgroundColor: 'var(--bg-card)', paddingTop: 'var(--space-12)', paddingBottom: 'var(--space-12)' }}>
-        <div className="container grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="container grid grid-cols-1 nosotros-grid-3 gap-8">
           <motion.div className="card" whileHover={{ y: -5 }}>
             <div className="flex items-center gap-3 mb-4">
               <Target className="text-accent" size={28} style={{ color: 'var(--accent-primary)' }} />
@@ -61,45 +61,52 @@ const Nosotros = () => {
       </section>
 
       {/* Historia y Presencia */}
-      <section className="section">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <section className="section pt-0">
+        <div className="container flex flex-col gap-12">
+
+          {/* Nuestra Historia */}
           <div>
-            <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
               <Calendar className="text-accent" style={{ color: 'var(--accent-primary)' }} />
               Nuestra Historia
             </h2>
             <p className="text-secondary mb-4">
               Constituida en 2018 y con casa matriz en Valparaíso, nuestra compañía cuenta con ocho años de operación continua especializándose en el diseño, construcción y operación de plataformas digitales de misión crítica para el sector sanitario.
             </p>
-            <p className="text-secondary mb-6">
+            <p className="text-secondary mb-8">
               Nuestra actividad se concentra en organizaciones donde la interrupción de un sistema no constituye una pérdida económica, sino un riesgo asistencial. A lo largo de nuestra trayectoria hemos ejecutado proyectos de gran envergadura para redes hospitalarias y prestadores.
             </p>
-            
-            <h3 className="text-2xl font-bold mb-4 mt-8 flex items-center gap-3">
+          </div>
+
+          {/* Certificaciones y Alianzas */}
+          <div>
+            <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
               <Award className="text-accent" style={{ color: 'var(--accent-primary)' }} />
               Certificaciones y Alianzas
             </h3>
-            <div className="flex flex-wrap gap-2">
-              <span className="btn-secondary" style={{ padding: '0.25rem 0.75rem', fontSize: '0.875rem' }}>ISO/IEC 27001:2022</span>
-              <span className="btn-secondary" style={{ padding: '0.25rem 0.75rem', fontSize: '0.875rem' }}>ISO 9001:2015</span>
-              <span className="btn-secondary" style={{ padding: '0.25rem 0.75rem', fontSize: '0.875rem' }}>ISO/IEC 27701</span>
-              <span className="btn-secondary" style={{ padding: '0.25rem 0.75rem', fontSize: '0.875rem' }}>ISO 22301</span>
-              <span className="btn-secondary" style={{ padding: '0.25rem 0.75rem', fontSize: '0.875rem' }}>CMMI-DEV Nivel 3</span>
-              <span className="btn-primary" style={{ padding: '0.25rem 0.75rem', fontSize: '0.875rem' }}>AWS Advanced Partner</span>
-              <span className="btn-primary" style={{ padding: '0.25rem 0.75rem', fontSize: '0.875rem' }}>Azure Solutions Partner</span>
-              <span className="btn-primary" style={{ padding: '0.25rem 0.75rem', fontSize: '0.875rem' }}>Miembro HL7 International</span>
+            <div className="flex flex-wrap gap-4">
+              <span className="btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>ISO/IEC 27001:2022</span>
+              <span className="btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>ISO 9001:2015</span>
+              <span className="btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>ISO/IEC 27701</span>
+              <span className="btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>ISO 22301</span>
+              <span className="btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>CMMI-DEV Nivel 3</span>
+              <span className="btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>AWS Advanced Partner</span>
+              <span className="btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>Azure Solutions Partner</span>
+              <span className="btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>Miembro HL7 International</span>
+              <span className="btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '1rem', backgroundColor: 'var(--bg-card)' }}>Accesibilidad WCAG 2.2 AA</span>
             </div>
           </div>
-          
-          <div className="card glass relative" style={{ minHeight: '400px' }}>
-            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+
+          {/* Presencia Geográfica */}
+          <div className="card glass w-full">
+            <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
               <Globe className="text-accent" style={{ color: 'var(--accent-primary)' }} />
               Presencia Geográfica
             </h3>
             <p className="text-secondary mb-8">
               La compañía opera desde tres emplazamientos estratégicos para asegurar soporte directo y tiempos de respuesta mínimos.
             </p>
-            
+
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-4 border-b pb-4" style={{ borderColor: 'var(--border-color)' }}>
                 <Building size={24} style={{ color: 'var(--text-muted)' }} />
@@ -126,6 +133,13 @@ const Nosotros = () => {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @media (min-width: 768px) {
+          .nosotros-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+          .nosotros-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+        }
+      `}</style>
     </div>
   );
 };

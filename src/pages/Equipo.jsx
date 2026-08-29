@@ -68,6 +68,36 @@ const Equipo = () => {
         </div>
       </section>
 
+      {/* Directorio y Socios */}
+      <section className="section bg-secondary" style={{ backgroundColor: 'var(--bg-secondary)', paddingBottom: '0' }}>
+        <div className="container">
+          <h2 className="text-3xl font-bold mb-12 flex items-center justify-center gap-3">
+            <Users style={{ color: 'var(--accent-primary)' }} />
+            Directorio y Socios Fundadores
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <motion.div className="card text-center flex flex-col items-center" whileHover={{ y: -5 }}>
+              <UserCircle size={60} className="mb-4 text-muted" />
+              <h3 className="text-xl font-bold">Roberto Cerda</h3>
+              <p className="text-accent mb-2 font-semibold text-sm" style={{ color: 'var(--accent-primary)' }}>Director Ejecutivo (CEO)</p>
+              <p className="text-xs text-secondary mb-4">Ingeniero Civil Industrial con 15 años de experiencia liderando empresas de base tecnológica en el sector salud.</p>
+            </motion.div>
+            <motion.div className="card text-center flex flex-col items-center" whileHover={{ y: -5 }}>
+              <UserCircle size={60} className="mb-4 text-muted" />
+              <h3 className="text-xl font-bold">Daniela Riquelme</h3>
+              <p className="text-accent mb-2 font-semibold text-sm" style={{ color: 'var(--accent-primary)' }}>Directora de Tecnología (CTO)</p>
+              <p className="text-xs text-secondary mb-4">Arquitecta de Sistemas especializada en infraestructuras de misión crítica y procesamiento de alto volumen.</p>
+            </motion.div>
+            <motion.div className="card text-center flex flex-col items-center" whileHover={{ y: -5 }}>
+              <UserCircle size={60} className="mb-4 text-muted" />
+              <h3 className="text-xl font-bold">Felipe Sandoval</h3>
+              <p className="text-accent mb-2 font-semibold text-sm" style={{ color: 'var(--accent-primary)' }}>Director de Operaciones (COO)</p>
+              <p className="text-xs text-secondary mb-4">Experto en continuidad operativa, gestión de servicios bajo marco ITIL v4 y calidad normativa.</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Equipo Clave Nominado */}
       <section className="section bg-secondary" style={{ backgroundColor: 'var(--bg-secondary)' }}>
         <div className="container">

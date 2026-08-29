@@ -7,6 +7,7 @@ import Nosotros from './pages/Nosotros';
 import CasosExito from './pages/CasosExito';
 import Equipo from './pages/Equipo';
 import Capacidades from './pages/Capacidades';
+import Recursos from './pages/Recursos';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/casos-exito" element={<CasosExito />} />
             <Route path="/equipo" element={<Equipo />} />
             <Route path="/capacidades" element={<Capacidades />} />
+            <Route path="/recursos" element={<Recursos />} />
           </Routes>
         </main>
         <Footer />

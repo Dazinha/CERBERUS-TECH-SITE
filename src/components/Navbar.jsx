@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: 'Casos de Éxito', path: '/casos-exito' },
     { name: 'Equipo', path: '/equipo' },
     { name: 'Capacidades', path: '/capacidades' },
+    { name: 'Recursos', path: '/recursos' },
   ];
 
   return (

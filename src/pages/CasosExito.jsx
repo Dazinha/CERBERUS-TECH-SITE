@@ -158,6 +158,50 @@ const CasosExito = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonios */}
+      <section className="section">
+        <div className="container max-w-5xl">
+          <h2 className="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+            <Users style={{ color: 'var(--accent-primary)' }} />
+            Testimonios y Referencias
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="card glass relative">
+              <span style={{ fontSize: '4rem', position: 'absolute', top: '-10px', left: '10px', opacity: 0.1, color: 'var(--accent-primary)' }}>"</span>
+              <p className="text-secondary text-sm italic mb-6 z-10 relative mt-4">
+                "La plataforma integrada resolvió nuestro problema histórico de fichas duplicadas. Ahora nuestros médicos confían plenamente en el historial del paciente, incluso si el sistema central sufre cortes, gracias a la arquitectura híbrida."
+              </p>
+              <div className="mt-auto border-t pt-4" style={{ borderColor: 'var(--border-color)' }}>
+                <h4 className="font-bold text-sm">Ricardo Salgado Peña</h4>
+                <p className="text-xs text-muted">Director TI, Red Hospitalaria San Juan</p>
+              </div>
+            </div>
+
+            <div className="card glass relative">
+              <span style={{ fontSize: '4rem', position: 'absolute', top: '-10px', left: '10px', opacity: 0.1, color: 'var(--accent-primary)' }}>"</span>
+              <p className="text-secondary text-sm italic mb-6 z-10 relative mt-4">
+                "Lograr interoperar a 12 instituciones distintas a nivel nacional parecía imposible. Cerberus logró un índice maestro confiable y rápido, respetando los estándares FHIR y garantizando la privacidad de los afiliados."
+              </p>
+              <div className="mt-auto border-t pt-4" style={{ borderColor: 'var(--border-color)' }}>
+                <h4 className="font-bold text-sm">Carolina Vergara Ríos</h4>
+                <p className="text-xs text-muted">Gerenta Trans. Digital, Mutualidad de Trabajadores</p>
+              </div>
+            </div>
+
+            <div className="card glass relative">
+              <span style={{ fontSize: '4rem', position: 'absolute', top: '-10px', left: '10px', opacity: 0.1, color: 'var(--accent-primary)' }}>"</span>
+              <p className="text-secondary text-sm italic mb-6 z-10 relative mt-4">
+                "La app de asignación de terreno redujo nuestro ausentismo dramáticamente. La estabilidad del sistema nos permitió enfocar los recursos donde más se necesitan sin preocuparnos por caídas técnicas."
+              </p>
+              <div className="mt-auto border-t pt-4" style={{ borderColor: 'var(--border-color)' }}>
+                <h4 className="font-bold text-sm">Jorge Fuenzalida Ibáñez</h4>
+                <p className="text-xs text-muted">Subdirector Operaciones, Clínica Los Andes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

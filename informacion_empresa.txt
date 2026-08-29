@@ -1,0 +1,203 @@
+
+PROPUESTA TÉCNICA
+Subdocumento 1 — Presentación de la Empresa
+Licitación N° TFEP-01/2026
+Proyecto de Plataforma Digital de Misión Crítica
+Caso 04 — Consultas Médicas
+Mandante: Red de Salud Ñielol S.A.
+Proponente: Cerberus Tech SpA
+[ESPACIO RESERVADO PARA EL LOGOTIPO DE CERBERUS TECH SPA]
+Valparaíso, septiembre de 2026
+
+
+1. Presentación de la Empresa
+Cerberus Tech SpA es una compañía chilena de base tecnológica constituida en 2018, con casa matriz en Valparaíso y ocho años de operación continua, especializada en el diseño, construcción y operación de plataformas digitales de misión crítica para el sector sanitario. Nuestra actividad se concentra en organizaciones donde la interrupción de un sistema no constituye una pérdida económica sino un riesgo asistencial, y esa condición determina la forma en que diseñamos, comprometemos y operamos cada solución.
+A lo largo de nuestra trayectoria hemos ejecutado proyectos de registro clínico electrónico, identidad de paciente e interoperabilidad sanitaria para redes hospitalarias, mutualidades y prestadores ambulatorios, integrando el desarrollo de software a medida con la operación gestionada de la plataforma bajo acuerdos de nivel de servicio verificables.
+
+1.1 Misión de la empresa
+Proveer infraestructuras tecnológicas resilientes, seguras y centradas en el usuario, que garanticen la continuidad operativa ininterrumpida en sectores donde la tecnología es de misión crítica. Buscamos que cada plataforma implementada no solo resuelva un desafío técnico, sino que reduzca de forma medible el riesgo clínico y administrativo de la organización que la adopta.
+
+1.2 Visión de la empresa
+Ser el socio tecnológico de referencia en la transformación digital del sector salud en Chile y Latinoamérica, erradicando la fragmentación de la información clínica y elevando el estándar de seguridad del dato de salud, de modo que la tecnología opere como una capacidad confiable e invisible al servicio de la atención.
+
+1.3 Valores y responsabilidad de la empresa
+Nuestra actividad se rige por cuatro principios que se expresan en decisiones concretas de diseño y de operación:
+Seguridad por diseño. Los controles de seguridad se incorporan desde la definición de la arquitectura y no como una etapa posterior de verificación.
+Resiliencia verificable. Todo compromiso de disponibilidad y de recuperación se somete a prueba periódica, y sus resultados se reportan al mandante.
+Trazabilidad íntegra. Cada acceso, cambio y decisión estructural queda registrado y es auditable por el cliente.
+Ética en el tratamiento de datos sensibles. Aplicamos minimización, control de finalidad y gestión de consentimiento sobre la información clínica, con independencia de que la normativa lo exija de forma expresa.
+En materia de responsabilidad organizacional, privilegiamos arquitecturas que optimizan el consumo de recursos computacionales, reducimos la circulación de documentación en papel mediante la digitalización de los procesos asistenciales y administrativos, y orientamos el diseño de nuestras interfaces a la accesibilidad y a la inclusión de poblaciones con distintos niveles de alfabetización digital.
+
+1.4 Presencia geográfica y presencia digital
+La compañía opera desde tres emplazamientos. La casa matriz, ubicada en Valparaíso, concentra la dirección, la arquitectura de soluciones y la fábrica de software. La Sucursal Sur, con sede en Temuco, Región de La Araucanía, sostiene las actividades de implantación, capacitación y soporte en terreno, y es la unidad que dará cobertura a los nueve centros médicos de la Red de Salud Ñielol. El Centro de Operaciones, también en Valparaíso, alberga el centro de operación de red y el centro de operaciones de seguridad, ambos con funcionamiento continuo durante las veinticuatro horas del día, los siete días de la semana, durante todo el año.
+La información institucional de la compañía, sus casos de éxito con las métricas asociadas, su organigrama directivo, los currículos del equipo clave, sus capacidades técnicas y sus alianzas tecnológicas se encuentran publicados y vigentes en el sitio web corporativo https://cerberus-tech.vercel.app/, el que permanecerá activo y accesible durante todo el proceso licitatorio.
+
+
+2. Líneas de Negocio, Productos y Servicios
+Cerberus Tech estructura su oferta en cuatro líneas de negocio, todas ellas concurrentes en el alcance del presente proyecto.
+
+2.1 Plataformas clínicas e identidad del paciente
+Comprende el registro clínico electrónico, el índice maestro de pacientes, el agendamiento y la gestión de la demanda ambulatoria. Es la línea que resuelve el problema de la ficha única y del reconocimiento inequívoco de la persona atendida a lo largo de una red multisede.
+
+2.2 Interoperabilidad e ingeniería de datos
+Abarca la integración bajo los estándares HL7 v2.x y HL7 FHIR R4, la operación de motores de mensajería clínica, la gestión de terminologías clínicas como SNOMED CT y LOINC, la migración y el saneamiento de datos históricos, y la separación de las cargas transaccionales respecto de las analíticas.
+
+2.3 Ciberseguridad y operaciones defensivas
+Incluye el diseño de arquitecturas bajo modelo Zero Trust, la gestión de identidad y acceso, la operación de un centro de operaciones de seguridad permanente, la gestión de vulnerabilidades, la respuesta a incidentes y el cumplimiento normativo aplicable al tratamiento de datos personales sensibles.
+
+2.4 Operación gestionada y confiabilidad
+Contempla la mesa de servicio multinivel conforme al marco ITIL 4, la observabilidad de extremo a extremo, la gestión de capacidad, la ejecución periódica de pruebas de recuperación ante desastres y la mantención preventiva, correctiva y evolutiva de la plataforma.
+
+2.5 Catálogo de servicios acreditables
+Los servicios que la compañía presta de forma habitual y que pueden ser acreditados mediante contratos vigentes o finalizados son los siguientes: consultoría y arquitectura de solución; desarrollo de software a medida bajo prácticas DevSecOps; integración de sistemas heterogéneos y de plataformas heredadas; migración de datos clínicos; despliegue de infraestructura híbrida que combina nube pública, instalaciones propias del cliente y nodos de borde; operación continua bajo acuerdos de nivel de servicio contractuales; y capacitación, implantación y gestión del cambio con usuarios operacionales.
+
+
+3. Estructura Organizacional y Dotación
+Cerberus Tech opera bajo una estructura matricial. Unidades funcionales permanentes concentran la especialización técnica y aportan profesionales a células de proyecto dirigidas por un Jefe de Proyecto con dedicación exclusiva y con facultades para comprometer a la compañía en materias de ejecución.
+
+3.1 Dotación total y fundamento de su dimensionamiento
+La dotación total de la compañía asciende a noventa y ocho profesionales. Esta cifra se deriva del compromiso de operación continua que la compañía sostiene con sus clientes. Un puesto cubierto de forma ininterrumpida durante todo el año demanda ocho mil setecientas sesenta horas de cobertura; considerando una disponibilidad efectiva aproximada de mil setecientas horas anuales por profesional, una vez descontados feriados legales, capacitación y ausentismo, cada puesto continuo requiere del orden de cinco coma dos profesionales equivalentes. De ese cálculo se desprende el dimensionamiento de las unidades de turno.
+La distribución de la dotación por unidad es la siguiente:
+
+Dirección y oficina de gestión de proyectos: seis profesionales, responsables de la metodología de gestión, del control de cambios y de la gestión de riesgos conforme a la norma ISO 31000.
+Arquitectura y diseño de soluciones: ocho profesionales, que sostienen el Comité de Arquitectura permanente y el registro formal de las decisiones de diseño.
+Ingeniería de software: treinta profesionales, organizados en células de desarrollo de servicios de negocio, interfaces web, aplicaciones móviles e integración.
+Datos e interoperabilidad: diez profesionales, dedicados a la ingeniería de datos, a la mensajería clínica bajo HL7 y FHIR, y a la migración y saneamiento de información histórica.
+Ciberseguridad: catorce profesionales, de los cuales once sostienen los dos puestos continuos del centro de operaciones de seguridad y tres se desempeñan en gobierno, riesgo y cumplimiento.
+Operación y confiabilidad: dieciséis profesionales, de los cuales once sostienen los dos puestos continuos del centro de operación de red y cinco se desempeñan en ingeniería de plataforma.
+Calidad y pruebas: nueve profesionales, especializados en automatización, desempeño, pruebas de seguridad y aceptación de usuario.
+Implantación, capacitación y gestión del cambio: cinco profesionales, dedicados al despliegue en terreno y al acompañamiento de usuarios operacionales.
+Esta dotación corresponde a la capacidad instalada de la compañía. La dotación específicamente asignada al presente proyecto y su curva de participación por fase se declaran en el Formulario T-15 y se desarrollan en el Subdocumento 12, en coherencia con la estructura de desglose del trabajo y con la curva de recursos de la Oferta Económica.
+
+
+4. Credenciales Institucionales y Alianzas Tecnológicas
+
+4.1 Certificaciones vigentes
+La compañía mantiene vigentes las siguientes certificaciones institucionales, todas ellas con alcance corporativo:
+ISO/IEC 27001:2022, sobre sistemas de gestión de la seguridad de la información, con alcance sobre la totalidad de las operaciones de la compañía.
+ISO 9001:2015, sobre sistemas de gestión de la calidad.
+ISO/IEC 27701, sobre gestión de la privacidad de la información, aplicable al tratamiento de datos personales sensibles de salud.
+ISO 22301, sobre continuidad del negocio, que respalda los compromisos de recuperación ante desastres.
+CMMI-DEV nivel 3, como referencia de madurez de los procesos de análisis, diseño, construcción, prueba y despliegue de software.
+
+4.2 Alianzas tecnológicas
+Cerberus Tech mantiene la condición de Advanced Consulting Partner de Amazon Web Services, con competencia declarada en el sector salud, lo que habilita el despliegue de arquitecturas con soporte directo del fabricante y con acceso a sus programas de arquitectura de referencia. Adicionalmente, la compañía es Solutions Partner de Microsoft Azure en la categoría de innovación digital y de aplicaciones, condición que permite ofrecer una alternativa de despliegue y de respaldo, y es organización miembro de HL7 International, lo que acredita su participación formal en el desarrollo y adopción de los estándares de interoperabilidad clínica.
+
+4.3 Credenciales financieras y cumplimiento laboral
+La compañía acredita estados financieros auditados correspondientes a los últimos tres ejercicios, todos ellos con patrimonio positivo, y dispone de línea bancaria vigente que le permite constituir las garantías exigidas por las Bases Administrativas, esto es, la Garantía de Seriedad de la Oferta por quinientos mil dólares de los Estados Unidos de América y la Garantía de Fiel Cumplimiento del Contrato por un millón de dólares de la misma moneda.
+La gestión presupuestaria se realiza por centros de costo, con control físico y financiero del avance, curvas de progreso y reservas para contingencias. En materia laboral y previsional, la compañía no registra deudas ni sanciones graves vigentes, condición acreditada mediante certificado de la Dirección del Trabajo y del Boletín Laboral y Previsional.
+
+
+5. Experiencia Relevante en la Industria del Caso
+La compañía declara tres proyectos de software de misión crítica finalizados y en operación dentro de los últimos cinco años, cuyos antecedentes completos se consignan en el Formulario T-6 que acompaña este subdocumento como Anexo A.
+
+5.1 Sistema Integrado de Salud Híbrido para la Red Hospitalaria San Juan
+Ejecutado entre los años 2023 y 2025 en calidad de contratista principal, por un monto situado en el rango de doce a quince millones de dólares, este proyecto consistió en la implementación de un registro clínico electrónico unificado para los cuatro recintos de la red.
+La solución se desplegó sobre una arquitectura híbrida que combina nube pública para las cargas elásticas y de analítica con nodos de borde emplazados en cada recinto, capaces de sostener la operación asistencial de forma autónoma ante la caída del enlace de conectividad. El alcance ejecutado comprendió la identidad de paciente, el agendamiento, la gestión de órdenes y resultados, la migración del padrón histórico, la integración con los sistemas de laboratorio e imagenología, y la operación gestionada de la plataforma durante dieciocho meses.
+La plataforma soporta cuatrocientos ochenta mil pacientes activos y un millón cuatrocientas mil atenciones anuales, con dos mil cien usuarios concurrentes en hora de mayor demanda y sesenta y dos terabytes de imagenología almacenada. El acuerdo de nivel de servicio comprometió una disponibilidad de noventa y nueve coma cinco por ciento, con objetivo de tiempo de recuperación de cuatro horas y objetivo de punto de recuperación de quince minutos; la disponibilidad efectivamente medida y verificada mes a mes alcanza el noventa y nueve coma noventa y cinco por ciento.
+
+5.2 Plataforma Nacional de Interoperabilidad e Índice Maestro de Pacientes para la Mutualidad de Trabajadores
+Ejecutado entre los años 2022 y 2024 en calidad de contratista principal, por un monto situado en el rango de seis a ocho millones de dólares, este proyecto consistió en el despliegue de un índice maestro de pacientes de cobertura nacional sobre un padrón de un millón ochocientos mil registros.
+Mediante técnicas de conciliación determinística y probabilística se unificaron un millón doscientos mil registros clínicos previamente fragmentados, resolviendo un catorce por ciento de duplicidad histórica. El diseño incorporó de forma deliberada un flujo de arbitraje manual obligatorio para los pares de baja confianza, en lugar de la fusión automática de fichas, decisión que evita el modo de falla más severo de este tipo de sistemas, consistente en atribuir a una persona la información clínica de otra. El alcance incluyó además el motor de integración bajo HL7 v2.x y FHIR R4, el gobierno de calidad de datos y un portal de administración de identidad.
+La solución integra doce instituciones adherentes y sostiene un caudal de cuarenta mensajes por segundo en hora de mayor demanda, bajo un compromiso de disponibilidad de noventa y nueve coma cinco por ciento y una latencia de consulta inferior a trescientos milisegundos en el percentil noventa y cinco.
+Este proyecto guarda correspondencia directa con la necesidad declarada por la Red de Salud Ñielol. El problema raíz que el mandante describe no es de proceso ni de tecnología, sino de identidad del paciente, y su resolución sobre un padrón de un millón ochocientos mil registros constituye antecedente suficiente para abordar el padrón histórico de quinientos sesenta mil registros que el presente proyecto debe migrar.
+
+5.3 Plataforma de Coordinación de Atención Ambulatoria y Domiciliaria para Clínica Los Andes
+Ejecutado entre los años 2021 y 2022 en calidad de contratista principal, por un monto situado en el rango de dos coma cinco a tres coma cinco millones de dólares, este proyecto consistió en la implementación de una suite de gestión omnicanal para el agendamiento, el triaje digital, la confirmación de horas y la asignación y ruteo de prestaciones en terreno, complementada con una aplicación móvil para los equipos domiciliarios y un tablero de gestión de la demanda.
+La automatización del ciclo de recordatorio y confirmación redujo el ausentismo de pacientes en un cuarenta y cinco por ciento. La plataforma opera sobre noventa y cinco mil pacientes activos y doscientas diez mil atenciones anuales, con treinta y ocho mil notificaciones mensuales y ciento cuarenta profesionales desplegados en terreno, bajo un compromiso de disponibilidad de noventa y nueve por ciento y de entrega de notificación en menos de sesenta segundos en el percentil noventa y cinco.
+La pertinencia de este antecedente radica en que aborda la coordinación de una red ambulatoria multisede con pacientes territorialmente dispersos, condición que replica la operación de los nueve centros médicos de la Red de Salud Ñielol en las regiones de La Araucanía y de Los Ríos, y que ataca directamente el indicador de ausentismo que el mandante declara entre sus dolores principales.
+
+5.4 Comprensión acreditada del contexto sectorial
+La experiencia descrita incorpora los condicionantes que distinguen el presente caso y que exceden la mera capacidad técnica de construcción de software.
+Tratamiento de datos personales sensibles. La compañía opera bajo la Ley N° 21.719 sobre protección y tratamiento de datos personales, la Ley N° 20.584 sobre derechos y deberes de las personas en su atención de salud, y la Ley N° 21.663 Marco sobre Ciberseguridad, con controles verificables de consentimiento, minimización, trazabilidad de acceso y retención.
+Identidad del paciente como riesgo clínico. La experiencia acumulada en el índice maestro de pacientes aborda de forma específica el modo de falla en que un resultado clínico se atribuye a una persona distinta de aquella a la que corresponde, mediante arbitraje manual obligatorio de los pares de baja confianza.
+Acreditación de prestadores institucionales. Hemos acompañado procesos de acreditación ante la Superintendencia de Salud, incorporando desde el diseño la evidencia documental y los registros que el estándar exige, condición relevante para una red que se encuentra en dicho proceso.
+Profesionales no dependientes. Una fracción decisiva de los profesionales que utilizarán el sistema no mantiene vínculo de dependencia con la red, sino que elige dónde atender. A ellos no se les puede imponer un proceso por instrucción, y si el sistema les consume minutos de consulta, dejan de utilizarlo. Nuestra práctica de diseño parte de ese supuesto y orienta la solución a devolver tiempo clínico antes que a capturar información adicional.
+Pertinencia territorial e intercultural. La operación en las regiones de La Araucanía y de Los Ríos exige considerar la composición intercultural de la población atendida y las condiciones reales de conectividad en zonas rurales, materias que se desarrollan en los Subdocumentos 2 y 3.
+
+
+6. Equipo Clave Nominado
+La compañía nomina a continuación a los profesionales que asumirán los roles mínimos del equipo, con indicación de su dedicación y de su período de participación. El detalle de currículos, certificaciones acreditadas y cartas de compromiso se consigna en el Formulario T-8 y se desarrolla en el Subdocumento 12.
+
+6.1 Conducción del proyecto
+El señor Alonso Alexander Maurel Murgas asumirá como Jefe de Proyecto, con dedicación exclusiva del cien por ciento durante toda la fase de implementación, entre el primer y el vigésimo mes de contrato. Es Ingeniero Civil Informático, cuenta con certificación Project Management Professional y con acreditación ITIL 4, y dispone de facultades para comprometer a la compañía en materias de ejecución. Su experiencia comprobable en proyectos de escala equivalente se respalda en la dirección del Sistema Integrado de Salud Híbrido descrito en el apartado 5.1.
+El señor Adolfo Cordero Ponce asumirá como Arquitecto de Solución, con dedicación alta durante la fase de diseño y participación permanente en el Comité de Arquitectura a lo largo de los cincuenta y seis meses de contrato. Cuenta con la certificación de arquitectura del proveedor de nube ofertado y con especialización en arquitecturas híbridas y de borde.
+
+6.2 Seguridad, datos e integración
+El señor Miguel Bernales Avaria asumirá como Encargado de Seguridad de la Información, con dedicación permanente durante los cincuenta y seis meses de contrato. Cuenta con certificación en seguridad vigente, en calidad de auditor líder ISO/IEC 27001, y con especialización en protección de datos personales sensibles y en la normativa sectorial aplicable.
+El señor Matías Castro Rojas asumirá como Líder de Datos, con dedicación permanente durante la fase de implementación, entre el primer y el vigésimo mes de contrato. Su experiencia se concentra en el modelado y la migración de datos, y en el gobierno de la calidad de la información clínica.
+La señora Camila Ortiz Fuentealba asumirá como Líder de Integración, con dedicación permanente durante la fase de implementación, entre el primer y el vigésimo mes de contrato. Proviene de la unidad de Datos e Interoperabilidad de la compañía y acredita experiencia en la integración de sistemas heredados bajo los estándares HL7 v2.x y FHIR R4.
+
+6.3 Construcción, función y calidad
+El señor Rubén Antonio Carvajal Muñoz asumirá como Líder de Desarrollo, con dedicación del cien por ciento durante la fase de implementación, entre el primer y el vigésimo mes de contrato, y acredita experiencia en la tecnología ofertada y en prácticas DevSecOps.
+La señora Monserrath Morales asumirá como Líder Funcional, con dedicación del cien por ciento durante la fase de implementación, entre el primer y el vigésimo mes de contrato. Acredita experiencia en la industria del caso, específicamente en atención ambulatoria de especialidad, y conducirá el levantamiento funcional y la definición de los criterios de aceptación.
+El señor Nehemías Joel Leiva Cataldo asumirá como Líder de Calidad, con dedicación permanente durante los cincuenta y seis meses de contrato. Cuenta con certificación en pruebas de software y con especialización en los marcos ISO/IEC 25010 e ISO/IEC/IEEE 29119.
+
+6.4 Operación e implantación
+El señor Sebastián Gatica Leiva asumirá como Líder de Operación y Confiabilidad, incorporándose a partir del sexto mes de contrato y con dedicación permanente durante toda la fase de operación, hasta el mes cincuenta y seis. Cuenta con certificación en gestión de servicios y con experiencia en la gestión de ambientes, alta disponibilidad y recuperación ante desastres.
+El señor Pablo Daza Garrido asumirá como Líder de Implantación y Gestión del Cambio, incorporándose a partir del octavo mes de contrato y hasta el mes cincuenta y seis. Acredita experiencia en implantación con usuarios operacionales, y conducirá la capacitación, la comunicación y las actividades orientadas a la adopción efectiva de la solución.
+La estructura organizacional del proyecto, la matriz de asignación de responsabilidades, la curva de dotación por fase, las decisiones de construcción o adquisición, las subcontrataciones y el régimen de reemplazos del equipo clave se desarrollan en el Subdocumento 12.
+
+
+7. Gobierno Interno de Calidad, Seguridad y Conocimiento
+
+7.1 Gobierno de calidad
+El aseguramiento de calidad se estructura sobre la norma ISO/IEC 25010 para el modelo de calidad de producto y sobre la norma ISO/IEC/IEEE 29119 para la estrategia de pruebas. El flujo de integración continua incorpora puertas de calidad bloqueantes que exigen una cobertura mínima de setenta por ciento sobre la lógica de negocio y la ausencia de pruebas en falla, junto con límites de complejidad ciclomática y de acoplamiento, revisión por pares obligatoria y trazabilidad de extremo a extremo entre el requerimiento, el diseño, el código, la prueba y el despliegue.
+Ningún artefacto avanza a producción sin evidencia registrada del cumplimiento de la puerta anterior, y esa evidencia queda disponible para auditoría del mandante.
+
+7.2 Gobierno de seguridad
+La seguridad se incorpora desde el diseño y no como etapa terminal de verificación. El flujo DevSecOps contempla análisis estático de código, análisis dinámico de la aplicación en ejecución, análisis de composición de software con generación de un inventario de componentes y gestión centralizada de secretos, todo ello con carácter previo al paso a producción.
+La operación se sostiene sobre un centro de operaciones de seguridad de funcionamiento continuo, dotado de una plataforma de gestión de eventos e información de seguridad, con correlación de eventos y procedimientos formales de respuesta a incidentes, bajo un modelo Zero Trust que exige autenticación multifactor y cifrado de la información tanto en tránsito como en reposo. Un Comité de Seguridad de frecuencia mensual revisa los hallazgos, las excepciones vigentes y el estado de remediación, y reporta formalmente a la contraparte técnica del mandante.
+
+7.3 Gestión del conocimiento y continuidad
+El conocimiento generado durante el proyecto se documenta como activo del cliente y no como saber tácito del proveedor. Las prácticas que sostienen ese principio son las siguientes:
+Registros de decisión de arquitectura. Cada decisión estructural queda documentada con las alternativas evaluadas, el criterio de selección aplicado y las consecuencias asumidas.
+Libros de operación y guías de resolución. Se versionan junto al código y se revisan de forma obligatoria tras cada incidente mayor.
+Análisis retrospectivo sin atribución de culpa. Posterior a cada incidente, orientado a la corrección del sistema y no a la identificación de responsables individuales.
+Continuidad ante rotación. Todo rol clave cuenta con un sustituto identificado y con participación activa en el proyecto, de modo que un eventual reemplazo no dependa de un traspaso posterior de conocimiento.
+Espacio colaborativo accesible al mandante. Contiene la documentación del proyecto, los entregables, las actas de comité, el registro de riesgos y el registro de cambios, permanentemente actualizados.
+La totalidad de los activos generados, comprendiendo el código fuente, la infraestructura definida como código, la documentación de arquitectura y los libros de operación, es transferible al mandante, auditable y libre de dependencias que impidan su operación por un tercero, en coherencia con el plan de reversibilidad comprometido.
+
+
+
+Anexo A — Formulario T-6: Experiencia en Proyectos Similares
+Se declaran tres proyectos finalizados y en operación dentro de los últimos cinco años, con indicación de la contraparte de referencia para su verificación directa.
+
+A.1 Proyecto 1
+Nombre del proyecto: Sistema Integrado de Salud Híbrido (SISH)
+Cliente o mandante: Red Hospitalaria San Juan
+Industria: Salud — red hospitalaria de alta complejidad
+Año de inicio y de término: 2023 – 2025
+Monto del contrato: Rango de USD 12.000.000 a USD 15.000.000
+Alcance ejecutado: Registro clínico electrónico unificado para cuatro recintos; identidad de paciente; agendamiento; gestión de órdenes y resultados; migración del padrón histórico; integración con laboratorio e imagenología; operación gestionada durante dieciocho meses.
+Arquitectura: Híbrida. Nube pública para cargas elásticas y analítica, con nodos de borde en instalaciones de cada recinto, capaces de operación autónoma ante corte de enlace.
+Nivel de servicio comprometido: Disponibilidad de 99,5 % comprometida contractualmente, con 99,95 % efectivamente medido y verificado mensualmente. Objetivo de tiempo de recuperación de 4 horas y objetivo de punto de recuperación de 15 minutos.
+Volumen de operación soportado: 480.000 pacientes activos; 1,4 millones de atenciones anuales; 2.100 usuarios concurrentes en hora peak; 62 TB de imagenología.
+Rol de la empresa: Contratista principal
+Contraparte de referencia y contacto: Ricardo Salgado Peña, Director de Tecnologías de Información, Red Hospitalaria San Juan. Correo electrónico: r.salgado@redsanjuan.cl. Teléfono: +56 2 2478 9100.
+
+A.2 Proyecto 2
+Nombre del proyecto: Plataforma Nacional de Interoperabilidad e Índice Maestro de Pacientes
+Cliente o mandante: Mutualidad de Trabajadores
+Industria: Salud ocupacional y seguridad laboral
+Año de inicio y de término: 2022 – 2024
+Monto del contrato: Rango de USD 6.000.000 a USD 8.000.000
+Alcance ejecutado: Índice maestro de pacientes de cobertura nacional; conciliación determinística y probabilística; motor de integración HL7 v2.x y FHIR R4; gobierno de calidad de datos; arbitraje manual de pares de baja confianza; portal de administración de identidad.
+Arquitectura: Nube pública, con pasarela de integración instalada en dependencias de cada institución adherente.
+Nivel de servicio comprometido: Disponibilidad de 99,5 % en el servicio de resolución de identidad, con latencia de consulta inferior a 300 milisegundos en el percentil 95.
+Volumen de operación soportado: Padrón de 1,8 millones de registros, de los cuales 1,2 millones fueron unificados; 12 instituciones integradas; 40 mensajes por segundo en peak.
+Rol de la empresa: Contratista principal
+Contraparte de referencia y contacto: Carolina Vergara Ríos, Gerenta de Transformación Digital, Mutualidad de Trabajadores. Correo electrónico: c.vergara@mutualtrabajadores.cl. Teléfono: +56 2 2630 4400.
+
+A.3 Proyecto 3
+Nombre del proyecto: Plataforma de Coordinación de Atención Ambulatoria y Domiciliaria
+Cliente o mandante: Clínica Los Andes
+Industria: Salud — atención ambulatoria y domiciliaria
+Año de inicio y de término: 2021 – 2022
+Monto del contrato: Rango de USD 2.500.000 a USD 3.500.000
+Alcance ejecutado: Agendamiento omnicanal; triaje digital; confirmación y recordatorio automatizado; asignación y ruteo de prestaciones en terreno; aplicación móvil para equipos domiciliarios; tablero de gestión de la demanda.
+Arquitectura: Nube pública, con componente móvil habilitado para operación intermitente.
+Nivel de servicio comprometido: Disponibilidad de 99,0 %, con entrega de notificación en menos de 60 segundos en el percentil 95.
+Volumen de operación soportado: 95.000 pacientes activos; 210.000 atenciones anuales; 38.000 notificaciones mensuales; 140 profesionales en terreno.
+Rol de la empresa: Contratista principal
+Contraparte de referencia y contacto: Jorge Fuenzalida Ibáñez, Subdirector de Operaciones, Clínica Los Andes. Correo electrónico: j.fuenzalida@clinicalosandes.cl. Teléfono: +56 2 2915 7720.
