@@ -4,15 +4,15 @@ import { Cloud, Code2, Database, ShieldCheck, Workflow, Laptop } from 'lucide-re
 const Capacidades = () => {
   return (
     <div className="w-full">
-      <section className="section text-center pb-8">
+      <section className="section text-center" style={{ paddingBottom: '8rem' }}>
         <div className="container">
-          <motion.h1 
+          <motion.h1
             className="text-4xl md:text-5xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           >
             Capacidades <span className="text-gradient">Técnicas</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-xl text-secondary max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
@@ -22,7 +22,7 @@ const Capacidades = () => {
       </section>
 
       {/* Servicios y Soluciones */}
-      <section className="section pt-0">
+      <section className="section" style={{ paddingTop: '0' }}>
         <div className="container">
           <h2 className="text-3xl font-bold mb-12 text-center">Líneas de Negocio</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -89,7 +89,7 @@ const Capacidades = () => {
 
           <div>
             <h2 className="text-3xl font-bold mb-6">Catálogo de Servicios Acreditables</h2>
-            <p className="text-secondary mb-6">Nuestros servicios prestados de forma habitual y acreditables mediante contratos vigentes o finalizados incluyen:</p>
+            <p className="text-secondary mb-8">Nuestros servicios prestados de forma habitual y acreditables mediante contratos vigentes o finalizados incluyen:</p>
             <ul className="text-secondary flex flex-col gap-4 list-disc pl-5">
               <li>Consultoría y arquitectura de solución.</li>
               <li>Desarrollo de software a medida bajo prácticas DevSecOps.</li>
@@ -107,7 +107,7 @@ const Capacidades = () => {
       <section className="section">
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="card glass">
-            <h3 className="text-2xl font-bold mb-6">Metodologías Certificadas</h3>
+            <h3 className="text-2xl font-bold mb-8">Metodologías Certificadas</h3>
             <ul className="text-secondary flex flex-col gap-4">
               <li>
                 <strong className="text-white block mb-1">DevSecOps</strong>
@@ -125,7 +125,7 @@ const Capacidades = () => {
           </div>
 
           <div className="card glass">
-            <h3 className="text-2xl font-bold mb-6">Infraestructura y Capacidad Instalada</h3>
+            <h3 className="text-2xl font-bold mb-8">Infraestructura y Capacidad Instalada</h3>
             <ul className="text-secondary flex flex-col gap-4">
               <li>
                 <strong className="text-white block mb-1">Centro de Operaciones de Seguridad (SOC)</strong>

@@ -36,18 +36,14 @@ const Footer = () => {
             <h4 className="font-bold text-sm tracking-widest uppercase text-white" style={{ letterSpacing: '0.1em', marginBottom: '1.5rem' }}>Contacto Licitaciones</h4>
 
             <div className="flex flex-col text-sm" style={{ color: '#a0aabf', gap: '1rem' }}>
-              <div style={{ marginBottom: '0.5rem' }}>
-                <p className="font-semibold text-white">Jorge Arancibia Valenzuela</p>
-                <p className="text-xs mt-1">Gerente Comercial y de Licitaciones</p>
-              </div>
 
               <div className="flex flex-col gap-4">
                 {/* Contact Card 1 */}
-                <a href="tel:+56987654321" className="contact-card">
+                <a href="tel:+56322551000" className="contact-card">
                   <Phone size={18} style={{ color: '#8b949e', flexShrink: 0 }} />
                   <div className="flex flex-col">
                     <span style={{ fontSize: '12px', color: '#8b949e', marginBottom: '2px', lineHeight: '1' }}>Teléfono</span>
-                    <span style={{ fontSize: '14px', color: '#e2e8f0', fontWeight: '400', lineHeight: '1.2' }}>+56 9 8765 4321</span>
+                    <span style={{ fontSize: '14px', color: '#e2e8f0', fontWeight: '400', lineHeight: '1.2' }}>+56 32 255 1000</span>
                   </div>
                 </a>
 
@@ -66,7 +62,7 @@ const Footer = () => {
                   <div className="flex flex-col">
                     <span style={{ fontSize: '12px', color: '#8b949e', marginBottom: '2px', lineHeight: '1' }}>Ubicación</span>
                     <div className="flex items-center gap-1">
-                      <span style={{ fontSize: '14px', color: '#e2e8f0', fontWeight: '400', lineHeight: '1.2' }}>Av. Errázuriz 1234, Valparaíso</span>
+                      <span style={{ fontSize: '14px', color: '#e2e8f0', fontWeight: '400', lineHeight: '1.2' }}>Av. Brasil 2950, piso 8</span>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e2e8f0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                     </div>
                   </div>

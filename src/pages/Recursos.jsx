@@ -15,15 +15,15 @@ const Recursos = () => {
 
   return (
     <div className="w-full">
-      <section className="section text-center pb-8">
+      <section className="section text-center" style={{ paddingBottom: '8rem' }}>
         <div className="container">
-          <motion.h1 
+          <motion.h1
             className="text-4xl md:text-5xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           >
             Centro de <span className="text-gradient">Recursos y Soporte</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-xl text-secondary max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
@@ -33,7 +33,7 @@ const Recursos = () => {
       </section>
 
       {/* Portal & Demo */}
-      <section className="section pt-0">
+      <section className="section" style={{ paddingTop: '0' }}>
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="card glass relative overflow-hidden flex flex-col justify-between" style={{ minHeight: '300px' }}>
             <div className="z-10 relative">
@@ -70,17 +70,17 @@ const Recursos = () => {
               <h2 className="text-3xl font-bold mb-2">Calculadora de Retorno de Inversión (ROI)</h2>
               <p className="text-secondary">Estime el ahorro mensual en horas administrativas al implementar nuestra plataforma unificada, basado en la capacidad instalada de su centro.</p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <label className="block text-sm font-semibold mb-4 text-white">Número de Camas / Boxes de Atención: <span className="text-accent text-lg ml-2" style={{ color: 'var(--accent-primary)' }}>{beds}</span></label>
-                <input 
-                  type="range" 
-                  min="50" 
-                  max="1000" 
+                <input
+                  type="range"
+                  min="50"
+                  max="1000"
                   step="50"
-                  value={beds} 
-                  onChange={(e) => calculateRoi(Number(e.target.value))} 
+                  value={beds}
+                  onChange={(e) => calculateRoi(Number(e.target.value))}
                   className="w-full"
                   style={{ accentColor: 'var(--accent-primary)' }}
                 />
@@ -89,7 +89,7 @@ const Recursos = () => {
                   <span>1000+</span>
                 </div>
               </div>
-              
+
               <div className="text-center p-8 rounded-lg" style={{ background: 'rgba(168, 85, 247, 0.1)', border: '1px solid var(--accent-primary)' }}>
                 <p className="text-sm text-secondary font-semibold mb-2">Ahorro Mensual Estimado</p>
                 <h3 className="text-4xl font-bold text-white mb-2">${roi.toLocaleString('es-CL')} <span className="text-lg text-muted font-normal">CLP</span></h3>
@@ -103,7 +103,7 @@ const Recursos = () => {
       {/* Material Educativo */}
       <section className="section">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12 flex items-center justify-center gap-3 text-center">
+          <h2 className="text-3xl font-bold mb-12 flex items-center justify-center gap-2 text-center">
             <BookOpen style={{ color: 'var(--accent-primary)' }} />
             Material Educativo y Seminarios
           </h2>

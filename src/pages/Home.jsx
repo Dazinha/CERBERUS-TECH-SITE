@@ -64,7 +64,7 @@ const Home = () => {
       {/* Features Quick Look */}
       <section className="section" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="container">
-          <div className="grid grid-cols-4 md:grid-cols-1 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-1 gap-8">
             <motion.div
               className="card flex flex-col items-center text-center gap-4"
               whileHover={{ y: -10 }}

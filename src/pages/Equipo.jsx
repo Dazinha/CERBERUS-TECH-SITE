@@ -4,15 +4,15 @@ import { Users, UserCircle, BadgeCheck, Network, Settings, Database, Shield, Mon
 const Equipo = () => {
   return (
     <div className="w-full">
-      <section className="section text-center pb-8">
+      <section className="section text-center" style={{ paddingBottom: '8rem' }}>
         <div className="container">
-          <motion.h1 
+          <motion.h1
             className="text-4xl md:text-5xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           >
             Nuestra <span className="text-gradient">Estructura Organizacional</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-xl text-secondary max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
@@ -22,45 +22,45 @@ const Equipo = () => {
       </section>
 
       {/* Dotación y Distribución */}
-      <section className="section pt-0">
+      <section className="section" style={{ paddingTop: '0' }}>
         <div className="container">
           <div className="card glass text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Dotación Total: 98 Profesionales</h2>
             <p className="text-secondary max-w-3xl mx-auto mb-6">
               Esta cifra se deriva del compromiso de operación continua que la compañía sostiene con sus clientes. Un puesto cubierto de forma ininterrumpida requiere del orden de 5,2 profesionales equivalentes.
             </p>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 text-left">
               <div className="p-4 rounded-lg" style={{ background: 'rgba(255,255,255,0.05)' }}>
-                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Settings size={16} style={{ color: 'var(--accent-primary)' }}/> Dirección y PMO</h4>
+                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Settings size={16} style={{ color: 'var(--accent-primary)' }} /> Dirección y PMO</h4>
                 <p className="text-xl font-semibold">6 <span className="text-sm font-normal text-muted">profesionales</span></p>
               </div>
               <div className="p-4 rounded-lg" style={{ background: 'rgba(255,255,255,0.05)' }}>
-                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Network size={16} style={{ color: 'var(--accent-primary)' }}/> Arquitectura</h4>
+                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Network size={16} style={{ color: 'var(--accent-primary)' }} /> Arquitectura</h4>
                 <p className="text-xl font-semibold">8 <span className="text-sm font-normal text-muted">profesionales</span></p>
               </div>
               <div className="p-4 rounded-lg" style={{ background: 'rgba(255,255,255,0.05)' }}>
-                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><MonitorPlay size={16} style={{ color: 'var(--accent-primary)' }}/> Ing. de Software</h4>
+                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><MonitorPlay size={16} style={{ color: 'var(--accent-primary)' }} /> Ing. de Software</h4>
                 <p className="text-xl font-semibold">30 <span className="text-sm font-normal text-muted">profesionales</span></p>
               </div>
               <div className="p-4 rounded-lg" style={{ background: 'rgba(255,255,255,0.05)' }}>
-                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Database size={16} style={{ color: 'var(--accent-primary)' }}/> Datos e Interop.</h4>
+                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Database size={16} style={{ color: 'var(--accent-primary)' }} /> Datos e Interop.</h4>
                 <p className="text-xl font-semibold">10 <span className="text-sm font-normal text-muted">profesionales</span></p>
               </div>
               <div className="p-4 rounded-lg" style={{ background: 'rgba(255,255,255,0.05)' }}>
-                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Shield size={16} style={{ color: 'var(--accent-primary)' }}/> Ciberseguridad</h4>
+                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Shield size={16} style={{ color: 'var(--accent-primary)' }} /> Ciberseguridad</h4>
                 <p className="text-xl font-semibold">14 <span className="text-sm font-normal text-muted">profesionales</span></p>
               </div>
               <div className="p-4 rounded-lg" style={{ background: 'rgba(255,255,255,0.05)' }}>
-                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Activity size={16} style={{ color: 'var(--accent-primary)' }}/> Operación</h4>
+                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Activity size={16} style={{ color: 'var(--accent-primary)' }} /> Operación</h4>
                 <p className="text-xl font-semibold">16 <span className="text-sm font-normal text-muted">profesionales</span></p>
               </div>
               <div className="p-4 rounded-lg" style={{ background: 'rgba(255,255,255,0.05)' }}>
-                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><CheckCircle size={16} style={{ color: 'var(--accent-primary)' }}/> Calidad y Pruebas</h4>
+                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><CheckCircle size={16} style={{ color: 'var(--accent-primary)' }} /> Calidad y Pruebas</h4>
                 <p className="text-xl font-semibold">9 <span className="text-sm font-normal text-muted">profesionales</span></p>
               </div>
               <div className="p-4 rounded-lg" style={{ background: 'rgba(255,255,255,0.05)' }}>
-                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Lightbulb size={16} style={{ color: 'var(--accent-primary)' }}/> Implantación</h4>
+                <h4 className="font-bold flex items-center gap-2 mb-1 text-white"><Lightbulb size={16} style={{ color: 'var(--accent-primary)' }} /> Implantación</h4>
                 <p className="text-xl font-semibold">5 <span className="text-sm font-normal text-muted">profesionales</span></p>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Equipo = () => {
       {/* Directorio y Socios */}
       <section className="section bg-secondary" style={{ backgroundColor: 'var(--bg-secondary)', paddingBottom: '0' }}>
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12 flex items-center justify-center gap-3">
+          <h2 className="text-3xl font-bold mb-12 flex items-center justify-center gap-2">
             <Users style={{ color: 'var(--accent-primary)' }} />
             Directorio y Socios Fundadores
           </h2>
@@ -101,11 +101,11 @@ const Equipo = () => {
       {/* Equipo Clave Nominado */}
       <section className="section bg-secondary" style={{ backgroundColor: 'var(--bg-secondary)' }}>
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12 flex items-center justify-center gap-3">
+          <h2 className="text-3xl font-bold mb-12 flex items-center justify-center gap-2">
             <Users style={{ color: 'var(--accent-primary)' }} />
             Equipo Clave Nominado
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <motion.div className="card text-center flex flex-col items-center" whileHover={{ y: -5 }}>
               <UserCircle size={60} className="mb-4 text-muted" />

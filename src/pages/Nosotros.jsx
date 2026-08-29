@@ -5,7 +5,7 @@ const Nosotros = () => {
   return (
     <div className="w-full">
       {/* Header */}
-      <section className="section text-center" style={{ paddingBottom: 'var(--space-12)' }}>
+      <section className="section text-center" style={{ paddingBottom: '8rem' }}>
         <div className="container">
           <motion.h1
             className="text-4xl md:text-6xl font-bold mb-4"
@@ -26,7 +26,7 @@ const Nosotros = () => {
       <section className="section" style={{ backgroundColor: 'var(--bg-card)', paddingTop: 'var(--space-12)', paddingBottom: 'var(--space-12)' }}>
         <div className="container grid grid-cols-1 nosotros-grid-3 gap-8">
           <motion.div className="card" whileHover={{ y: -5 }}>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-2 mb-4">
               <Target className="text-accent" size={28} style={{ color: 'var(--accent-primary)' }} />
               <h3 className="text-2xl font-bold">Misión</h3>
             </div>
@@ -36,7 +36,7 @@ const Nosotros = () => {
           </motion.div>
 
           <motion.div className="card" whileHover={{ y: -5 }}>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-2 mb-4">
               <Eye className="text-accent" size={28} style={{ color: 'var(--accent-primary)' }} />
               <h3 className="text-2xl font-bold">Visión</h3>
             </div>
@@ -46,7 +46,7 @@ const Nosotros = () => {
           </motion.div>
 
           <motion.div className="card" whileHover={{ y: -5 }}>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-2 mb-4">
               <Shield className="text-accent" size={28} style={{ color: 'var(--accent-primary)' }} />
               <h3 className="text-2xl font-bold">Valores</h3>
             </div>
@@ -61,7 +61,7 @@ const Nosotros = () => {
       </section>
 
       {/* Historia y Presencia */}
-      <section className="section pt-0">
+      <section className="section" style={{ paddingTop: '0' }}>
         <div className="container flex flex-col gap-12">
 
           {/* Nuestra Historia */}
@@ -99,7 +99,7 @@ const Nosotros = () => {
 
           {/* Presencia Geográfica */}
           <div className="card glass w-full">
-            <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+            <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
               <Globe className="text-accent" style={{ color: 'var(--accent-primary)' }} />
               Presencia Geográfica
             </h3>
