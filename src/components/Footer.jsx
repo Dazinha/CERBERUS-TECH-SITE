@@ -57,12 +57,12 @@ const Footer = () => {
                 </a>
 
                 {/* Contact Card 3 */}
-                <a href="https://maps.app.goo.gl/MWdq6U7ySoLzUR856" target="_blank" rel="noopener noreferrer" className="contact-card">
+                <a href="https://maps.app.goo.gl/FNAh1PKzBtTg37PQA" target="_blank" rel="noopener noreferrer" className="contact-card">
                   <MapPin size={18} style={{ color: '#a1a1aa', flexShrink: 0 }} />
                   <div className="flex flex-col">
                     <span style={{ color: '#71717a', fontSize: '12px', marginBottom: '2px', lineHeight: '1' }}>Ubicación</span>
                     <div className="flex items-center gap-1">
-                      <span style={{ fontSize: '14px', color: '#e4e4e7', fontWeight: '400', lineHeight: '1.2' }}>Av. Brasil 2950, piso 8</span>
+                      <span style={{ fontSize: '14px', color: '#e4e4e7', fontWeight: '400', lineHeight: '1.2' }}>Av. Brasil 2241, piso 2</span>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#e4e4e7' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                     </div>
                   </div>
