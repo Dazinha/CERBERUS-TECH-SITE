@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { BookOpen, Video, ArrowRight, PlayCircle, LifeBuoy, Calculator, Activity, ExternalLink, Wifi, CheckCircle2, AlertCircle, Clock } from 'lucide-react';
+import { BookOpen, Video, ArrowRight, Calculator, Activity, ExternalLink, CheckCircle2, AlertCircle, Clock, LifeBuoy } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Recursos = () => {
   const [beds, setBeds] = useState(100);
@@ -143,6 +144,103 @@ const Recursos = () => {
       </section>
 
 
+
+      {/* RT-23.08 — Portal de Soporte */}
+      <section className="section bg-section-alt">
+        <div className="container">
+          <div className="card-premium" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '3rem 2rem', borderTop: '3px solid #6366f1', maxWidth: '700px', margin: '0 auto' }}>
+            <div style={{ padding: '1rem', borderRadius: '0.75rem', backgroundColor: '#eef2ff', color: '#6366f1', marginBottom: '1.5rem' }}>
+              <LifeBuoy size={36} />
+            </div>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.75rem' }}>Portal de Soporte a Clientes</h2>
+            <p style={{ color: '#475569', maxWidth: '480px', lineHeight: 1.7, marginBottom: '2rem', fontSize: '0.95rem' }}>
+              Registre incidentes, consultas o solicitudes de cambio. Nuestro equipo NOC/SOC opera de forma continua las 24 horas del día, los 365 días del año.
+            </p>
+            <Link to="/soporte" className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              Ir al Portal de Soporte <ExternalLink size={14} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* RT-23.07 — Material Educativo con links reales */}
+      <section className="section">
+        <div className="container">
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem', justifyContent: 'center', textAlign: 'center' }}>
+            <BookOpen size={20} style={{ color: '#6366f1' }} />
+            Material Educativo y Seminarios
+          </h2>
+          <p style={{ textAlign: 'center', color: '#64748b', marginBottom: '2.5rem', fontSize: '0.9rem' }}>
+            Recursos públicos de organismos reconocidos del ecosistema de salud digital.
+          </p>
+          <div className="grid grid-cols-1 rec-grid-3 gap-6">
+            {[
+              {
+                type: 'Curso en Línea',
+                typeClass: 'badge-indigo',
+                icon: <Video size={36} />,
+                title: 'Introducción a la Interoperabilidad y al estándar FHIR',
+                org: 'OPS / OMS — Campus Virtual de Salud Pública',
+                desc: 'Curso gratuito oficial de la Organización Panamericana de la Salud. Cubre los fundamentos del estándar HL7 FHIR R4 y su integración en redes asistenciales.',
+                href: 'https://campus.paho.org/',
+                action: 'Acceder al Curso',
+                color: '#6366f1',
+              },
+              {
+                type: 'Guía Técnica',
+                typeClass: 'badge-green',
+                icon: <BookOpen size={36} />,
+                title: 'Guías de Implementación FHIR y Connectathon Chile',
+                org: 'HL7 Chile',
+                desc: 'Guías técnicas de lectura y aplicación práctica del estándar HL7 FHIR, publicadas por el capítulo chileno oficial de HL7 International.',
+                href: 'https://hl7chile.cl/',
+                action: 'Ver Recursos',
+                color: '#10b981',
+              },
+              {
+                type: 'Programa Académico',
+                typeClass: 'badge-amber',
+                icon: <Activity size={36} />,
+                title: 'Sistemas de Información en Salud e Interoperabilidad',
+                org: 'CENS — Centro Nacional en Sistemas de Información en Salud',
+                desc: 'Programa de formación especializada en sistemas de información clínica, estándares HL7 FHIR y gobierno de datos en el sector sanitario chileno.',
+                href: 'https://cens.cl/',
+                action: 'Ver Programas',
+                color: '#f59e0b',
+              },
+            ].map((r, i) => (
+              <motion.div
+                key={r.title}
+                className="card-premium"
+                style={{ display: 'flex', flexDirection: 'column' }}
+                whileHover={{ y: -5 }}
+                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
+              >
+                <div style={{
+                  height: '120px', borderRadius: '0.75rem', marginBottom: '1rem',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: `linear-gradient(135deg, ${r.color}15, ${r.color}30)`,
+                  color: r.color,
+                }}>
+                  {r.icon}
+                </div>
+                <span className={`badge ${r.typeClass}`} style={{ marginBottom: '0.5rem' }}>{r.type}</span>
+                <h4 style={{ fontWeight: 700, marginBottom: '0.25rem', fontSize: '0.92rem' }}>{r.title}</h4>
+                <p style={{ fontSize: '0.72rem', color: '#6366f1', fontWeight: 600, marginBottom: '0.5rem' }}>{r.org}</p>
+                <p style={{ fontSize: '0.84rem', color: '#475569', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.25rem' }}>{r.desc}</p>
+                <a
+                  href={r.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: '0.85rem', fontWeight: 600, color: r.color, display: 'flex', alignItems: 'center', gap: '0.35rem' }}
+                >
+                  {r.action} <ArrowRight size={14} />
+                </a>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <style>{`
         @media (min-width: 768px) {

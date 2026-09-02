@@ -8,6 +8,7 @@ import CasosExito from './pages/CasosExito';
 import Equipo from './pages/Equipo';
 import Capacidades from './pages/Capacidades';
 import Recursos from './pages/Recursos';
+import Soporte from './pages/Soporte';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/equipo" element={<Equipo />} />
             <Route path="/capacidades" element={<Capacidades />} />
             <Route path="/recursos" element={<Recursos />} />
+            <Route path="/soporte" element={<Soporte />} />
           </Routes>
         </main>
         <footer role="contentinfo">

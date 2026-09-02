@@ -26,6 +26,7 @@ const Footer = () => {
               <Link to="/equipo" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Equipo Profesional</Link>
               <Link to="/capacidades" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Capacidades Técnicas</Link>
               <Link to="/recursos" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Recursos y Soporte</Link>
+              <Link to="/soporte" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Portal de Soporte</Link>
             </div>
           </div>
         </div>
