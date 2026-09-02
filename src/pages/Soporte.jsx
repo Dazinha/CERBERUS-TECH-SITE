@@ -137,6 +137,8 @@ const Soporte = () => {
               className="card-premium"
               style={{ textAlign: 'center', padding: '3rem 2rem', borderTop: '3px solid #10b981' }}
               initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
+              role="alert"
+              aria-live="assertive"
             >
               <div style={{ display: 'inline-flex', padding: '1rem', borderRadius: '50%', backgroundColor: '#ecfdf5', color: '#10b981', marginBottom: '1.25rem' }}>
                 <CheckCircle size={40} />
@@ -166,18 +168,20 @@ const Soporte = () => {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                   <label htmlFor="nombre" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#374151' }}>Nombre completo *</label>
                   <input
-                    id="nombre" name="nombre" type="text" required
+                    id="nombre" name="nombre" type="text" required aria-required="true"
                     value={form.nombre} onChange={handleChange}
                     placeholder="Juan Pérez"
+                    autoComplete="name"
                     style={inputStyle}
                   />
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                   <label htmlFor="organizacion" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#374151' }}>Organización *</label>
                   <input
-                    id="organizacion" name="organizacion" type="text" required
+                    id="organizacion" name="organizacion" type="text" required aria-required="true"
                     value={form.organizacion} onChange={handleChange}
                     placeholder="Red de Salud Ñielol"
+                    autoComplete="organization"
                     style={inputStyle}
                   />
                 </div>
@@ -186,9 +190,10 @@ const Soporte = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 <label htmlFor="correo" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#374151' }}>Correo electrónico *</label>
                 <input
-                  id="correo" name="correo" type="email" required
+                  id="correo" name="correo" type="email" required aria-required="true"
                   value={form.correo} onChange={handleChange}
                   placeholder="juan.perez@organizacion.cl"
+                  autoComplete="email"
                   style={inputStyle}
                 />
               </div>
@@ -196,7 +201,7 @@ const Soporte = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 <label htmlFor="tipo" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#374151' }}>Tipo de solicitud *</label>
                 <select
-                  id="tipo" name="tipo" required
+                  id="tipo" name="tipo" required aria-required="true"
                   value={form.tipo} onChange={handleChange}
                   style={{ ...inputStyle, cursor: 'pointer' }}
                 >
@@ -211,7 +216,7 @@ const Soporte = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 <label htmlFor="descripcion" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#374151' }}>Descripción *</label>
                 <textarea
-                  id="descripcion" name="descripcion" required
+                  id="descripcion" name="descripcion" required aria-required="true"
                   value={form.descripcion} onChange={handleChange}
                   rows={5}
                   placeholder="Describa el problema o solicitud con el mayor detalle posible..."

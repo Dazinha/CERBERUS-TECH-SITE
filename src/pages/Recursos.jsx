@@ -57,7 +57,7 @@ const Recursos = () => {
       </section>
 
       {/* RT-23.09 — Métricas de disponibilidad en tiempo real */}
-      <section className="stats-band">
+      <section className="stats-band" aria-label="Métricas de disponibilidad y desempeño en tiempo real">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.75rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -69,7 +69,7 @@ const Recursos = () => {
               Actualizado: {metrics.lastUpdated.toLocaleTimeString('es-CL')} · Refresco cada 30s
             </span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4" role="status" aria-live="polite" aria-atomic="true">
             {[
               { label: 'Uptime SISH', value: `${metrics.uptimeSISH}%`, status: metrics.uptimeSISH >= 99.5 ? 'ok' : 'warn' },
               { label: 'Uptime Interop.', value: `${metrics.uptimeInterop}%`, status: metrics.uptimeInterop >= 99.5 ? 'ok' : 'warn' },
@@ -119,6 +119,11 @@ const Recursos = () => {
                   onChange={(e) => setBeds(Number(e.target.value))}
                   className="w-full"
                   style={{ accentColor: '#6366f1' }}
+                  aria-label="Cantidad de camas o boxes de atención"
+                  aria-valuemin={50}
+                  aria-valuemax={1000}
+                  aria-valuenow={beds}
+                  aria-valuetext={`${beds} camas — Ahorro estimado: $${roi.toLocaleString('es-CL')} CLP mensuales`}
                 />
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: '#64748b', marginTop: '0.4rem' }}>
                   <span>50</span><span>1.000+</span>
@@ -212,6 +217,7 @@ const Recursos = () => {
                   href={r.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`${r.action}: ${r.title} — ${r.org} (abre en nueva ventana)`}
                   style={{ fontSize: '0.85rem', fontWeight: 600, color: r.color, display: 'flex', alignItems: 'center', gap: '0.35rem' }}
                 >
                   {r.action} <ArrowRight size={14} />

@@ -257,9 +257,10 @@ const CasosExito = () => {
               >
                 <span className="quote-mark">"</span>
                 <div style={{ position: 'relative', zIndex: 1 }}>
-                  <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '1rem', color: '#f59e0b' }}>
+                  <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '1rem', color: '#f59e0b' }} aria-hidden="true">
                     {[...Array(5)].map((_, j) => <Star key={j} size={14} fill="currentColor" />)}
                   </div>
+                  <span className="sr-only">Valoración: 5 de 5 estrellas</span>
                   <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.7, fontStyle: 'italic', marginBottom: '1.5rem' }}>"{t.quote}"</p>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>

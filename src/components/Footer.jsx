@@ -3,13 +3,13 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contacto" style={{ backgroundColor: '#09090b', borderTop: '1px solid rgba(255,255,255,0.1)', padding: 'var(--space-12) 0' }}>
+    <footer id="contacto" aria-label="Pie de página — Cerberus Tech" style={{ backgroundColor: '#09090b', borderTop: '1px solid rgba(255,255,255,0.1)', padding: 'var(--space-12) 0' }}>
       <div className="container grid grid-cols-3 md:grid-cols-1 gap-8" style={{ gap: '6rem' }}>
 
         {/* Column 1: Brand */}
         <div className="flex flex-col gap-6">
-          <Link to="/" className="flex items-center gap-2 mb-2">
-            <img src="/CERBERUSTECHLOGO.png" alt="Cerberus Tech Logo" style={{ height: '150px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
+          <Link to="/" className="flex items-center gap-2 mb-2" aria-label="Cerberus Tech — Ir al inicio">
+            <img src="/CERBERUSTECHLOGO.png" alt="Cerberus Tech — Soluciones tecnológicas de misión crítica para el sector salud" style={{ height: '150px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
           </Link>
           <p className="text-sm leading-relaxed mb-2" style={{ color: '#a1a1aa' }}>
             El socio tecnológico confiable para la operación continua en salud. Garantizamos resiliencia, seguridad e interoperabilidad bajo los más altos estándares.
@@ -19,15 +19,15 @@ const Footer = () => {
         {/* Column 2: Compañía */}
         <div className="flex flex-col gap-8 md:pl-8">
           <div>
-            <h3 className="font-bold text-sm tracking-widest uppercase" style={{ color: '#f4f4f5', letterSpacing: '0.1em', marginBottom: '1.5rem' }}>Compañía</h3>
-            <div className="flex flex-col text-sm" style={{ gap: '1.25rem' }}>
+            <h3 className="font-bold text-sm tracking-widest uppercase" id="footer-nav-heading" style={{ color: '#f4f4f5', letterSpacing: '0.1em', marginBottom: '1.5rem' }}>Compañía</h3>
+            <nav aria-labelledby="footer-nav-heading" className="flex flex-col text-sm" style={{ gap: '1.25rem' }}>
               <Link to="/nosotros" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Nosotros</Link>
               <Link to="/casos-exito" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Casos de Éxito</Link>
               <Link to="/equipo" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Equipo Profesional</Link>
               <Link to="/capacidades" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Capacidades Técnicas</Link>
-              <Link to="/recursos" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Recursos y Soporte</Link>
+              <Link to="/recursos" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Recursos</Link>
               <Link to="/soporte" className="hover-link transition-colors" style={{ color: '#a1a1aa' }}>Soporte</Link>
-            </div>
+            </nav>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Footer = () => {
 
               <div className="flex flex-col gap-4">
                 {/* Contact Card 1 */}
-                <a href="tel:+56322551000" className="contact-card">
+                <a href="tel:+56322551000" className="contact-card" aria-label="Llamar al teléfono +56 32 255 1000">
                   <Phone size={18} style={{ color: '#a1a1aa', flexShrink: 0 }} />
                   <div className="flex flex-col">
                     <span style={{ color: '#9ca3af', fontSize: '12px', marginBottom: '2px', lineHeight: '1' }}>Teléfono</span>
@@ -49,7 +49,7 @@ const Footer = () => {
                 </a>
 
                 {/* Contact Card 2 */}
-                <a href="mailto:licitaciones@cerberustech.cl" className="contact-card">
+                <a href="mailto:licitaciones@cerberustech.cl" className="contact-card" aria-label="Enviar correo a licitaciones@cerberustech.cl">
                   <Mail size={18} style={{ color: '#a1a1aa', flexShrink: 0 }} />
                   <div className="flex flex-col">
                     <span style={{ color: '#9ca3af', fontSize: '12px', marginBottom: '2px', lineHeight: '1' }}>Email</span>
@@ -58,7 +58,7 @@ const Footer = () => {
                 </a>
 
                 {/* Contact Card 3 */}
-                <a href="https://maps.app.goo.gl/FNAh1PKzBtTg37PQA" target="_blank" rel="noopener noreferrer" className="contact-card">
+                <a href="https://maps.app.goo.gl/FNAh1PKzBtTg37PQA" target="_blank" rel="noopener noreferrer" className="contact-card" aria-label="Ver ubicación en Google Maps: Av. Brasil 2241, piso 2, Valparaíso (abre en nueva ventana)">
                   <MapPin size={18} style={{ color: '#a1a1aa', flexShrink: 0 }} />
                   <div className="flex flex-col">
                     <span style={{ color: '#9ca3af', fontSize: '12px', marginBottom: '2px', lineHeight: '1' }}>Ubicación</span>

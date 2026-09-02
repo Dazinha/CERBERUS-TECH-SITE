@@ -15,23 +15,111 @@
   z-index: 9999;
   text-decoration: none;
   font-size: 0.9rem;
+  transition: top 0.15s ease;
 }
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
   top: 0;
+  outline: 3px solid #fbbf24;
+  outline-offset: 2px;
 }
 
-/* Focus visible para navegación por teclado */
+/* ─── Focus visible global para navegación por teclado ─── */
 :focus-visible {
   outline: 3px solid #6366f1;
   outline-offset: 3px;
   border-radius: 4px;
 }
 
+/* Focus visible — botones */
+.btn:focus-visible {
+  outline: 3px solid #6366f1;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.2);
+}
+
+/* Focus visible — enlaces de navegación */
+nav a:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Focus visible — cards interactivas */
+.card-premium:focus-visible,
+.card:focus-visible {
+  outline: 3px solid #6366f1;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.15);
+}
+
+/* Focus visible — inputs y selects del formulario */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+/* Focus visible — pills y badges (no interactivos, quitar outline) */
+.pill:focus { outline: none; }
+
+/* Focus visible — enlaces del footer */
+.contact-card:focus-visible {
+  outline: 2px solid #818cf8;
+  outline-offset: 2px;
+}
+
+/* ─── Clase utilitaria para lectores de pantalla ─── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* Respetar preferencias de movimiento reducido */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Soporte para modo de alto contraste (Forced Colors) ─── */
+@media (forced-colors: active) {
+  .btn-primary {
+    border: 2px solid ButtonText;
+  }
+  .card-premium,
+  .card,
+  .stat-card {
+    border: 2px solid CanvasText;
+  }
+  .text-gradient {
+    -webkit-text-fill-color: unset;
+    background: none;
+    color: LinkText;
+  }
+  .pill {
+    border: 1px solid CanvasText;
+  }
+}
+
+/* ─── Soporte para preferencia de contraste alto ─── */
+@media (prefers-contrast: more) {
+  :root {
+    --text-secondary: #1e293b;
+    --text-muted: #334155;
+    --border-color: rgba(15, 23, 42, 0.3);
   }
 }
 

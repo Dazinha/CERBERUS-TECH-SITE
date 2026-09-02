@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav style={{
+    <nav aria-label="Navegación principal" style={{
       position: 'sticky', top: 0, zIndex: 50,
       backgroundColor: 'rgba(255,255,255,0.92)',
       backdropFilter: 'blur(16px)',
@@ -32,8 +32,8 @@ const Navbar = () => {
       transition: 'border-color 0.3s, box-shadow 0.3s'
     }}>
       <div className="container flex justify-between items-center" style={{ padding: '0.75rem 1rem' }}>
-        <Link to="/" className="flex items-center gap-2" style={{ zIndex: 51 }}>
-          <img src="/logoblanco.jpg" alt="Cerberus Tech Logo" style={{ height: '55px', width: 'auto', objectFit: 'contain', borderRadius: '6px' }} />
+        <Link to="/" className="flex items-center gap-2" style={{ zIndex: 51 }} aria-label="Cerberus Tech — Ir al inicio">
+          <img src="/logoblanco.jpg" alt="Cerberus Tech — Plataformas de misión crítica para salud" style={{ height: '55px', width: 'auto', objectFit: 'contain', borderRadius: '6px' }} />
         </Link>
 
         {/* Desktop Menu */}
@@ -44,6 +44,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                aria-current={isActive ? 'page' : undefined}
                 style={{
                   color: isActive ? 'var(--accent-primary)' : 'var(--text-secondary)',
                   fontWeight: isActive ? '600' : '400',
@@ -80,21 +81,25 @@ const Navbar = () => {
             padding: '1rem 1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem',
             boxShadow: '0 8px 24px -4px rgba(0,0,0,0.1)'
           }}>
-            {links.map((link) => (
+            {links.map((link) => {
+              const isCurrent = location.pathname === link.path;
+              return (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
+                aria-current={isCurrent ? 'page' : undefined}
                 style={{
-                  color: location.pathname === link.path ? 'var(--accent-primary)' : 'var(--text-primary)',
-                  fontWeight: location.pathname === link.path ? '600' : '400',
+                  color: isCurrent ? 'var(--accent-primary)' : 'var(--text-primary)',
+                  fontWeight: isCurrent ? '600' : '400',
                   padding: '0.5rem 0',
                   borderBottom: '1px solid var(--border-color)'
                 }}
               >
                 {link.name}
               </Link>
-            ))}
+              );
+            })}
             <a href="#contacto" className="btn btn-primary text-center" style={{ marginTop: '0.5rem' }}>Contactar</a>
           </div>
         )}

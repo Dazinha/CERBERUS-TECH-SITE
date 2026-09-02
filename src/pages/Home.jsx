@@ -20,8 +20,8 @@ const Home = () => {
           padding: '4rem 1rem',
         }}
       >
-        {/* Fondo sutil con logo */}
-        <div style={{
+        {/* Fondo sutil con logo — decorativo */}
+        <div aria-hidden="true" role="presentation" style={{
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
           width: '150%', height: '150%',
           backgroundImage: 'url(/logoblanco.jpg)',
@@ -32,8 +32,8 @@ const Home = () => {
           borderRadius: '8px',
         }}></div>
 
-        {/* Glow acentuado */}
-        <div style={{
+        {/* Glow acentuado — decorativo */}
+        <div aria-hidden="true" style={{
           position: 'absolute', top: '30%', left: '50%', transform: 'translate(-50%, -50%)',
           width: '700px', height: '700px',
           background: 'radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%)',
