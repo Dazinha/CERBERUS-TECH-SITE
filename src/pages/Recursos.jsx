@@ -39,19 +39,19 @@ const Recursos = () => {
       <section className="section-header">
         <div className="container">
           <motion.div style={{ marginBottom: '1rem' }} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="badge badge-indigo">Recursos y Soporte</span>
+            <span className="badge badge-indigo">Recursos Técnicos</span>
           </motion.div>
           <motion.h1
             style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0f172a' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
           >
-            Centro de <span className="text-gradient">Recursos y Soporte</span>
+            Centro de <span className="text-gradient">Recursos Técnicos</span>
           </motion.h1>
           <motion.p
             style={{ fontSize: '1.05rem', color: '#475569', maxWidth: '560px', margin: '0 auto' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
-            Herramientas, material educativo y portal de atención para nuestros clientes en el sector sanitario.
+            Métricas de desempeño en tiempo real, herramientas de estimación y material educativo del ecosistema de salud digital.
           </motion.p>
         </div>
       </section>
@@ -139,26 +139,6 @@ const Recursos = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* RT-23.08 — Portal de Soporte */}
-      <section className="section bg-section-alt">
-        <div className="container">
-          <div className="card-premium" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '3rem 2rem', borderTop: '3px solid #6366f1', maxWidth: '700px', margin: '0 auto' }}>
-            <div style={{ padding: '1rem', borderRadius: '0.75rem', backgroundColor: '#eef2ff', color: '#6366f1', marginBottom: '1.5rem' }}>
-              <LifeBuoy size={36} />
-            </div>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.75rem' }}>Portal de Soporte a Clientes</h2>
-            <p style={{ color: '#475569', maxWidth: '480px', lineHeight: 1.7, marginBottom: '2rem', fontSize: '0.95rem' }}>
-              Registre incidentes, consultas o solicitudes de cambio. Nuestro equipo NOC/SOC opera de forma continua las 24 horas del día, los 365 días del año.
-            </p>
-            <Link to="/soporte" className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              Ir al Portal de Soporte <ExternalLink size={14} />
-            </Link>
           </div>
         </div>
       </section>
