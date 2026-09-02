@@ -58,7 +58,7 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <a href="/soporte" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem' }}>Soporte</a>
+          <Link to="/soporte" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem' }}>Soporte</Link>
         </div>
 
         {/* Mobile Menu Toggle */}
