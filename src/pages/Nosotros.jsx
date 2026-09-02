@@ -146,19 +146,19 @@ const Nosotros = () => {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             <div>
-              <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>Normas ISO y CMMI</p>
+              <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>Normas ISO y CMMI</p>
               <div className="flex flex-wrap gap-3">
                 {isoCerts.map(c => <span key={c} className="pill pill-slate">{c}</span>)}
               </div>
             </div>
             <div>
-              <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>Alianzas Cloud y Accesibilidad</p>
+              <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>Alianzas Cloud y Accesibilidad</p>
               <div className="flex flex-wrap gap-3">
                 {cloudCerts.map(c => <span key={c} className="pill pill-indigo">{c}</span>)}
               </div>
             </div>
             <div>
-              <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>Estándares de Salud</p>
+              <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>Estándares de Salud</p>
               <div className="flex flex-wrap gap-3">
                 {stdCerts.map(c => <span key={c} className="pill pill-green">{c}</span>)}
               </div>

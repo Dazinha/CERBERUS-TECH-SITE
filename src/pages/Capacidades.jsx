@@ -7,28 +7,28 @@ const Capacidades = () => {
       icon: <ShieldCheck size={30} />,
       title: 'Plataformas Clínicas e Identidad del Paciente',
       desc: 'Comprende el registro clínico electrónico, el índice maestro de pacientes, el agendamiento y la gestión de la demanda ambulatoria. Resuelve el problema de la ficha única y del reconocimiento inequívoco a lo largo de una red multisede.',
-      color: '#6366f1', bg: '#eef2ff',
+      color: '#6366f1', pillText: '#4338ca', bg: '#eef2ff',
       tags: ['Registro Clínico', 'Índice Maestro', 'Agendamiento'],
     },
     {
       icon: <Database size={30} />,
       title: 'Interoperabilidad e Ingeniería de Datos',
       desc: 'Abarca la integración bajo los estándares HL7 v2.x y HL7 FHIR R4, motores de mensajería clínica, gestión de terminologías como SNOMED CT y LOINC, y migración de datos históricos.',
-      color: '#3b82f6', bg: '#eff6ff',
+      color: '#3b82f6', pillText: '#1d4ed8', bg: '#eff6ff',
       tags: ['HL7 FHIR R4', 'SNOMED CT', 'LOINC', 'Migración'],
     },
     {
       icon: <Cloud size={30} />,
       title: 'Ciberseguridad y Operaciones Defensivas',
       desc: 'Diseño de arquitecturas bajo modelo Zero Trust, gestión de identidad y acceso, SOC permanente, gestión de vulnerabilidades, respuesta a incidentes y cumplimiento normativo de datos sensibles.',
-      color: '#10b981', bg: '#ecfdf5',
+      color: '#10b981', pillText: '#047857', bg: '#ecfdf5',
       tags: ['Zero Trust', 'SOC 24/7', 'IAM', 'Gestión de Vulnerabilidades'],
     },
     {
       icon: <Workflow size={30} />,
       title: 'Operación Gestionada y Confiabilidad',
       desc: 'Mesa de servicio multinivel bajo ITIL 4, observabilidad de extremo a extremo, gestión de capacidad, pruebas de recuperación ante desastres y mantención preventiva, correctiva y evolutiva.',
-      color: '#f59e0b', bg: '#fffbeb',
+      color: '#f59e0b', pillText: '#b45309', bg: '#fffbeb',
       tags: ['ITIL 4', 'DRP', 'Observabilidad', 'SLA Contractual'],
     },
   ];
@@ -97,7 +97,7 @@ const Capacidades = () => {
                 whileHover={{ y: -5 }}
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
               >
-                <div className="order-number">{String(i + 1).padStart(2, '0')}</div>
+                <div className="order-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start', marginBottom: '1rem' }}>
                   <div style={{ padding: '0.75rem', borderRadius: '0.75rem', backgroundColor: line.bg, color: line.color, flexShrink: 0 }}>
                     {line.icon}
@@ -107,7 +107,7 @@ const Capacidades = () => {
                 <p style={{ fontSize: '0.88rem', color: '#475569', lineHeight: 1.7, marginBottom: '1rem' }}>{line.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {line.tags.map(tag => (
-                    <span key={tag} className="pill" style={{ fontSize: '0.72rem', color: line.color, backgroundColor: line.bg, borderColor: `${line.color}40` }}>{tag}</span>
+                    <span key={tag} className="pill" style={{ fontSize: '0.72rem', color: line.pillText, backgroundColor: line.bg, borderColor: `${line.color}40` }}>{tag}</span>
                   ))}
                 </div>
               </motion.div>
@@ -126,7 +126,7 @@ const Capacidades = () => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {Object.entries(techStack).map(([category, { pills, color }]) => (
               <div key={category}>
-                <p style={{ fontSize: '0.75rem', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>{category}</p>
+                <p style={{ fontSize: '0.75rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>{category}</p>
                 <div className="flex flex-wrap gap-2">
                   {pills.map(p => (
                     <span key={p} className={`pill pill-${color}`}>{p}</span>

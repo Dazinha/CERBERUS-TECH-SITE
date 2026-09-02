@@ -102,7 +102,7 @@ const Home = () => {
             ].map(([num, label]) => (
               <div key={label} style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#6366f1', fontFamily: 'Outfit, sans-serif' }}>{num}</div>
-                <div style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '0.2rem' }}>{label}</div>
+                <div style={{ fontSize: '0.78rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '0.2rem' }}>{label}</div>
               </div>
             ))}
           </motion.div>
@@ -126,6 +126,7 @@ const Home = () => {
                 desc: 'No somos una consultora genérica con una práctica de salud. Cada proyecto, cada certificación y cada metodología está orientada exclusivamente al sector sanitario.',
                 tag: 'Especialización Vertical',
                 color: '#6366f1',
+                pillText: '#4338ca',
               },
               {
                 icon: <RefreshCw size={30} />,
@@ -133,6 +134,7 @@ const Home = () => {
                 desc: 'No entregamos el software y nos retiramos. Asumimos la operación gestionada bajo SLA contractuales verificables, con NOC y SOC propios 24/7/365.',
                 tag: 'Responsabilidad Total',
                 color: '#3b82f6',
+                pillText: '#1d4ed8',
               },
               {
                 icon: <Network size={30} />,
@@ -140,6 +142,7 @@ const Home = () => {
                 desc: 'Nuestras plataformas operan de forma autónoma aunque caiga la conectividad. Los nodos de borde garantizan atención continua en zonas rurales o durante cortes.',
                 tag: 'Resiliencia Territorial',
                 color: '#10b981',
+                pillText: '#047857',
               },
               {
                 icon: <FileText size={30} />,
@@ -147,6 +150,7 @@ const Home = () => {
                 desc: 'Código fuente, infraestructura como código y documentación de arquitectura son transferibles al mandante en cualquier momento, sin dependencias de proveedor.',
                 tag: 'Sin Lock-in',
                 color: '#f59e0b',
+                pillText: '#b45309',
               },
             ].map((item, i) => (
               <motion.div
@@ -158,13 +162,13 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
               >
-                <div className="order-number">{String(i + 1).padStart(2, '0')}</div>
+                <div className="order-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                   <div style={{ flexShrink: 0, paddingTop: '0.1rem', color: item.color }}>{item.icon}</div>
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
                       <h3 style={{ fontSize: '1rem', fontWeight: 700, margin: 0 }}>{item.title}</h3>
-                      <span className="pill" style={{ fontSize: '0.7rem', padding: '0.15rem 0.6rem', color: item.color, backgroundColor: `${item.color}15`, borderColor: `${item.color}40` }}>{item.tag}</span>
+                      <span className="pill" style={{ fontSize: '0.7rem', padding: '0.15rem 0.6rem', color: item.pillText, backgroundColor: `${item.color}15`, borderColor: `${item.color}40` }}>{item.tag}</span>
                     </div>
                     <p style={{ fontSize: '0.88rem', color: '#475569', margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
                   </div>

@@ -65,6 +65,8 @@ const Navbar = () => {
           className="btn-secondary"
           style={{ padding: '0.5rem', display: 'flex', color: 'var(--text-primary)' }}
           id="mobile-toggle"
+          aria-label={isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'}
+          aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={22} /> : <Menu size={22} />}

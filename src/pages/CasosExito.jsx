@@ -148,28 +148,28 @@ const CasosExito = () => {
                 {/* Client pill + industry */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', marginBottom: '0.75rem' }}>
                   <span className="pill" style={{ fontSize: '0.72rem', color: p.accentColor, backgroundColor: `${p.accentColor}12`, borderColor: `${p.accentColor}40`, width: 'fit-content' }}>{p.client}</span>
-                  <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>{p.industry}</span>
+                  <span style={{ fontSize: '0.72rem', color: '#64748b' }}>{p.industry}</span>
                 </div>
 
                 <h3 style={{ fontSize: '1rem', fontWeight: 700, margin: '0 0 0.25rem' }}>{p.title}</h3>
                 <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
-                  <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>{p.period}</span>
-                  <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>·</span>
-                  <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>{p.budget}</span>
+                  <span style={{ fontSize: '0.75rem', color: '#64748b' }}>{p.period}</span>
+                  <span style={{ fontSize: '0.75rem', color: '#64748b' }}>·</span>
+                  <span style={{ fontSize: '0.75rem', color: '#64748b' }}>{p.budget}</span>
                 </div>
                 <p style={{ fontSize: '0.86rem', color: '#475569', lineHeight: 1.65, flexGrow: 1, marginBottom: '1rem' }}>{p.desc}</p>
 
                 <div className="grid grid-cols-2 gap-2" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '0.875rem', marginBottom: '0.875rem' }}>
                   {p.stats.map(s => (
                     <div key={s.label}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.7rem', color: '#94a3b8', marginBottom: '0.2rem' }}>{s.icon} {s.label}</div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.7rem', color: '#64748b', marginBottom: '0.2rem' }}>{s.icon} {s.label}</div>
                       <strong style={{ fontSize: '1.1rem', color: '#0f172a', fontFamily: 'Outfit, sans-serif' }}>{s.value}</strong>
                     </div>
                   ))}
                 </div>
 
                 <div style={{ borderTop: '1px dashed var(--border-color)', paddingTop: '0.75rem' }}>
-                  <p style={{ fontSize: '0.7rem', color: '#94a3b8', marginBottom: '0.2rem' }}>Referencia verificable</p>
+                  <p style={{ fontSize: '0.7rem', color: '#64748b', marginBottom: '0.2rem' }}>Referencia verificable</p>
                   <p style={{ fontSize: '0.82rem', color: '#475569', fontWeight: 500, marginBottom: '0.1rem' }}>{p.ref}</p>
                   <p style={{ fontSize: '0.75rem', color: '#6366f1' }}>{p.email}</p>
                 </div>
@@ -266,7 +266,7 @@ const CasosExito = () => {
                   <div className={`team-avatar ${t.avatarClass}`} style={{ width: '40px', height: '40px', fontSize: '0.9rem', marginBottom: 0 }}>{t.initial}</div>
                   <div>
                     <h4 style={{ fontSize: '0.88rem', fontWeight: 700, marginBottom: '0.1rem' }}>{t.name}</h4>
-                    <p style={{ fontSize: '0.75rem', color: '#94a3b8' }}>{t.role}</p>
+                    <p style={{ fontSize: '0.75rem', color: '#64748b' }}>{t.role}</p>
                   </div>
                 </div>
               </motion.div>

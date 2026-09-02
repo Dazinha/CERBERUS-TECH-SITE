@@ -31,56 +31,6 @@ const Recursos = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const portals = [
-    {
-      icon: <LifeBuoy size={32} />,
-      title: 'Portal de Soporte a Clientes',
-      desc: 'Acceda al portal ITIL para registrar incidentes, solicitar cambios y hacer seguimiento a sus tickets con nuestro equipo de operaciones.',
-      action: 'Ingresar al Portal',
-      isPrimary: true,
-      color: '#6366f1',
-      bg: '#eef2ff',
-    },
-    {
-      icon: <PlayCircle size={32} />,
-      title: 'Demostración en Línea',
-      desc: 'Agende un recorrido virtual por nuestras plataformas clínicas, módulo de interoperabilidad y arquitectura de ciberseguridad.',
-      action: 'Solicitar Demo',
-      isPrimary: false,
-      color: '#3b82f6',
-      bg: '#eff6ff',
-    },
-  ];
-
-  const resources = [
-    {
-      type: 'Webinar',
-      typeClass: 'badge-indigo',
-      icon: <Video size={36} />,
-      title: 'Interoperabilidad con HL7 FHIR R4',
-      desc: 'Aprenda cómo conectar sistemas legados hospitalarios con el estándar de la industria.',
-      action: 'Ver Grabación',
-      color: '#6366f1',
-    },
-    {
-      type: 'Artículo',
-      typeClass: 'badge-green',
-      icon: <BookOpen size={36} />,
-      title: 'Zero Trust en Entornos Clínicos',
-      desc: 'Estrategias prácticas para proteger la identidad del paciente en redes multisede.',
-      action: 'Leer Artículo',
-      color: '#10b981',
-    },
-    {
-      type: 'Caso de Estudio',
-      typeClass: 'badge-amber',
-      icon: <Activity size={36} />,
-      title: 'Mitigación de Caídas (DRP)',
-      desc: 'Cómo reducimos el RTO a menos de 1 minuto en la Red Hospitalaria San Juan.',
-      action: 'Descargar PDF',
-      color: '#f59e0b',
-    },
-  ];
 
   return (
     <div className="w-full">
@@ -113,7 +63,7 @@ const Recursos = () => {
               <span style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#22c55e', boxShadow: '0 0 0 3px rgba(34,197,94,0.3)', animation: 'pulse-dot 2s infinite' }}></span>
               <span style={{ color: '#f1f5f9', fontWeight: 700, fontSize: '1rem' }}>Métricas en Tiempo Real</span>
             </div>
-            <span style={{ fontSize: '0.75rem', color: '#64748b' }}>
+            <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
               <Clock size={12} style={{ display: 'inline', marginRight: '0.25rem' }} />
               Actualizado: {metrics.lastUpdated.toLocaleTimeString('es-CL')} · Refresco cada 30s
             </span>
@@ -134,43 +84,14 @@ const Recursos = () => {
                   }
                 </div>
                 <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#f1f5f9', fontFamily: 'Outfit, sans-serif', lineHeight: 1 }}>{m.value}</div>
-                <div style={{ fontSize: '0.72rem', color: '#64748b', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>{m.label}</div>
+                <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>{m.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Portal & Demo */}
-      <section className="section">
-        <div className="container">
-          <div className="grid grid-cols-1 rec-grid-2 gap-6">
-            {portals.map((p, i) => (
-              <motion.div
-                key={p.title}
-                className="card-premium"
-                style={{ borderTop: `3px solid ${p.color}`, minHeight: '240px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
-                whileHover={{ y: -5 }}
-                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
-              >
-                <div>
-                  <div style={{ padding: '0.75rem', borderRadius: '0.75rem', backgroundColor: p.bg, color: p.color, display: 'inline-flex', marginBottom: '1.25rem' }}>
-                    {p.icon}
-                  </div>
-                  <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '0.75rem' }}>{p.title}</h3>
-                  <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.6 }}>{p.desc}</p>
-                </div>
-                <button
-                  className={`btn ${p.isPrimary ? 'btn-primary' : 'btn-secondary'} gap-2`}
-                  style={{ marginTop: '1.5rem', width: 'fit-content' }}
-                >
-                  {p.action} <ExternalLink size={14} />
-                </button>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Calculadora ROI */}
       <section className="section bg-section-alt">
@@ -198,10 +119,10 @@ const Recursos = () => {
                   className="w-full"
                   style={{ accentColor: '#6366f1' }}
                 />
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.4rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: '#64748b', marginTop: '0.4rem' }}>
                   <span>50</span><span>1.000+</span>
                 </div>
-                <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '1rem', lineHeight: 1.5 }}>
+                <p style={{ fontSize: '0.78rem', color: '#64748b', marginTop: '1rem', lineHeight: 1.5 }}>
                   Basado en un ahorro promedio de 2,5 horas/cama a $15.000 la hora hombre.
                 </p>
               </div>
@@ -213,7 +134,7 @@ const Recursos = () => {
                 </div>
                 <div style={{ fontSize: '0.85rem', color: '#6366f1', fontWeight: 600, marginTop: '0.3rem' }}>CLP / mes</div>
                 <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#0f172a', marginTop: '1rem' }}>
-                  ${(roi * 12).toLocaleString('es-CL')} <span style={{ fontSize: '0.8rem', fontWeight: 500, color: '#94a3b8' }}>CLP / año</span>
+                  ${(roi * 12).toLocaleString('es-CL')} <span style={{ fontSize: '0.8rem', fontWeight: 500, color: '#64748b' }}>CLP / año</span>
                 </div>
               </div>
             </div>
@@ -221,41 +142,7 @@ const Recursos = () => {
         </div>
       </section>
 
-      {/* Material Educativo */}
-      <section className="section">
-        <div className="container">
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
-            <BookOpen size={20} style={{ color: '#6366f1' }} />
-            Material Educativo y Seminarios
-          </h2>
-          <div className="grid grid-cols-1 rec-grid-3 gap-6">
-            {resources.map((r, i) => (
-              <motion.div
-                key={r.title}
-                className="card-premium"
-                style={{ display: 'flex', flexDirection: 'column' }}
-                whileHover={{ y: -5 }}
-                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
-              >
-                <div style={{
-                  height: '140px', borderRadius: '0.75rem', marginBottom: '1.25rem',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  background: `linear-gradient(135deg, ${r.color}15, ${r.color}30)`,
-                  color: r.color,
-                }}>
-                  {r.icon}
-                </div>
-                <span className={`badge ${r.typeClass}`} style={{ marginBottom: '0.75rem' }}>{r.type}</span>
-                <h4 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>{r.title}</h4>
-                <p style={{ fontSize: '0.86rem', color: '#475569', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.25rem' }}>{r.desc}</p>
-                <a href="#" style={{ fontSize: '0.85rem', fontWeight: 600, color: r.color, display: 'flex', alignItems: 'center', gap: '0.35rem', transition: 'gap 0.2s' }}>
-                  {r.action} <ArrowRight size={14} />
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <style>{`
         @media (min-width: 768px) {

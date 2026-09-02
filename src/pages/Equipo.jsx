@@ -200,7 +200,7 @@ const Equipo = () => {
               ))}
             </div>
           </div>
-          <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', background: '#f8fafc', borderRadius: '0.5rem', border: '1px solid var(--border-color)', fontSize: '0.8rem', color: '#94a3b8', textAlign: 'center' }}>
+          <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', background: '#f8fafc', borderRadius: '0.5rem', border: '1px solid var(--border-color)', fontSize: '0.8rem', color: '#64748b', textAlign: 'center' }}>
             Los 10 líderes de proyecto reportan matricialmente a la Dirección de Tecnología y a la Dirección de Operaciones según la fase del contrato.
           </div>
         </div>
@@ -221,7 +221,7 @@ const Equipo = () => {
                 <div style={{ flex: 1 }}>
                   <h4 style={{ fontWeight: 700, fontSize: '0.92rem', marginBottom: '0.1rem' }}>{m.name}</h4>
                   <p style={{ fontSize: '0.78rem', color: '#6366f1', fontWeight: 600, marginBottom: '0.15rem' }}>{m.role}</p>
-                  <p style={{ fontSize: '0.73rem', color: '#94a3b8', marginBottom: '0.5rem' }}>{m.bio}</p>
+                  <p style={{ fontSize: '0.73rem', color: '#64748b', marginBottom: '0.5rem' }}>{m.bio}</p>
                   <div className="flex flex-wrap gap-1">
                     {m.certs.map(c => <span key={c} className="pill pill-slate" style={{ fontSize: '0.65rem', padding: '0.1rem 0.45rem' }}>{c}</span>)}
                   </div>
