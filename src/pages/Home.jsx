@@ -25,7 +25,7 @@ const Home = () => {
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
           width: '150%', height: '150%',
           backgroundImage: 'url(/logoblanco.jpg)',
-          backgroundSize: 'max(600px, 60vw)', /* Tamaño del logo aumentado */
+          backgroundSize: 'max(600px, 62vw)', /* Tamaño del logo aumentado */
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center calc(50% + 30px)',
           zIndex: 0, opacity: 0.06,

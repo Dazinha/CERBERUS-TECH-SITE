@@ -140,50 +140,6 @@ const Equipo = () => {
         </div>
       </div>
 
-      {/* Organigrama — RT-23.03 */}
-      <section className="section">
-        <div className="container">
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <Users size={20} style={{ color: '#6366f1' }} />
-            Organigrama del Equipo Directivo
-          </h2>
-
-          {/* Nodo CEO */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
-            <div className="card-premium" style={{ width: 'fit-content', textAlign: 'center', padding: '1rem 2rem', borderTop: '3px solid #6366f1', minWidth: '220px' }}>
-              <div className="team-avatar avatar-indigo" style={{ width: '52px', height: '52px', fontSize: '1.1rem', margin: '0 auto 0.5rem' }}>RC</div>
-              <h4 style={{ fontWeight: 700, fontSize: '0.95rem' }}>Roberto Cerda</h4>
-              <p style={{ fontSize: '0.78rem', color: '#6366f1', fontWeight: 600 }}>Director Ejecutivo (CEO)</p>
-            </div>
-
-            {/* Línea vertical */}
-            <div style={{ width: '2px', height: '2rem', backgroundColor: '#c7d2fe' }}></div>
-
-            {/* Línea horizontal */}
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0', position: 'relative' }}>
-              <div style={{ position: 'absolute', top: 0, left: '25%', right: '25%', height: '2px', backgroundColor: '#c7d2fe' }}></div>
-              {[
-                { name: 'Daniela Riquelme', role: 'Directora de Tecnología (CTO)', initials: 'DR', avatar: 'avatar-violet' },
-                { name: 'Felipe Sandoval', role: 'Director de Operaciones (COO)', initials: 'FS', avatar: 'avatar-blue' },
-              ].map((d, i) => (
-                <div key={d.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}>
-                  <div style={{ width: '2px', height: '2rem', backgroundColor: '#c7d2fe' }}></div>
-                  <div className="card-premium" style={{ textAlign: 'center', padding: '0.875rem 1.25rem', borderTop: '3px solid #6366f1', width: '100%', maxWidth: '220px' }}>
-                    <div className={`team-avatar ${d.avatar}`} style={{ width: '44px', height: '44px', fontSize: '1rem', margin: '0 auto 0.5rem' }}>{d.initials}</div>
-                    <h4 style={{ fontWeight: 700, fontSize: '0.88rem' }}>{d.name}</h4>
-                    <p style={{ fontSize: '0.72rem', color: '#6366f1', fontWeight: 600 }}>{d.role}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', background: '#f8fafc', borderRadius: '0.5rem', border: '1px solid var(--border-color)', fontSize: '0.8rem', color: '#94a3b8', textAlign: 'center' }}>
-            Los 10 líderes de proyecto reportan matricialmente a la Dirección de Tecnología y a la Dirección de Operaciones según la fase del contrato.
-          </div>
-        </div>
-      </section>
-
       {/* Distribución por área */}
       <section className="section bg-section-alt">
         <div className="container">
@@ -205,23 +161,47 @@ const Equipo = () => {
       {/* Directorio con certificaciones */}
       <section className="section">
         <div className="container">
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', textAlign: 'center' }}>Directorio y Socios Fundadores</h2>
-          <div className="grid grid-cols-1 team-grid-3 gap-6" style={{ maxWidth: '860px', margin: '0 auto' }}>
-            {directors.map((d, i) => (
-              <motion.div key={d.name} className="card-premium"
-                style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}
-                whileHover={{ y: -5 }}
-                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
-              >
-                <div className={`team-avatar ${d.avatar}`} style={{ width: '80px', height: '80px', fontSize: '1.75rem' }}>{d.initials}</div>
-                <h3 style={{ fontWeight: 700, marginBottom: '0.25rem', fontSize: '1rem' }}>{d.name}</h3>
-                <p style={{ fontSize: '0.78rem', color: '#6366f1', fontWeight: 600, marginBottom: '0.75rem' }}>{d.role}</p>
-                <p style={{ fontSize: '0.82rem', color: '#475569', lineHeight: 1.6, marginBottom: '1rem' }}>{d.bio}</p>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {d.certs.map(c => <span key={c} className="pill pill-indigo" style={{ fontSize: '0.68rem' }}><Award size={10} /> {c}</span>)}
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <Users size={20} style={{ color: '#6366f1' }} />
+            Equipo Directivo
+          </h2>
+
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
+            {/* Nodo CEO */}
+            <div className="card-premium" style={{ width: 'fit-content', textAlign: 'center', padding: '1.25rem 2rem', borderTop: '3px solid #6366f1', minWidth: '220px', maxWidth: '400px' }}>
+              <div className={`team-avatar ${directors[0].avatar}`} style={{ width: '52px', height: '52px', fontSize: '1.1rem', margin: '0 auto 0.5rem' }}>{directors[0].initials}</div>
+              <h4 style={{ fontWeight: 700, fontSize: '0.95rem' }}>{directors[0].name}</h4>
+              <p style={{ fontSize: '0.78rem', color: '#6366f1', fontWeight: 600, marginBottom: '0.75rem' }}>{directors[0].role}</p>
+              <p style={{ fontSize: '0.82rem', color: '#475569', lineHeight: 1.6, marginBottom: '1rem' }}>{directors[0].bio}</p>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {directors[0].certs.map(c => <span key={c} className="pill pill-indigo" style={{ fontSize: '0.68rem' }}><Award size={10} /> {c}</span>)}
+              </div>
+            </div>
+
+            {/* Línea vertical */}
+            <div style={{ width: '2px', height: '2rem', backgroundColor: '#c7d2fe' }}></div>
+
+            {/* Línea horizontal */}
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0', position: 'relative', width: '100%', maxWidth: '800px' }}>
+              <div style={{ position: 'absolute', top: 0, left: '25%', right: '25%', height: '2px', backgroundColor: '#c7d2fe' }}></div>
+              {directors.slice(1).map((d, i) => (
+                <div key={d.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}>
+                  <div style={{ width: '2px', height: '2rem', backgroundColor: '#c7d2fe' }}></div>
+                  <div className="card-premium" style={{ textAlign: 'center', padding: '1rem 1.25rem', borderTop: '3px solid #6366f1', width: '90%', maxWidth: '350px' }}>
+                    <div className={`team-avatar ${d.avatar}`} style={{ width: '44px', height: '44px', fontSize: '1rem', margin: '0 auto 0.5rem' }}>{d.initials}</div>
+                    <h4 style={{ fontWeight: 700, fontSize: '0.88rem' }}>{d.name}</h4>
+                    <p style={{ fontSize: '0.72rem', color: '#6366f1', fontWeight: 600, marginBottom: '0.75rem' }}>{d.role}</p>
+                    <p style={{ fontSize: '0.82rem', color: '#475569', lineHeight: 1.6, marginBottom: '1rem' }}>{d.bio}</p>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {d.certs.map(c => <span key={c} className="pill pill-indigo" style={{ fontSize: '0.68rem' }}><Award size={10} /> {c}</span>)}
+                    </div>
+                  </div>
                 </div>
-              </motion.div>
-            ))}
+              ))}
+            </div>
+          </div>
+          <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', background: '#f8fafc', borderRadius: '0.5rem', border: '1px solid var(--border-color)', fontSize: '0.8rem', color: '#94a3b8', textAlign: 'center' }}>
+            Los 10 líderes de proyecto reportan matricialmente a la Dirección de Tecnología y a la Dirección de Operaciones según la fase del contrato.
           </div>
         </div>
       </section>
