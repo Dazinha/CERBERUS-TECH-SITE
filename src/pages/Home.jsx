@@ -60,7 +60,7 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             Construimos y operamos:{' '}
-            <span className="text-gradient">no entregamos y nos vamos.</span>
+            <span className="text-gradient" style={{ fontSize: '0.75em' }}>no entregamos y nos vamos.</span>
           </motion.h1>
 
           <motion.p
