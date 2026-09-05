@@ -59,8 +59,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Asegurando el futuro{' '}
-            <span className="text-gradient">digital de la salud</span>
+            Construimos y operamos:{' '}
+            <span className="text-gradient">no entregamos y nos vamos.</span>
           </motion.h1>
 
           <motion.p
