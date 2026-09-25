@@ -97,7 +97,7 @@ const Home = () => {
             {[
               ['8+', 'Años de operación continua'],
               ['3', 'Proyectos acreditados (5 años)'],
-              ['USD 21M+', 'Contratos ejecutados'],
+              ['106', 'Profesionales en dotación'],
               ['56 meses', 'Compromisos de largo plazo'],
             ].map(([num, label]) => (
               <div key={label} style={{ textAlign: 'center' }}>
@@ -190,8 +190,8 @@ const Home = () => {
             <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, color: '#f1f5f9', marginBottom: '1rem' }}>
               Tres proyectos acreditados en los últimos 5 años
             </h2>
-            <p style={{ color: '#94a3b8', maxWidth: '520px', margin: '0 auto 2rem', fontSize: '0.95rem', lineHeight: 1.6 }}>
-              480.000 pacientes activos · 1,8M registros unificados · 99,95% uptime medido mes a mes.
+            <p style={{ color: '#94a3b8', maxWidth: '580px', margin: '0 auto 2rem', fontSize: '0.95rem', lineHeight: 1.6 }}>
+              480.000 pacientes activos (Valle Quilén) · 1,8M registros unificados (Cordillera Austral) · 99,95% uptime medido mes a mes.
             </p>
             <Link to="/casos-exito" className="btn btn-primary gap-2" style={{ padding: '0.85rem 2.25rem', fontSize: '1rem' }}>
               Ver Casos de Éxito <ArrowRight size={18} />

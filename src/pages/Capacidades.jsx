@@ -13,23 +13,23 @@ const Capacidades = () => {
     {
       icon: <Database size={30} />,
       title: 'Interoperabilidad e Ingeniería de Datos',
-      desc: 'Abarca la integración bajo los estándares HL7 v2.x y HL7 FHIR R4, motores de mensajería clínica, gestión de terminologías como SNOMED CT y LOINC, y migración de datos históricos.',
+      desc: 'Abarca la integración entre sistemas bajo los estándares HL7 v2.x y HL7 FHIR R4, motores de mensajería clínica, gestión de terminologías clínicas como SNOMED CT y LOINC, migración y saneamiento de datos históricos, y la separación de las cargas transaccionales respecto de las analíticas.',
       color: '#3b82f6', pillText: '#1d4ed8', bg: '#eff6ff',
-      tags: ['HL7 FHIR R4', 'SNOMED CT', 'LOINC', 'Migración'],
+      tags: ['HL7 FHIR R4', 'SNOMED CT', 'LOINC', 'Migración y Saneamiento'],
     },
     {
       icon: <Cloud size={30} />,
       title: 'Ciberseguridad y Operaciones Defensivas',
-      desc: 'Diseño de arquitecturas bajo modelo Zero Trust, gestión de identidad y acceso, SOC permanente, gestión de vulnerabilidades, respuesta a incidentes y cumplimiento normativo de datos sensibles.',
+      desc: 'Diseño de arquitecturas bajo el modelo Zero Trust (verificación continua de cada acceso), gestión de identidad y acceso (IAM), operación permanente del SOC, gestión de vulnerabilidades, respuesta a incidentes y cumplimiento normativo de datos sensibles.',
       color: '#10b981', pillText: '#047857', bg: '#ecfdf5',
       tags: ['Zero Trust', 'SOC 24/7', 'IAM', 'Gestión de Vulnerabilidades'],
     },
     {
       icon: <Workflow size={30} />,
       title: 'Operación Gestionada y Confiabilidad',
-      desc: 'Mesa de servicio multinivel bajo ITIL 4, observabilidad de extremo a extremo, gestión de capacidad, pruebas de recuperación ante desastres y mantención preventiva, correctiva y evolutiva.',
+      desc: 'Mesa de servicio multinivel organizada según ITIL 4, observabilidad de extremo a extremo, gestión de capacidad mediante clústeres que se amplían automáticamente ante aumentos de demanda, pruebas periódicas de DRP con respaldos cifrados en formato WORM y mantención integral.',
       color: '#f59e0b', pillText: '#b45309', bg: '#fffbeb',
-      tags: ['ITIL 4', 'DRP', 'Observabilidad', 'SLA Contractual'],
+      tags: ['ITIL 4', 'DRP WORM', 'Observabilidad', 'SLA Contractual'],
     },
   ];
 
@@ -164,6 +164,28 @@ const Capacidades = () => {
                     <p style={{ fontSize: '0.85rem', color: '#475569' }}>{m.desc}</p>
                   </div>
                 ))}
+              </div>
+
+              <div style={{ marginTop: '0.5rem' }}>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Alianzas Tecnológicas Oficiales (1.6)</h2>
+                <div className="card-premium" style={{ marginBottom: '0.75rem', borderLeft: '3px solid #0078d4', borderRadius: '0 0.75rem 0.75rem 0' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '0.25rem' }}>
+                    <h4 style={{ fontWeight: 700, color: '#0078d4', margin: 0, fontSize: '0.92rem' }}>Microsoft Azure</h4>
+                    <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: '#eff6ff', color: '#1d4ed8' }}>Solutions Partner</span>
+                  </div>
+                  <p style={{ fontSize: '0.82rem', color: '#475569', margin: 0, lineHeight: 1.5 }}>
+                    Partner oficial en Innovación Digital y de Aplicaciones. Soporte directo del fabricante y acceso a arquitecturas de referencia en nube pública e híbrida.
+                  </p>
+                </div>
+                <div className="card-premium" style={{ marginBottom: '0.75rem', borderLeft: '3px solid #d97706', borderRadius: '0 0.75rem 0.75rem 0' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '0.25rem' }}>
+                    <h4 style={{ fontWeight: 700, color: '#d97706', margin: 0, fontSize: '0.92rem' }}>HL7 International</h4>
+                    <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: '#fffbeb', color: '#b45309' }}>Membresía HL7-ORG-20417</span>
+                  </div>
+                  <p style={{ fontSize: '0.82rem', color: '#475569', margin: 0, lineHeight: 1.5 }}>
+                    Organización miembro activa en la definición y adopción de estándares de interoperabilidad clínica HL7 v2.x y FHIR R4 (vigencia hasta 31/12/2027).
+                  </p>
+                </div>
               </div>
             </div>
           </div>

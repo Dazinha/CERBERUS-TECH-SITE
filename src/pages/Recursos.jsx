@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import { BookOpen, Video, ArrowRight, Calculator, Activity, ExternalLink, CheckCircle2, AlertCircle, Clock, LifeBuoy } from 'lucide-react';
+import { BookOpen, Video, ArrowRight, Calculator, Activity, CheckCircle2, AlertCircle, Clock } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Recursos = () => {
   const [beds, setBeds] = useState(100);
@@ -71,21 +70,22 @@ const Recursos = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4" role="status" aria-live="polite" aria-atomic="true">
             {[
-              { label: 'Uptime SISH', value: `${metrics.uptimeSISH}%`, status: metrics.uptimeSISH >= 99.5 ? 'ok' : 'warn' },
-              { label: 'Uptime Interop.', value: `${metrics.uptimeInterop}%`, status: metrics.uptimeInterop >= 99.5 ? 'ok' : 'warn' },
-              { label: 'Uptime Ambulat.', value: `${metrics.uptimeAmb}%`, status: metrics.uptimeAmb >= 99.0 ? 'ok' : 'warn' },
-              { label: 'Latencia p95', value: `${metrics.latency}ms`, status: metrics.latency < 300 ? 'ok' : 'warn' },
-              { label: 'Usuarios activos', value: metrics.activeUsers.toLocaleString('es-CL'), status: 'ok' },
+              { label: 'Uptime SISH', sub: 'Red Hosp. Valle Quilén', value: `${metrics.uptimeSISH}%`, status: metrics.uptimeSISH >= 99.5 ? 'ok' : 'warn' },
+              { label: 'Uptime Interop.', sub: 'Mutual Cordillera Austral', value: `${metrics.uptimeInterop}%`, status: metrics.uptimeInterop >= 99.5 ? 'ok' : 'warn' },
+              { label: 'Uptime Ambulat.', sub: 'Clínica Ribera Norte', value: `${metrics.uptimeAmb}%`, status: metrics.uptimeAmb >= 99.0 ? 'ok' : 'warn' },
+              { label: 'Latencia p95', sub: 'Interoperabilidad FHIR', value: `${metrics.latency}ms`, status: metrics.latency < 300 ? 'ok' : 'warn' },
+              { label: 'Usuarios activos', sub: 'Simultáneos en red', value: metrics.activeUsers.toLocaleString('es-CL'), status: 'ok' },
             ].map(m => (
               <div key={m.label} style={{ textAlign: 'center', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '0.75rem', border: '1px solid rgba(255,255,255,0.08)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.35rem', marginBottom: '0.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.35rem', marginBottom: '0.35rem' }}>
                   {m.status === 'ok'
                     ? <CheckCircle2 size={14} style={{ color: '#22c55e' }} />
                     : <AlertCircle size={14} style={{ color: '#f59e0b' }} />
                   }
                 </div>
                 <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#f1f5f9', fontFamily: 'Outfit, sans-serif', lineHeight: 1 }}>{m.value}</div>
-                <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>{m.label}</div>
+                <div style={{ fontSize: '0.72rem', color: '#f1f5f9', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 700 }}>{m.label}</div>
+                <div style={{ fontSize: '0.65rem', color: '#94a3b8', marginTop: '0.15rem' }}>{m.sub}</div>
               </div>
             ))}
           </div>

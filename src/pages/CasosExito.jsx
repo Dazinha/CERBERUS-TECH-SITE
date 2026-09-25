@@ -12,50 +12,50 @@ const CasosExito = () => {
   const projects = [
     {
       title: 'Sistema Integrado de Salud Híbrido',
-      client: 'Red Hospitalaria San Juan',
+      client: 'Red Hospitalaria Valle Quilén',
       industry: 'Red Hospitalaria — Alta Complejidad',
       period: '2023 – 2025',
       budget: 'USD 12M – 15M',
-      desc: 'Registro clínico electrónico unificado para cuatro recintos con identidad de paciente, agendamiento y migración histórica. Arquitectura híbrida con nodos de borde para autonomía ante cortes de conectividad.',
+      desc: 'Registro clínico electrónico unificado para cuatro recintos con identidad de paciente, agendamiento, gestión de órdenes/resultados y migración histórica. Arquitectura híbrida con nodos de borde para autonomía ante cortes de conectividad.',
       stats: [
         { icon: <BarChart3 size={12} />, label: 'Uptime medido', value: '99.95%' },
         { icon: <Users size={12} />, label: 'Pacientes activos', value: '480.000' },
         { icon: <Activity size={12} />, label: 'Atenciones/año', value: '1,4M' },
         { icon: <Building size={12} />, label: 'TB imagenología', value: '62 TB' },
       ],
-      ref: 'Ricardo Salgado Peña — Director TI', email: 'r.salgado@redsanjuan.cl',
+      ref: 'Ricardo Salgado Peña — Director TI', email: 'r.salgado@vallequilen.cl',
       accentColor: '#6366f1',
     },
     {
-      title: 'Plataforma Nacional de Interoperabilidad',
-      client: 'Mutualidad de Trabajadores',
+      title: 'Plataforma Nacional de Interoperabilidad e Índice Maestro de Pacientes',
+      client: 'Mutual Laboral Cordillera Austral',
       industry: 'Salud Ocupacional y Seguridad Laboral',
       period: '2022 – 2024',
       budget: 'USD 6M – 8M',
-      desc: 'Índice maestro de pacientes de cobertura nacional. Unificación de 1,2 M de registros fragmentados mediante técnicas determinísticas y probabilísticas, con arbitraje manual de pares de baja confianza bajo HL7 v2.x y FHIR R4.',
+      desc: 'Índice maestro de pacientes de cobertura nacional sobre 1,8M de registros. Unificación de 1,2 M de registros fragmentados con conciliación determinística y probabilística, y arbitraje manual obligatorio para baja confianza bajo HL7 v2.x y FHIR R4.',
       stats: [
         { icon: <Activity size={12} />, label: 'Latencia p95', value: '<300ms' },
         { icon: <Building size={12} />, label: 'Instituciones', value: '12' },
         { icon: <Users size={12} />, label: 'Registros padrón', value: '1,8M' },
         { icon: <BarChart3 size={12} />, label: 'Peak mensajería', value: '40 msg/s' },
       ],
-      ref: 'Carolina Vergara Ríos — Gerenta Transformación Digital', email: 'c.vergara@mutualtrabajadores.cl',
+      ref: 'Carolina Vergara Ríos — Gerenta Transformación Digital', email: 'c.vergara@cordilleraaustral.cl',
       accentColor: '#3b82f6',
     },
     {
-      title: 'Plataforma de Coordinación Ambulatoria',
-      client: 'Clínica Los Andes',
+      title: 'Plataforma de Coordinación de Atención Ambulatoria y Domiciliaria',
+      client: 'Clínica Ambulatoria Ribera Norte',
       industry: 'Atención Ambulatoria y Domiciliaria',
       period: '2021 – 2022',
       budget: 'USD 2,5M – 3,5M',
-      desc: 'Suite omnicanal de agendamiento, triaje, confirmación y asignación de prestaciones en terreno con app móvil para profesionales y tablero de gestión de la demanda. Reducción de ausentismo del 45%.',
+      desc: 'Solución omnicanal de agendamiento, triaje digital, confirmación de horas y ruteo de prestaciones en terreno con app móvil para profesionales y tablero de demanda. Reducción de ausentismo del 45%.',
       stats: [
         { icon: <Phone size={12} />, label: 'Notificación p95', value: '<60s' },
         { icon: <ShieldAlert size={12} />, label: 'Ausentismo', value: '−45%' },
         { icon: <Users size={12} />, label: 'Pacientes activos', value: '95.000' },
         { icon: <Activity size={12} />, label: 'Atenciones/año', value: '210.000' },
       ],
-      ref: 'Jorge Fuenzalida Ibáñez — Subdirector Operaciones', email: 'j.fuenzalida@clinicalosandes.cl',
+      ref: 'Jorge Fuenzalida Ibáñez — Subdirector Operaciones', email: 'j.fuenzalida@riberanorte.cl',
       accentColor: '#10b981',
     },
   ];
@@ -68,26 +68,26 @@ const CasosExito = () => {
   ];
 
   const contextItems = [
-    { icon: <ShieldCheck size={26} />, title: 'Datos Sensibles', color: '#6366f1', bg: '#eef2ff', desc: 'Operamos bajo la Ley N° 21.719 de protección de datos, Ley N° 20.584 y Ley N° 21.663 Marco sobre Ciberseguridad, con controles verificables de consentimiento, minimización, trazabilidad de acceso y retención.' },
-    { icon: <UserX size={26} />, title: 'Identidad como Riesgo Clínico', color: '#3b82f6', bg: '#eff6ff', desc: 'Prevenimos que un resultado clínico se atribuya erróneamente mediante flujos de arbitraje manual obligatorio para pares de baja confianza.' },
-    { icon: <FileCheck size={26} />, title: 'Acreditación Institucional', color: '#10b981', bg: '#ecfdf5', desc: 'Acompañamos procesos de acreditación ante la Superintendencia de Salud, incorporando desde el diseño la evidencia documental y los registros que el estándar exige.' },
-    { icon: <MapPin size={26} />, title: 'Pertinencia Territorial', color: '#f59e0b', bg: '#fffbeb', desc: 'Contemplamos conectividad rural e interculturalidad para garantizar que la tecnología opere de manera inclusiva e ininterrumpida en zonas como La Araucanía y Los Ríos.' },
+    { icon: <ShieldCheck size={26} />, title: 'Datos Personales Sensibles', color: '#6366f1', bg: '#eef2ff', desc: 'Operamos bajo la Ley N° 21.719 de protección de datos personales, Ley N° 20.584 y Ley N° 21.663 Marco sobre Ciberseguridad, con controles verificables de consentimiento, minimización, trazabilidad de accesos y retención certificada ISO/IEC 27701.' },
+    { icon: <UserX size={26} />, title: 'Identidad del Paciente como Riesgo Clínico', color: '#3b82f6', bg: '#eff6ff', desc: 'Prevenimos errores de asignación clínica mediante flujos de arbitraje manual obligatorio para pares con baja confianza en el índice maestro de pacientes (MPI).' },
+    { icon: <FileCheck size={26} />, title: 'Acreditación de Prestadores Institucionales', color: '#10b981', bg: '#ecfdf5', desc: 'Acompañamos procesos ante la Superintendencia de Salud incorporando desde el diseño la evidencia documental y los registros trazables que exige el estándar.' },
+    { icon: <MapPin size={26} />, title: 'Pertinencia Territorial e Intercultural', color: '#f59e0b', bg: '#fffbeb', desc: 'Diseño preparado para la realidad de La Araucanía y Los Ríos: conectividad rural asistida por nodos de borde y consideración de la interculturalidad de los pacientes.' },
   ];
 
   const testimonials = [
     {
       quote: 'La plataforma integrada resolvió nuestro problema histórico de fichas duplicadas. Ahora nuestros médicos confían plenamente en el historial del paciente, incluso si el sistema central sufre cortes, gracias a la arquitectura híbrida.',
-      name: 'Ricardo Salgado Peña', role: 'Director TI, Red Hospitalaria San Juan',
+      name: 'Ricardo Salgado Peña', role: 'Director TI, Red Hospitalaria Valle Quilén',
       initial: 'RS', avatarClass: 'avatar-indigo',
     },
     {
       quote: 'Lograr interoperar a 12 instituciones distintas a nivel nacional parecía imposible. Cerberus logró un índice maestro confiable y rápido, respetando los estándares FHIR y garantizando la privacidad de los afiliados.',
-      name: 'Carolina Vergara Ríos', role: 'Gerenta Trans. Digital, Mutualidad Trabajadores',
+      name: 'Carolina Vergara Ríos', role: 'Gerenta de Transformación Digital, Mutual Laboral Cordillera Austral',
       initial: 'CV', avatarClass: 'avatar-blue',
     },
     {
       quote: 'La app de asignación de terreno redujo nuestro ausentismo dramáticamente. La estabilidad del sistema nos permitió enfocar los recursos donde más se necesitan sin preocuparnos por caídas técnicas.',
-      name: 'Jorge Fuenzalida Ibáñez', role: 'Subdirector Operaciones, Clínica Los Andes',
+      name: 'Jorge Fuenzalida Ibáñez', role: 'Subdirector de Operaciones, Clínica Ambulatoria Ribera Norte',
       initial: 'JF', avatarClass: 'avatar-teal',
     },
   ];

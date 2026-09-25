@@ -48,12 +48,21 @@ const Footer = () => {
                   </div>
                 </a>
 
-                {/* Contact Card 2 */}
+                {/* Contact Card 2: Licitaciones */}
                 <a href="mailto:licitaciones@cerberustech.cl" className="contact-card" aria-label="Enviar correo a licitaciones@cerberustech.cl">
                   <Mail size={18} style={{ color: '#a1a1aa', flexShrink: 0 }} />
                   <div className="flex flex-col">
-                    <span style={{ color: '#9ca3af', fontSize: '12px', marginBottom: '2px', lineHeight: '1' }}>Email</span>
+                    <span style={{ color: '#9ca3af', fontSize: '12px', marginBottom: '2px', lineHeight: '1' }}>Licitaciones</span>
                     <span style={{ fontSize: '14px', color: '#e4e4e7', fontWeight: '400', lineHeight: '1.2' }}>licitaciones@cerberustech.cl</span>
+                  </div>
+                </a>
+
+                {/* Contact Card 3: Soporte */}
+                <a href="mailto:soporte@cerberustech.cl" className="contact-card" aria-label="Enviar correo a soporte@cerberustech.cl">
+                  <Mail size={18} style={{ color: '#a1a1aa', flexShrink: 0 }} />
+                  <div className="flex flex-col">
+                    <span style={{ color: '#9ca3af', fontSize: '12px', marginBottom: '2px', lineHeight: '1' }}>Soporte Técnico</span>
+                    <span style={{ fontSize: '14px', color: '#e4e4e7', fontWeight: '400', lineHeight: '1.2' }}>soporte@cerberustech.cl</span>
                   </div>
                 </a>
 

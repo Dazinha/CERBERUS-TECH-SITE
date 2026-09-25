@@ -18,7 +18,7 @@ const Soporte = () => {
   const contactInfo = [
     {
       icon: <Phone size={20} />,
-      label: 'Teléfono',
+      label: 'Teléfono Central',
       value: '+56 32 255 1000',
       href: 'tel:+56322551000',
       color: '#6366f1',
@@ -26,11 +26,19 @@ const Soporte = () => {
     },
     {
       icon: <Mail size={20} />,
-      label: 'Correo de Soporte',
+      label: 'Soporte Técnico',
       value: 'soporte@cerberustech.cl',
       href: 'mailto:soporte@cerberustech.cl',
       color: '#3b82f6',
       bg: '#eff6ff',
+    },
+    {
+      icon: <Mail size={20} />,
+      label: 'Contacto Licitaciones',
+      value: 'licitaciones@cerberustech.cl',
+      href: 'mailto:licitaciones@cerberustech.cl',
+      color: '#8b5cf6',
+      bg: '#f3e8ff',
     },
     {
       icon: <MapPin size={20} />,
@@ -41,9 +49,17 @@ const Soporte = () => {
       bg: '#ecfdf5',
     },
     {
+      icon: <MapPin size={20} />,
+      label: 'Sucursal Sur',
+      value: 'Temuco, Región de La Araucanía',
+      href: null,
+      color: '#06b6d4',
+      bg: '#ecfeff',
+    },
+    {
       icon: <Clock size={20} />,
-      label: 'Disponibilidad NOC/SOC',
-      value: '24 horas · 7 días · 365 días',
+      label: 'Centro Operaciones NOC / SOC',
+      value: '24/7/365 · Valparaíso (Redundante)',
       href: null,
       color: '#f59e0b',
       bg: '#fffbeb',
@@ -91,7 +107,7 @@ const Soporte = () => {
             <LifeBuoy size={20} style={{ color: '#6366f1' }} />
             Canales de Contacto
           </h2>
-          <div className="grid grid-cols-1 soporte-grid-2 gap-4" style={{ maxWidth: '900px' }}>
+          <div className="grid grid-cols-1 soporte-grid-cards gap-4" style={{ maxWidth: '1050px' }}>
             {contactInfo.map((item, i) => (
               <motion.div
                 key={item.label}
@@ -235,6 +251,7 @@ const Soporte = () => {
       <style>{`
         @media (min-width: 768px) {
           .soporte-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+          .soporte-grid-cards { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
         }
         input:focus, select:focus, textarea:focus {
           outline: none;
