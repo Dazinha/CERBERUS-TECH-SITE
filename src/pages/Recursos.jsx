@@ -177,7 +177,7 @@ const Recursos = () => {
                 icon: <BookOpen size={36} />,
                 title: 'Guías de Implementación FHIR y Connectathon Chile',
                 org: 'HL7 Chile',
-                desc: 'Guías técnicas de lectura y aplicación práctica del estándar HL7 FHIR, publicadas por el capítulo chileno oficial de HL7 International.',
+                desc: 'Guías técnicas de lectura y aplicación práctica del estándar HL7 FHIR, publicadas por la representación chilena oficial de HL7 International.',
                 href: 'https://hl7chile.cl/',
                 action: 'Ver Recursos',
                 color: '#10b981',

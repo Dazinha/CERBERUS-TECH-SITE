@@ -159,7 +159,7 @@ const Equipo = () => {
           {/* Fundamento de la Dotación */}
           <div className="card-premium" style={{ marginTop: '2.5rem', backgroundColor: '#ffffff', borderLeft: '4px solid #6366f1' }}>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.75rem', color: '#0f172a' }}>
-              Fundamento de la Dotación (Capítulo 1.2.3)
+              Fundamento de la Dotación Operativa
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ fontSize: '0.85rem', color: '#475569', lineHeight: 1.6 }}>
               <div>
@@ -253,7 +253,7 @@ const Equipo = () => {
         </div>
       </section>
 
-      {/* Estructura para Proyecto — Capítulo 1.5 */}
+      {/* Estructura para Proyecto */}
       <section className="section">
         <div className="container" style={{ maxWidth: '1000px' }}>
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
@@ -261,7 +261,7 @@ const Equipo = () => {
               Estructura Organizacional para el <span className="text-gradient">Proyecto</span>
             </h2>
             <p style={{ color: '#475569', fontSize: '0.95rem' }}>
-              Traslado del modelo matricial al ciclo de vida del proyecto con el mandante (Capítulo 1.5).
+              Traslado del modelo matricial al ciclo de vida de los proyectos con nuestros clientes.
             </p>
           </div>
 
@@ -293,10 +293,10 @@ const Equipo = () => {
             </div>
           </div>
 
-          {/* Coordinación con el mandante */}
+          {/* Coordinación con el cliente */}
           <div className="card-premium" style={{ backgroundColor: '#ffffff' }}>
             <h4 style={{ fontWeight: 700, fontSize: '1rem', marginBottom: '1rem', color: '#0f172a' }}>
-              Mecanismos Formales de Coordinación con el Mandante
+              Mecanismos Formales de Coordinación con el Cliente
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4" style={{ fontSize: '0.85rem' }}>
               <div style={{ padding: '0.75rem', background: '#f8fafc', borderRadius: '0.5rem' }}>

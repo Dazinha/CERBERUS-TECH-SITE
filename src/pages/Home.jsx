@@ -147,7 +147,7 @@ const Home = () => {
               {
                 icon: <FileText size={30} />,
                 title: 'El dato es del cliente, siempre.',
-                desc: 'Código fuente, infraestructura como código y documentación de arquitectura son transferibles al mandante en cualquier momento, sin dependencias de proveedor.',
+                desc: 'Código fuente, infraestructura como código y documentación de arquitectura son transferibles al cliente en cualquier momento, sin dependencias de proveedor.',
                 tag: 'Sin Lock-in',
                 color: '#f59e0b',
                 pillText: '#b45309',

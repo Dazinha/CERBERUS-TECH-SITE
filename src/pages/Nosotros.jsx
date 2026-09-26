@@ -7,7 +7,7 @@ const Nosotros = () => {
     { year: '2020', title: 'Primera Red Hospitalaria', desc: 'Ejecuta su primer gran proyecto multisede, que integra tres hospitales bajo un registro clínico unificado.' },
     { year: '2022', title: 'Expansión Nacional', desc: 'Abre su sucursal en Temuco y consolida sus capacidades de interoperabilidad, es decir, de intercambio de información clínica entre sistemas distintos.' },
     { year: '2024', title: 'Alianzas con Proveedores de Nube', desc: 'Obtiene la condición de Solutions Partner de Microsoft Azure, y su equipo supera los 90 profesionales.' },
-    { year: '2026', title: 'Situación Actual', desc: 'Al 31 de agosto de 2026, fecha de corte de esta oferta, cuenta con 106 profesionales, tres sedes y proyectos activos en más de quince organizaciones del sector salud.' },
+    { year: '2026', title: 'Situación Actual', desc: 'A 2026, cuenta con 106 profesionales, tres sedes operativas y proyectos activos en más de quince organizaciones del sector salud.' },
   ];
 
   const officialCerts = [
@@ -148,7 +148,7 @@ const Nosotros = () => {
               isList: true,
               items: [
                 { label: 'Seguridad por diseño', desc: 'Los controles se incorporan desde la definición de la arquitectura y no como etapa posterior.' },
-                { label: 'Resiliencia verificable', desc: 'Todo compromiso de disponibilidad y recuperación se somete a prueba periódica e informa al mandante.' },
+                { label: 'Resiliencia verificable', desc: 'Todo compromiso de disponibilidad y recuperación se somete a prueba periódica e informa al cliente.' },
                 { label: 'Trazabilidad íntegra', desc: 'Cada acceso, cambio y decisión estructural queda registrado y puede ser auditado por el cliente.' },
                 { label: 'Ética de datos sensibles', desc: 'Minimización estricta, control de finalidad y gestión del consentimiento sobre la información clínica.' },
               ],
@@ -195,7 +195,7 @@ const Nosotros = () => {
               <Calendar size={22} />
             </div>
             <div>
-              <h2 style={{ fontSize: '1.75rem', fontWeight: 700 }}>Trayectoria (Capítulo 1.1.2)</h2>
+              <h2 style={{ fontSize: '1.75rem', fontWeight: 700 }}>Trayectoria y Evolución</h2>
               <p style={{ color: '#475569', fontSize: '0.9rem', margin: 0 }}>En ocho años, la empresa ha pasado de un equipo fundador enfocado en infraestructura sanitaria a una organización con presencia en dos regiones y proyectos activos en más de quince organizaciones de salud.</p>
             </div>
           </div>
@@ -221,7 +221,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* Certificaciones Institucionales Oficiales — Tabla 1.1 */}
+      {/* Certificaciones Institucionales Vigentes */}
       <section className="section">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
@@ -230,7 +230,7 @@ const Nosotros = () => {
             </div>
             <div>
               <h2 style={{ fontSize: '1.75rem', fontWeight: 700 }}>Certificaciones Institucionales Vigentes</h2>
-              <p style={{ color: '#475569', fontSize: '0.9rem', margin: 0 }}>Tabla 1.1 — Acreditaciones con alcance corporativo emitidas por organismos internacionales independientes.</p>
+              <p style={{ color: '#475569', fontSize: '0.9rem', margin: 0 }}>Acreditaciones con alcance corporativo emitidas por organismos internacionales independientes.</p>
             </div>
           </div>
 
@@ -264,13 +264,13 @@ const Nosotros = () => {
             </table>
           </div>
           <p style={{ fontSize: '0.8rem', color: '#64748b', marginTop: '0.75rem', fontStyle: 'italic' }}>
-            Todas las certificaciones cuentan con ciclos regulares de renovación y vencen entre agosto de 2027 y mayo de 2028. Copias verificables disponibles en anexos.
+            Todas las certificaciones cuentan con ciclos regulares de renovación y vigencia continua entre 2027 y 2028. Copias y certificados oficiales disponibles a solicitud.
           </p>
 
           {/* Alianzas Tecnológicas Oficiales */}
           <div style={{ marginTop: '2.5rem' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: '#0f172a' }}>
-              Alianzas Tecnológicas y Estándares de la Industria (Capítulo 1.6)
+              Alianzas Tecnológicas y Estándares de la Industria
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {alliances.map((a) => (
@@ -288,12 +288,12 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* Gobierno Interno: Calidad, Seguridad y Conocimiento — Capítulo 1.3 */}
+      {/* Gobierno Interno: Calidad, Seguridad y Conocimiento */}
       <section className="section bg-section-alt">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-              Modelo de Gobierno Interno (Capítulo 1.3)
+              Modelo de Gobierno Interno
             </h2>
             <p style={{ color: '#475569', maxWidth: '650px', margin: '0 auto', fontSize: '0.92rem' }}>
               Dependencia directa de la Dirección Ejecutiva con responsables y comités independientes para asegurar que ninguna unidad se controle a sí misma.
@@ -322,7 +322,7 @@ const Nosotros = () => {
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#475569' }}>
                 <li><strong>Políticas:</strong> ISO/IEC 27001:2022 y privacidad ISO/IEC 27701:2019.</li>
                 <li><strong>Responsable:</strong> Oficial de Seguridad (CISO), reporta a Dirección de Tecnología.</li>
-                <li><strong>Instancia:</strong> Comité de Seguridad mensual con informe formal al mandante.</li>
+                <li><strong>Instancia:</strong> Comité de Seguridad mensual con informe formal a la contraparte del cliente.</li>
                 <li><strong>Mecanismo:</strong> DevSecOps con análisis estático (SAST), dinámico (DAST), análisis de composición (SCA), secretos en Vault, arquitectura Zero Trust, MFA y SIEM permanente.</li>
               </ul>
             </div>
@@ -334,7 +334,7 @@ const Nosotros = () => {
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#475569' }}>
                 <li><strong>Continuidad:</strong> ISO 22301:2019 de continuidad del negocio.</li>
-                <li><strong>Principio:</strong> El conocimiento es un activo del mandante (código, IaC, manuales transferibles sin vendor lock-in).</li>
+                <li><strong>Principio:</strong> El conocimiento es un activo del cliente (código, infraestructura como código y documentación transferibles sin dependencia de proveedor).</li>
                 <li><strong>Instancia:</strong> Comité de Arquitectura con registros de decisión (ADR).</li>
                 <li><strong>Mecanismo:</strong> Libros de operación versionados con código, post-mortems sin culpa, sustituto activo por cada rol clave y espacio colaborativo compartido.</li>
               </ul>
@@ -352,7 +352,7 @@ const Nosotros = () => {
             </div>
             <div>
               <h2 style={{ fontSize: '1.75rem', fontWeight: 700 }}>Presencia Geográfica y Operativa</h2>
-              <p style={{ color: '#475569', fontSize: '0.9rem', margin: 0 }}>Tres emplazamientos con funciones claramente delimitadas (Capítulo 1.1.3).</p>
+              <p style={{ color: '#475569', fontSize: '0.9rem', margin: 0 }}>Tres emplazamientos con funciones claramente delimitadas para asegurar cobertura y soporte continuo.</p>
             </div>
           </div>
           <p style={{ color: '#475569', marginBottom: '2rem', marginTop: '0.5rem' }}>

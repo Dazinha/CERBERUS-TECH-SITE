@@ -167,7 +167,7 @@ const Capacidades = () => {
               </div>
 
               <div style={{ marginTop: '0.5rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Alianzas Tecnológicas Oficiales (1.6)</h2>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Alianzas Tecnológicas Oficiales</h2>
                 <div className="card-premium" style={{ marginBottom: '0.75rem', borderLeft: '3px solid #0078d4', borderRadius: '0 0.75rem 0.75rem 0' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '0.25rem' }}>
                     <h4 style={{ fontWeight: 700, color: '#0078d4', margin: 0, fontSize: '0.92rem' }}>Microsoft Azure</h4>
