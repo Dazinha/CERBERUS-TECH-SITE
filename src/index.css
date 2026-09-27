@@ -7,7 +7,7 @@
   position: absolute;
   top: -9999px;
   left: 0;
-  background: #6366f1;
+  background: #4f46e5;
   color: white;
   padding: 0.75rem 1.25rem;
   border-radius: 0 0 0.5rem 0;
@@ -26,21 +26,21 @@
 
 /* ─── Focus visible global para navegación por teclado ─── */
 :focus-visible {
-  outline: 3px solid #6366f1;
+  outline: 3px solid #4f46e5;
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 /* Focus visible — botones */
 .btn:focus-visible {
-  outline: 3px solid #6366f1;
+  outline: 3px solid #4f46e5;
   outline-offset: 3px;
   box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.2);
 }
 
 /* Focus visible — enlaces de navegación */
 nav a:focus-visible {
-  outline: 2px solid #6366f1;
+  outline: 2px solid #4f46e5;
   outline-offset: 4px;
   border-radius: 4px;
 }
@@ -48,7 +48,7 @@ nav a:focus-visible {
 /* Focus visible — cards interactivas */
 .card-premium:focus-visible,
 .card:focus-visible {
-  outline: 3px solid #6366f1;
+  outline: 3px solid #4f46e5;
   outline-offset: 2px;
   box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.15);
 }
@@ -58,7 +58,7 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
   outline: none;
-  border-color: #6366f1 !important;
+  border-color: #4f46e5 !important;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
 }
 
@@ -139,7 +139,7 @@ textarea:focus-visible {
   --text-secondary: #475569;
   --text-muted: #64748b; /* WCAG AA — ratio ≥ 4.5:1 sobre blanco */
 
-  --accent-primary: #6366f1;
+  --accent-primary: #4f46e5;
   /* Indigo vibrante - color del logo */
   --accent-secondary: #4338ca;
   /* Indigo profundo */
@@ -474,7 +474,7 @@ a:hover {
   flex-shrink: 0;
   margin-bottom: 1rem;
 }
-.avatar-indigo { background: linear-gradient(135deg, #6366f1, #4338ca); }
+.avatar-indigo { background: linear-gradient(135deg, #4f46e5, #4338ca); }
 .avatar-violet { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
 .avatar-blue   { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
 .avatar-teal   { background: linear-gradient(135deg, #14b8a6, #0f766e); }
@@ -593,6 +593,8 @@ a:hover {
   user-select: none;
   pointer-events: none;
 }
+/* Número decorativo como contenido CSS: no es texto del documento */
+.order-number::before { content: attr(data-num); }
 
 /* text utils */
 .text-center {

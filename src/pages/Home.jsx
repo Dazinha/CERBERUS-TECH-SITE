@@ -97,11 +97,11 @@ const Home = () => {
             {[
               ['8+', 'Años de operación continua'],
               ['3', 'Proyectos acreditados (5 años)'],
-              ['106', 'Profesionales en dotación'],
-              ['56 meses', 'Compromisos de largo plazo'],
+              ['98', 'Profesionales en dotación'],
+              ['24/7/365', 'NOC y SOC propios'],
             ].map(([num, label]) => (
               <div key={label} style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#6366f1', fontFamily: 'Outfit, sans-serif' }}>{num}</div>
+                <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#4f46e5', fontFamily: 'Outfit, sans-serif' }}>{num}</div>
                 <div style={{ fontSize: '0.78rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '0.2rem' }}>{label}</div>
               </div>
             ))}
@@ -125,7 +125,7 @@ const Home = () => {
                 title: 'Solo salud. Sin excepciones.',
                 desc: 'No somos una consultora genérica con una práctica de salud. Cada proyecto, cada certificación y cada metodología está orientada exclusivamente al sector sanitario.',
                 tag: 'Especialización Vertical',
-                color: '#6366f1',
+                color: '#4f46e5',
                 pillText: '#4338ca',
               },
               {
@@ -162,7 +162,7 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
               >
-                <div className="order-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
+                <div className="order-number" aria-hidden="true" data-num={String(i + 1).padStart(2, '0')}></div>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                   <div style={{ flexShrink: 0, paddingTop: '0.1rem', color: item.color }}>{item.icon}</div>
                   <div>

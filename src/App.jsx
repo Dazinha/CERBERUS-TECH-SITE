@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { MotionConfig } from 'framer-motion';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
@@ -12,6 +13,8 @@ import Soporte from './pages/Soporte';
 
 function App() {
   return (
+    // Respeta prefers-reduced-motion en todas las animaciones — WCAG 2.2 (RT-23.05)
+    <MotionConfig reducedMotion="user">
     <Router>
       <div className="flex flex-col" style={{ minHeight: '100vh' }}>
         {/* Skip-to-content — WCAG 2.2 AA (RT-23.05) */}
@@ -31,11 +34,10 @@ function App() {
             <Route path="/soporte" element={<Soporte />} />
           </Routes>
         </main>
-        <footer role="contentinfo">
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     </Router>
+    </MotionConfig>
   );
 }
 

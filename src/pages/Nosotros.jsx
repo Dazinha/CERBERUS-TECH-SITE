@@ -6,8 +6,8 @@ const Nosotros = () => {
     { year: '2018', title: 'Fundación', desc: 'La compañía se constituye en Valparaíso con foco en infraestructuras sanitarias de misión crítica.' },
     { year: '2020', title: 'Primera Red Hospitalaria', desc: 'Ejecuta su primer gran proyecto multisede, que integra tres hospitales bajo un registro clínico unificado.' },
     { year: '2022', title: 'Expansión Nacional', desc: 'Abre su sucursal en Temuco y consolida sus capacidades de interoperabilidad, es decir, de intercambio de información clínica entre sistemas distintos.' },
-    { year: '2024', title: 'Alianzas con Proveedores de Nube', desc: 'Obtiene la condición de Solutions Partner de Microsoft Azure, y su equipo supera los 90 profesionales.' },
-    { year: '2026', title: 'Situación Actual', desc: 'A 2026, cuenta con 106 profesionales, tres sedes operativas y proyectos activos en más de quince organizaciones del sector salud.' },
+    { year: '2024', title: 'Alianza con el Proveedor de Nube', desc: 'Obtiene la condición de Solutions Partner de Microsoft Azure y su equipo supera los 90 profesionales.' },
+    { year: '2026', title: 'Situación Actual', desc: 'A 2026, cuenta con 98 profesionales, tres sedes operativas y proyectos activos en más de quince organizaciones del sector salud.' },
   ];
 
   const officialCerts = [
@@ -15,16 +15,16 @@ const Nosotros = () => {
       norm: 'ISO/IEC 27001:2022',
       scope: 'Seguridad de la información en todas las operaciones',
       entity: 'SGS Chile',
-      certNum: 'SI-CL24/81923',
+      certNum: 'SI-CL24/81923', verification: 'SGS-VRF-81923-7QK4',
       validity: '15/05/2028',
       type: 'Seguridad',
-      color: '#6366f1',
+      color: '#4f46e5',
     },
     {
       norm: 'ISO 9001:2015',
       scope: 'Gestión de la calidad',
       entity: 'AENOR',
-      certNum: 'ER-0345/2023',
+      certNum: 'ER-0345/2023', verification: 'AENOR-ER0345-2023-M8TD',
       validity: '22/08/2027',
       type: 'Calidad',
       color: '#3b82f6',
@@ -33,7 +33,7 @@ const Nosotros = () => {
       norm: 'ISO/IEC 27701:2019',
       scope: 'Privacidad de datos personales sensibles de salud',
       entity: 'BSI Group',
-      certNum: 'PIMS-743210',
+      certNum: 'PIMS-743210', verification: 'BSI-PIMS-743210-XR2L',
       validity: '10/11/2027',
       type: 'Privacidad',
       color: '#10b981',
@@ -42,7 +42,7 @@ const Nosotros = () => {
       norm: 'ISO 22301:2019',
       scope: 'Continuidad del negocio',
       entity: 'TÜV Rheinland',
-      certNum: 'TR-BCM-2025-091',
+      certNum: 'TR-BCM-2025-091', verification: 'TUV-BCM-091-5HNP',
       validity: '05/02/2028',
       type: 'Continuidad',
       color: '#f59e0b',
@@ -51,7 +51,7 @@ const Nosotros = () => {
       norm: 'CMMI-DEV Nivel 3',
       scope: 'Madurez de los procesos de desarrollo de software',
       entity: 'ISACA (CMMI Institute)',
-      certNum: 'APP-49283',
+      certNum: 'APP-49283', verification: 'CMMI-APP-49283-QW7E',
       validity: '30/09/2027',
       type: 'Madurez SW',
       color: '#ec4899',
@@ -62,23 +62,16 @@ const Nosotros = () => {
     {
       name: 'Microsoft Azure',
       role: 'Solutions Partner',
-      badge: 'Partner Oficial',
-      desc: 'Partner en las categorías de Innovación Digital y de Aplicaciones. Otorga capacidad formal como socio del fabricante, soporte directo e integración con arquitecturas de referencia en la nube.',
-      color: '#0078d4',
+      badge: 'ID 6128457',
+      desc: 'Solutions Partner for Digital & App Innovation (Microsoft AI Cloud Partner Program), ID de socio 6128457, vigente hasta el 30/06/2027. Da acceso a soporte directo del fabricante y a sus arquitecturas de referencia.',
+      color: '#0078d4', text: '#005a9e',
     },
     {
       name: 'HL7 International',
       role: 'Organización Miembro',
       badge: 'Membresía N.º HL7-ORG-20417',
       desc: 'Participación formal en el desarrollo y la adopción de los estándares de interoperabilidad clínica HL7 v2.x y FHIR R4. Vigencia acreditada hasta el 31/12/2027.',
-      color: '#d97706',
-    },
-    {
-      name: 'Accesibilidad Web',
-      role: 'W3C WCAG 2.2 Nivel AA',
-      badge: 'Conformidad AA',
-      desc: 'Todas las interfaces desarrolladas cumplen las Pautas de Accesibilidad para el Contenido Web (WCAG 2.2 AA), asegurando accesibilidad e inclusión en personas con variados niveles de alfabetización digital.',
-      color: '#059669',
+      color: '#d97706', text: '#92400e',
     },
   ];
 
@@ -99,7 +92,7 @@ const Nosotros = () => {
       icon: <Building size={20} />,
       name: 'Centro de Operaciones — Valparaíso',
       address: 'Valparaíso (equipos redundantes en 2 zonas)',
-      desc: 'Alberga el NOC (monitoreo y rendimiento) y el SOC (seguridad e incidentes) operativos las 24 horas del día, los 365 días del año.',
+      desc: 'Alberga el NOC (monitoreo y rendimiento) y el SOC (seguridad e incidentes), operativos las 24 horas, los 365 días del año. El SOC cuenta con equipos redundantes en dos zonas geográficas y se presta a los clientes como servicio contratado.',
     },
   ];
 
@@ -129,18 +122,53 @@ const Nosotros = () => {
         </div>
       </section>
 
+      {/* Giro principal y antecedentes — RT-23.01 */}
+      <section className="section" aria-labelledby="giro-heading">
+        <div className="container">
+          <div className="grid grid-cols-1 nosotros-grid-giro gap-8" style={{ alignItems: 'start' }}>
+            <div>
+              <h2 id="giro-heading" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '1rem' }}>Giro Principal</h2>
+              <p style={{ color: '#475569', lineHeight: 1.7, marginBottom: '1rem' }}>
+                Diseño, construcción y operación de plataformas digitales de misión crítica para el sector salud. Un sistema es de misión crítica cuando su interrupción no genera sólo una pérdida económica, sino un riesgo para la atención de las personas, y esa condición define la forma en que la empresa diseña, compromete y opera cada solución.
+              </p>
+              <p style={{ color: '#475569', lineHeight: 1.7, marginBottom: '1rem' }}>
+                La oferta se organiza en cuatro líneas de negocio: plataformas clínicas e identidad del paciente; interoperabilidad e ingeniería de datos; ciberseguridad y operaciones defensivas; y operación gestionada y confiabilidad. Sobre ellas, la compañía presta consultoría y arquitectura de solución, desarrollo de software a medida, integración de sistemas, migración de datos clínicos, despliegue de infraestructura híbrida, operación continua bajo acuerdos de nivel de servicio, e implantación y gestión del cambio.
+              </p>
+              <p style={{ color: '#475569', lineHeight: 1.7 }}>
+                A diferencia de un proveedor que entrega el software y se retira, Cerberus Tech asume la operación de lo que construye, con centros propios de operación de red (NOC) y de seguridad (SOC) activos las 24 horas, los 365 días del año.
+              </p>
+            </div>
+            <dl className="card-premium" style={{ display: 'grid', gap: '0.9rem', margin: 0 }}>
+              {[
+                ['Razón social', 'Cerberus Tech SpA'],
+                ['Constitución', '2018, Valparaíso — 8 años de operación continua'],
+                ['Sector', 'Salud: redes hospitalarias, atención ambulatoria y salud ocupacional'],
+                ['Dotación', '98 profesionales (al 31 de agosto de 2026)'],
+                ['Sedes', 'Casa matriz y Centro de Operaciones en Valparaíso; Sucursal Sur en Temuco'],
+                ['Cartera', 'Proyectos activos en más de quince organizaciones del sector salud'],
+              ].map(([k, v]) => (
+                <div key={k} style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.75rem' }}>
+                  <dt style={{ fontSize: '0.75rem', fontWeight: 700, color: '#475569', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>{k}</dt>
+                  <dd style={{ margin: 0, fontSize: '0.92rem', color: '#0f172a', fontWeight: 500 }}>{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </section>
+
       {/* Misión, Visión, Valores */}
-      <section className="section">
+      <section className="section bg-section-alt">
         <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
               icon: <Target size={26} />, title: 'Misión',
-              content: 'Proveer infraestructuras tecnológicas resilientes, seguras y centradas en el usuario, que garanticen la continuidad operativa en sectores donde la tecnología es de misión crítica. Cada plataforma implementada debe resolver el desafío técnico y, además, reducir de forma medible el riesgo clínico y administrativo de la organización que la adopta.',
-              color: '#6366f1', bg: '#eef2ff',
+              content: 'Proveer infraestructuras tecnológicas resilientes, seguras y centradas en el usuario, que reduzcan de forma medible el riesgo clínico y administrativo de la organización que las adopta.',
+              color: '#4f46e5', bg: '#eef2ff',
             },
             {
               icon: <Eye size={26} />, title: 'Visión',
-              content: 'Ser el socio tecnológico de referencia en la transformación digital del sector salud en Chile y Latinoamérica, eliminando la fragmentación de la información clínica y elevando el estándar de seguridad del dato de salud, de modo que la tecnología opere como una capacidad confiable e invisible al servicio de la atención.',
+              content: 'Ser el socio tecnológico de referencia en la transformación digital del sector salud en Chile y Latinoamérica, eliminando la fragmentación de la información clínica.',
               color: '#3b82f6', bg: '#eff6ff',
             },
             {
@@ -188,10 +216,10 @@ const Nosotros = () => {
       </section>
 
       {/* Historia - Timeline */}
-      <section className="section bg-section-alt">
+      <section className="section">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2.5rem' }}>
-            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#6366f1' }}>
+            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#4f46e5' }}>
               <Calendar size={22} />
             </div>
             <div>
@@ -222,10 +250,10 @@ const Nosotros = () => {
       </section>
 
       {/* Certificaciones Institucionales Vigentes */}
-      <section className="section">
+      <section className="section bg-section-alt">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
-            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#6366f1' }}>
+            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#4f46e5' }}>
               <Award size={22} />
             </div>
             <div>
@@ -243,6 +271,7 @@ const Nosotros = () => {
                   <th style={{ padding: '0.85rem 1rem', fontWeight: 700 }}>Organismo Certificador</th>
                   <th style={{ padding: '0.85rem 1rem', fontWeight: 700 }}>N.º Certificado</th>
                   <th style={{ padding: '0.85rem 1rem', fontWeight: 700 }}>Vigencia Hasta</th>
+                  <th style={{ padding: '0.85rem 1rem', fontWeight: 700 }}>Código de Verificación</th>
                 </tr>
               </thead>
               <tbody>
@@ -256,30 +285,31 @@ const Nosotros = () => {
                     </td>
                     <td style={{ padding: '0.85rem 1rem', color: '#475569' }}>{c.scope}</td>
                     <td style={{ padding: '0.85rem 1rem', fontWeight: 600, color: '#334155' }}>{c.entity}</td>
-                    <td style={{ padding: '0.85rem 1rem', fontFamily: 'monospace', color: '#6366f1', fontSize: '0.82rem' }}>{c.certNum}</td>
-                    <td style={{ padding: '0.85rem 1rem', color: '#16a34a', fontWeight: 600 }}>{c.validity}</td>
+                    <td style={{ padding: '0.85rem 1rem', fontFamily: 'monospace', color: '#4f46e5', fontSize: '0.82rem' }}>{c.certNum}</td>
+                    <td style={{ padding: '0.85rem 1rem', color: '#15803d', fontWeight: 600 }}>{c.validity}</td>
+                    <td style={{ padding: '0.85rem 1rem', fontFamily: 'monospace', color: '#334155', fontSize: '0.78rem' }}>{c.verification}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
           <p style={{ fontSize: '0.8rem', color: '#64748b', marginTop: '0.75rem', fontStyle: 'italic' }}>
-            Todas las certificaciones cuentan con ciclos regulares de renovación y vigencia continua entre 2027 y 2028. Copias y certificados oficiales disponibles a solicitud.
+            Todas las certificaciones cuentan con ciclos regulares de renovación y vigencia continua entre 2027 y 2028. Cada certificado puede verificarse ante su organismo emisor con el código indicado.
           </p>
 
           {/* Alianzas Tecnológicas Oficiales */}
           <div style={{ marginTop: '2.5rem' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: '#0f172a' }}>
-              Alianzas Tecnológicas y Estándares de la Industria
+              Alianzas Tecnológicas
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 nosotros-grid-2 gap-6">
               {alliances.map((a) => (
                 <div key={a.name} className="card-premium" style={{ borderTop: `3px solid ${a.color}` }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
                     <h4 style={{ fontWeight: 700, fontSize: '1.05rem', margin: 0 }}>{a.name}</h4>
-                    <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: `${a.color}15`, color: a.color, borderColor: `${a.color}30` }}>{a.badge}</span>
+                    <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: `${a.color}15`, color: a.text, borderColor: `${a.color}30` }}>{a.badge}</span>
                   </div>
-                  <p style={{ fontSize: '0.78rem', color: a.color, fontWeight: 600, marginBottom: '0.5rem' }}>{a.role}</p>
+                  <p style={{ fontSize: '0.78rem', color: a.text, fontWeight: 600, marginBottom: '0.5rem' }}>{a.role}</p>
                   <p style={{ fontSize: '0.85rem', color: '#475569', lineHeight: 1.6, margin: 0 }}>{a.desc}</p>
                 </div>
               ))}
@@ -289,7 +319,7 @@ const Nosotros = () => {
       </section>
 
       {/* Gobierno Interno: Calidad, Seguridad y Conocimiento */}
-      <section className="section bg-section-alt">
+      <section className="section">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.5rem' }}>
@@ -314,8 +344,8 @@ const Nosotros = () => {
               </ul>
             </div>
 
-            <div className="card-premium" style={{ borderTop: '3px solid #6366f1' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#6366f1' }}>
+            <div className="card-premium" style={{ borderTop: '3px solid #4f46e5' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#4f46e5' }}>
                 <Lock size={22} />
                 <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0, color: '#0f172a' }}>Seguridad de la Información</h3>
               </div>
@@ -334,6 +364,7 @@ const Nosotros = () => {
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#475569' }}>
                 <li><strong>Continuidad:</strong> ISO 22301:2019 de continuidad del negocio.</li>
+                <li><strong>Responsable:</strong> Dirección y gestión de proyectos, con el Comité de Arquitectura como instancia de revisión.</li>
                 <li><strong>Principio:</strong> El conocimiento es un activo del cliente (código, infraestructura como código y documentación transferibles sin dependencia de proveedor).</li>
                 <li><strong>Instancia:</strong> Comité de Arquitectura con registros de decisión (ADR).</li>
                 <li><strong>Mecanismo:</strong> Libros de operación versionados con código, post-mortems sin culpa, sustituto activo por cada rol clave y espacio colaborativo compartido.</li>
@@ -344,10 +375,10 @@ const Nosotros = () => {
       </section>
 
       {/* Presencia Geográfica */}
-      <section className="section">
+      <section className="section bg-section-alt">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
-            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#6366f1' }}>
+            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#4f46e5' }}>
               <Globe size={22} />
             </div>
             <div>
@@ -367,12 +398,12 @@ const Nosotros = () => {
                 whileHover={{ y: -4 }}
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
               >
-                <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#6366f1', flexShrink: 0 }}>
+                <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#4f46e5', flexShrink: 0 }}>
                   {o.icon}
                 </div>
                 <div>
                   <h4 style={{ fontWeight: 700, marginBottom: '0.2rem', fontSize: '0.95rem' }}>{o.name}</h4>
-                  <p style={{ fontSize: '0.78rem', color: '#6366f1', fontWeight: 600, marginBottom: '0.35rem' }}>{o.address}</p>
+                  <p style={{ fontSize: '0.78rem', color: '#4f46e5', fontWeight: 600, marginBottom: '0.35rem' }}>{o.address}</p>
                   <p style={{ fontSize: '0.85rem', color: '#475569', lineHeight: 1.5 }}>{o.desc}</p>
                 </div>
               </motion.div>
@@ -384,6 +415,8 @@ const Nosotros = () => {
       <style>{`
         @media (min-width: 768px) {
           .nosotros-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+          .nosotros-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+          .nosotros-grid-giro { grid-template-columns: 3fr 2fr !important; }
         }
       `}</style>
     </div>

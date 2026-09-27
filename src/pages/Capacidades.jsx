@@ -7,7 +7,7 @@ const Capacidades = () => {
       icon: <ShieldCheck size={30} />,
       title: 'Plataformas Clínicas e Identidad del Paciente',
       desc: 'Comprende el registro clínico electrónico, el índice maestro de pacientes, el agendamiento y la gestión de la demanda ambulatoria. Resuelve el problema de la ficha única y del reconocimiento inequívoco a lo largo de una red multisede.',
-      color: '#6366f1', pillText: '#4338ca', bg: '#eef2ff',
+      color: '#4f46e5', pillText: '#4338ca', bg: '#eef2ff',
       tags: ['Registro Clínico', 'Índice Maestro', 'Agendamiento'],
     },
     {
@@ -27,17 +27,19 @@ const Capacidades = () => {
     {
       icon: <Workflow size={30} />,
       title: 'Operación Gestionada y Confiabilidad',
-      desc: 'Mesa de servicio multinivel organizada según ITIL 4, observabilidad de extremo a extremo, gestión de capacidad mediante clústeres que se amplían automáticamente ante aumentos de demanda, pruebas periódicas de DRP con respaldos cifrados en formato WORM y mantención integral.',
+      desc: 'Mesa de servicio multinivel organizada según ITIL 4, observabilidad de extremo a extremo, pruebas periódicas de recuperación ante desastres con copias de respaldo cifradas que no pueden modificarse ni borrarse una vez escritas, y mantención de las plataformas.',
       color: '#f59e0b', pillText: '#b45309', bg: '#fffbeb',
-      tags: ['ITIL 4', 'DRP WORM', 'Observabilidad', 'SLA Contractual'],
+      tags: ['ITIL 4', 'Recuperación ante Desastres', 'Observabilidad', 'SLA Contractual'],
     },
   ];
 
+  // Conjunto tecnológico dominado (Subdocumento 1, sección 1.1.4)
   const techStack = {
-    'Frontend & Backend': { pills: ['React / Next.js', 'Node.js', 'Python / FastAPI', 'Go', 'Java / Spring Boot'], color: 'indigo' },
-    'Infraestructura & DevOps': { pills: ['Kubernetes (K8s)', 'Docker', 'Terraform', 'CI/CD (GitLab, GitHub Actions)'], color: 'blue' },
+    'Desarrollo de Aplicaciones': { pills: ['Angular', 'React', 'Flutter', 'Java / Spring Boot', 'Node.js', 'Python', 'Go', 'Drools + DMN'], color: 'indigo' },
+    'Infraestructura y Automatización': { pills: ['Kubernetes', 'Docker', 'Terraform', 'CI/CD (GitLab, GitHub Actions)'], color: 'blue' },
+    'Plataforma de Nube (Microsoft Azure)': { pills: ['Azure Container Apps', 'Azure Functions', 'Azure Service Bus', 'Azure Database for PostgreSQL', 'Azure AI Search', 'Microsoft Fabric + Power BI'], color: 'slate' },
     'Bases de Datos': { pills: ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch'], color: 'green' },
-    'Seguridad': { pills: ['SIEM', 'WAF', 'Vault (HashiCorp)', 'ISO 27001 Controls'], color: 'amber' },
+    'Seguridad': { pills: ['Microsoft Sentinel (SIEM)', 'WAF', 'HashiCorp Vault', 'Azure Key Vault', 'Microsoft Entra ID'], color: 'amber' },
   };
 
   const services = [
@@ -51,15 +53,16 @@ const Capacidades = () => {
   ];
 
   const methodologies = [
-    { title: 'DevSecOps', desc: 'Integración continua de seguridad en todo el ciclo de vida del desarrollo.', color: '#6366f1' },
-    { title: 'Scrum & SAFe', desc: 'Agilidad escalada para entregar valor de forma iterativa y predecible en proyectos corporativos.', color: '#3b82f6' },
-    { title: 'ITIL v4', desc: 'Gestión de servicios de TI alineada a las mejores prácticas globales para operaciones eficientes.', color: '#10b981' },
+    { title: 'DevSecOps', desc: 'Integración continua de seguridad en todo el ciclo de vida del desarrollo: análisis estático, dinámico, de composición y gestión de secretos.', color: '#4f46e5' },
+    { title: 'Scrum & SAFe', desc: 'Agilidad escalada para entregar valor de forma iterativa y predecible en proyectos corporativos.', color: '#1d4ed8' },
+    { title: 'ITIL 4', desc: 'Gestión de servicios de TI alineada a las mejores prácticas globales para operaciones eficientes.', color: '#047857' },
+    { title: 'CMMI-DEV Nivel 3 · ISO 9001:2015', desc: 'Procesos de desarrollo y de calidad certificados por ISACA (CMMI Institute, APP-49283) y AENOR (ER-0345/2023).', color: '#9d174d' },
   ];
 
   const infraItems = [
-    { title: 'Centro de Operaciones de Seguridad (SOC)', desc: 'Monitoreo continuo 24/7/365 con equipos redundantes en dos zonas geográficas distintas.' },
-    { title: 'Capacidad de Procesamiento', desc: 'Clústeres de alto rendimiento aprovisionados dinámicamente con auto-scaling para manejar picos de hasta 100.000 TPS.' },
-    { title: 'Redundancia de Datos', desc: 'Copias de seguridad cifradas con políticas de retención WORM inmutables en múltiples regiones.' },
+    { title: 'Centro de Operación de Red (NOC)', desc: 'Monitoreo del funcionamiento y rendimiento de las plataformas 24/7/365, con dos puestos continuos sostenidos por 11 profesionales.' },
+    { title: 'Centro de Operaciones de Seguridad (SOC)', desc: 'Monitoreo de eventos y respuesta a incidentes 24/7/365, con equipos redundantes en dos zonas geográficas; se presta a los clientes como servicio contratado.' },
+    { title: 'Respaldo y Recuperación', desc: 'Pruebas periódicas de recuperación ante desastres, con copias de respaldo cifradas que no pueden modificarse ni borrarse una vez escritas.' },
   ];
 
   return (
@@ -97,7 +100,7 @@ const Capacidades = () => {
                 whileHover={{ y: -5 }}
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
               >
-                <div className="order-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
+                <div className="order-number" aria-hidden="true" data-num={String(i + 1).padStart(2, '0')}></div>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start', marginBottom: '1rem' }}>
                   <div style={{ padding: '0.75rem', borderRadius: '0.75rem', backgroundColor: line.bg, color: line.color, flexShrink: 0 }}>
                     {line.icon}
@@ -120,7 +123,7 @@ const Capacidades = () => {
       <section className="section bg-section-alt">
         <div className="container">
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <Code2 size={20} style={{ color: '#6366f1' }} />
+            <Code2 size={20} style={{ color: '#4f46e5' }} />
             Conjunto Tecnológico Dominado
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -148,7 +151,7 @@ const Capacidades = () => {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {services.map((s, i) => (
                   <li key={i} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-                    <CheckCircle size={16} style={{ color: '#6366f1', flexShrink: 0, marginTop: '0.2rem' }} />
+                    <CheckCircle size={16} style={{ color: '#4f46e5', flexShrink: 0, marginTop: '0.2rem' }} />
                     <span style={{ fontSize: '0.88rem', color: '#475569' }}>{s}</span>
                   </li>
                 ))}
@@ -157,7 +160,7 @@ const Capacidades = () => {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Metodologías Certificadas</h2>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Metodologías de Trabajo Certificadas</h2>
                 {methodologies.map(m => (
                   <div key={m.title} className="card-premium" style={{ marginBottom: '0.75rem', borderLeft: `3px solid ${m.color}`, borderRadius: '0 0.75rem 0.75rem 0' }}>
                     <h4 style={{ fontWeight: 700, color: m.color, marginBottom: '0.3rem', fontSize: '0.92rem' }}>{m.title}</h4>
@@ -170,16 +173,16 @@ const Capacidades = () => {
                 <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Alianzas Tecnológicas Oficiales</h2>
                 <div className="card-premium" style={{ marginBottom: '0.75rem', borderLeft: '3px solid #0078d4', borderRadius: '0 0.75rem 0.75rem 0' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '0.25rem' }}>
-                    <h4 style={{ fontWeight: 700, color: '#0078d4', margin: 0, fontSize: '0.92rem' }}>Microsoft Azure</h4>
+                    <h4 style={{ fontWeight: 700, color: '#005a9e', margin: 0, fontSize: '0.92rem' }}>Microsoft Azure</h4>
                     <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: '#eff6ff', color: '#1d4ed8' }}>Solutions Partner</span>
                   </div>
                   <p style={{ fontSize: '0.82rem', color: '#475569', margin: 0, lineHeight: 1.5 }}>
-                    Partner oficial en Innovación Digital y de Aplicaciones. Soporte directo del fabricante y acceso a arquitecturas de referencia en nube pública e híbrida.
+                    Solutions Partner for Digital & App Innovation, ID de socio 6128457, vigente hasta el 30/06/2027. Soporte directo del fabricante y acceso a sus arquitecturas de referencia.
                   </p>
                 </div>
                 <div className="card-premium" style={{ marginBottom: '0.75rem', borderLeft: '3px solid #d97706', borderRadius: '0 0.75rem 0.75rem 0' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '0.25rem' }}>
-                    <h4 style={{ fontWeight: 700, color: '#d97706', margin: 0, fontSize: '0.92rem' }}>HL7 International</h4>
+                    <h4 style={{ fontWeight: 700, color: '#92400e', margin: 0, fontSize: '0.92rem' }}>HL7 International</h4>
                     <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: '#fffbeb', color: '#b45309' }}>Membresía HL7-ORG-20417</span>
                   </div>
                   <p style={{ fontSize: '0.82rem', color: '#475569', margin: 0, lineHeight: 1.5 }}>
@@ -201,7 +204,7 @@ const Capacidades = () => {
               <motion.div
                 key={item.title}
                 className="card-premium"
-                style={{ borderTop: '3px solid #6366f1' }}
+                style={{ borderTop: '3px solid #4f46e5' }}
                 whileHover={{ y: -4 }}
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
               >

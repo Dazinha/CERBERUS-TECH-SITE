@@ -21,7 +21,7 @@ const Soporte = () => {
       label: 'Teléfono Central',
       value: '+56 32 255 1000',
       href: 'tel:+56322551000',
-      color: '#6366f1',
+      color: '#4f46e5',
       bg: '#eef2ff',
     },
     {
@@ -104,7 +104,7 @@ const Soporte = () => {
       <section className="section bg-section-alt">
         <div className="container">
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <LifeBuoy size={20} style={{ color: '#6366f1' }} />
+            <LifeBuoy size={20} style={{ color: '#4f46e5' }} />
             Canales de Contacto
           </h2>
           <div className="grid grid-cols-1 soporte-grid-cards gap-4" style={{ maxWidth: '1050px' }}>
@@ -196,7 +196,7 @@ const Soporte = () => {
                   <input
                     id="organizacion" name="organizacion" type="text" required aria-required="true"
                     value={form.organizacion} onChange={handleChange}
-                    placeholder="Red de Salud Ñielol"
+                    placeholder="Nombre de su institución"
                     autoComplete="organization"
                     style={inputStyle}
                   />
@@ -255,7 +255,7 @@ const Soporte = () => {
         }
         input:focus, select:focus, textarea:focus {
           outline: none;
-          border-color: #6366f1 !important;
+          border-color: #4f46e5 !important;
           box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
         }
       `}</style>

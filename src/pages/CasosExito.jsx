@@ -3,10 +3,10 @@ import { Briefcase, BarChart3, Users, Building, Activity, ShieldAlert, Phone, Sh
 
 const CasosExito = () => {
   const metrics = [
-    { num: '1.8M+', label: 'Registros en Padrón', icon: <Users size={20} /> },
-    { num: '99.95%', label: 'Uptime Verificado', icon: <BarChart3 size={20} /> },
-    { num: '1.6M+', label: 'Atenciones Anuales', icon: <Activity size={20} /> },
-    { num: '<1min', label: 'RTO y Notificaciones', icon: <ShieldAlert size={20} /> },
+    { num: '1,8M', label: 'Registros en Padrón', icon: <Users size={20} /> },
+    { num: '99,95 %', label: 'Disponibilidad Medida', icon: <BarChart3 size={20} /> },
+    { num: '1,6M', label: 'Atenciones Anuales', icon: <Activity size={20} /> },
+    { num: '−45 %', label: 'Ausentismo (Ribera Norte)', icon: <ShieldAlert size={20} /> },
   ];
 
   const projects = [
@@ -23,8 +23,8 @@ const CasosExito = () => {
         { icon: <Activity size={12} />, label: 'Atenciones/año', value: '1,4M' },
         { icon: <Building size={12} />, label: 'TB imagenología', value: '62 TB' },
       ],
-      ref: 'Ricardo Salgado Peña — Director TI', email: 'r.salgado@vallequilen.cl',
-      accentColor: '#6366f1',
+      ref: 'Ricardo Salgado Peña — Director de Tecnologías de Información', email: 'r.salgado@vallequilen.cl', phone: '+56 2 2478 9100',
+      accentColor: '#4f46e5', accentText: '#4338ca',
     },
     {
       title: 'Plataforma Nacional de Interoperabilidad e Índice Maestro de Pacientes',
@@ -39,8 +39,8 @@ const CasosExito = () => {
         { icon: <Users size={12} />, label: 'Registros padrón', value: '1,8M' },
         { icon: <BarChart3 size={12} />, label: 'Peak mensajería', value: '40 msg/s' },
       ],
-      ref: 'Carolina Vergara Ríos — Gerenta Transformación Digital', email: 'c.vergara@cordilleraaustral.cl',
-      accentColor: '#3b82f6',
+      ref: 'Carolina Vergara Ríos — Gerenta Transformación Digital', email: 'c.vergara@cordilleraaustral.cl', phone: '+56 2 2630 4400',
+      accentColor: '#3b82f6', accentText: '#1d4ed8',
     },
     {
       title: 'Plataforma de Coordinación de Atención Ambulatoria y Domiciliaria',
@@ -55,29 +55,30 @@ const CasosExito = () => {
         { icon: <Users size={12} />, label: 'Pacientes activos', value: '95.000' },
         { icon: <Activity size={12} />, label: 'Atenciones/año', value: '210.000' },
       ],
-      ref: 'Jorge Fuenzalida Ibáñez — Subdirector Operaciones', email: 'j.fuenzalida@riberanorte.cl',
-      accentColor: '#10b981',
+      ref: 'Jorge Fuenzalida Ibáñez — Subdirector Operaciones', email: 'j.fuenzalida@riberanorte.cl', phone: '+56 2 2915 7720',
+      accentColor: '#10b981', accentText: '#047857',
     },
   ];
 
+  // Industrias atendidas, con énfasis en atención ambulatoria — RT-23.02
   const industries = [
-    { icon: <Stethoscope size={22} />, name: 'Red Hospitalaria de Alta Complejidad', desc: 'Registro clínico electrónico, identidad de paciente y operación gestionada en redes multisede.', color: '#6366f1', bg: '#eef2ff' },
+    { icon: <Truck size={22} />, name: 'Atención Ambulatoria y Consultas de Especialidad', desc: 'Agendamiento omnicanal, confirmación de horas, reducción del ausentismo, triaje digital y coordinación de prestadores en terreno.', color: '#10b981', bg: '#ecfdf5', highlight: true },
+    { icon: <Stethoscope size={22} />, name: 'Red Hospitalaria de Alta Complejidad', desc: 'Registro clínico electrónico, identidad de paciente y operación gestionada en redes multisede.', color: '#4f46e5', bg: '#eef2ff' },
     { icon: <Building size={22} />, name: 'Salud Ocupacional y Mutualidades', desc: 'Interoperabilidad nacional, índice maestro de pacientes y gobierno de identidad a escala.', color: '#3b82f6', bg: '#eff6ff' },
-    { icon: <Truck size={22} />, name: 'Atención Ambulatoria y Domiciliaria', desc: 'Coordinación omnicanal, agendamiento, triaje y app móvil para prestadores en terreno.', color: '#10b981', bg: '#ecfdf5' },
     { icon: <Globe size={22} />, name: 'Redes de Salud con Dispersión Territorial', desc: 'Arquitecturas con nodos de borde para operación autónoma en zonas rurales o con conectividad limitada.', color: '#f59e0b', bg: '#fffbeb' },
   ];
 
   const contextItems = [
-    { icon: <ShieldCheck size={26} />, title: 'Datos Personales Sensibles', color: '#6366f1', bg: '#eef2ff', desc: 'Operamos bajo la Ley N° 21.719 de protección de datos personales, Ley N° 20.584 y Ley N° 21.663 Marco sobre Ciberseguridad, con controles verificables de consentimiento, minimización, trazabilidad de accesos y retención certificada ISO/IEC 27701.' },
+    { icon: <ShieldCheck size={26} />, title: 'Datos Personales Sensibles', color: '#4f46e5', bg: '#eef2ff', desc: 'Operamos bajo la Ley N° 21.719 de protección de datos personales, Ley N° 20.584 y Ley N° 21.663 Marco sobre Ciberseguridad, con controles verificables de consentimiento, minimización, trazabilidad de accesos y retención certificada ISO/IEC 27701. El registro de la atención se diseña conforme al Decreto N° 41 de 2012 sobre fichas clínicas.' },
     { icon: <UserX size={26} />, title: 'Identidad del Paciente como Riesgo Clínico', color: '#3b82f6', bg: '#eff6ff', desc: 'Prevenimos errores de asignación clínica mediante flujos de arbitraje manual obligatorio para pares con baja confianza en el índice maestro de pacientes (MPI).' },
-    { icon: <FileCheck size={26} />, title: 'Acreditación de Prestadores Institucionales', color: '#10b981', bg: '#ecfdf5', desc: 'Acompañamos procesos ante la Superintendencia de Salud incorporando desde el diseño la evidencia documental y los registros trazables que exige el estándar.' },
+    { icon: <FileCheck size={26} />, title: 'Acreditación de Prestadores Institucionales', color: '#10b981', bg: '#ecfdf5', desc: 'Acompañamos la acreditación ante la Superintendencia de Salud de la Red Hospitalaria Valle Quilén, incorporando desde el diseño la evidencia y los registros que exige el estándar.' },
     { icon: <MapPin size={26} />, title: 'Pertinencia Territorial e Intercultural', color: '#f59e0b', bg: '#fffbeb', desc: 'Diseño preparado para la realidad de La Araucanía y Los Ríos: conectividad rural asistida por nodos de borde y consideración de la interculturalidad de los pacientes.' },
   ];
 
   const testimonials = [
     {
       quote: 'La plataforma integrada resolvió nuestro problema histórico de fichas duplicadas. Ahora nuestros médicos confían plenamente en el historial del paciente, incluso si el sistema central sufre cortes, gracias a la arquitectura híbrida.',
-      name: 'Ricardo Salgado Peña', role: 'Director TI, Red Hospitalaria Valle Quilén',
+      name: 'Ricardo Salgado Peña', role: 'Director de Tecnologías de Información, Red Hospitalaria Valle Quilén',
       initial: 'RS', avatarClass: 'avatar-indigo',
     },
     {
@@ -136,7 +137,7 @@ const CasosExito = () => {
       <section className="section">
         <div className="container">
           <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <Briefcase size={22} style={{ color: '#6366f1' }} /> Proyectos Principales
+            <Briefcase size={22} style={{ color: '#4f46e5' }} /> Proyectos Principales
           </h2>
           <div className="grid grid-cols-1 cases-grid-3 gap-6">
             {projects.map((p, i) => (
@@ -147,7 +148,7 @@ const CasosExito = () => {
               >
                 {/* Client pill + industry */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', marginBottom: '0.75rem' }}>
-                  <span className="pill" style={{ fontSize: '0.72rem', color: p.accentColor, backgroundColor: `${p.accentColor}12`, borderColor: `${p.accentColor}40`, width: 'fit-content' }}>{p.client}</span>
+                  <span className="pill" style={{ fontSize: '0.72rem', color: p.accentText, backgroundColor: `${p.accentColor}12`, borderColor: `${p.accentColor}40`, width: 'fit-content' }}>{p.client}</span>
                   <span style={{ fontSize: '0.72rem', color: '#64748b' }}>{p.industry}</span>
                 </div>
 
@@ -171,7 +172,8 @@ const CasosExito = () => {
                 <div style={{ borderTop: '1px dashed var(--border-color)', paddingTop: '0.75rem' }}>
                   <p style={{ fontSize: '0.7rem', color: '#64748b', marginBottom: '0.2rem' }}>Referencia verificable</p>
                   <p style={{ fontSize: '0.82rem', color: '#475569', fontWeight: 500, marginBottom: '0.1rem' }}>{p.ref}</p>
-                  <p style={{ fontSize: '0.75rem', color: '#6366f1' }}>{p.email}</p>
+                  <a href={`mailto:${p.email}`} style={{ fontSize: '0.75rem', color: '#4338ca', textDecoration: 'underline', display: 'block' }}>{p.email}</a>
+                  <a href={`tel:${p.phone.replace(/\s/g, '')}`} style={{ fontSize: '0.75rem', color: '#4338ca', textDecoration: 'underline' }}>{p.phone}</a>
                 </div>
               </motion.div>
             ))}
@@ -187,19 +189,20 @@ const CasosExito = () => {
               Industrias <span className="text-gradient">Atendidas</span>
             </h2>
             <p style={{ color: '#475569', maxWidth: '560px', margin: '0 auto', fontSize: '0.95rem' }}>
-              Nuestra especialización está concentrada en el sector salud en sus distintas modalidades de operación.
+              Nuestra especialización está concentrada en el sector salud, con énfasis en la atención ambulatoria y las consultas de especialidad.
             </p>
           </div>
           <div className="grid grid-cols-1 cases-grid-2 gap-5">
             {industries.map((ind, i) => (
               <motion.div key={ind.name} className="card-premium"
-                style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}
+                style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start', ...(ind.highlight ? { border: `2px solid ${ind.color}` } : {}) }}
                 whileHover={{ y: -4 }}
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }}
               >
                 <div style={{ padding: '0.75rem', borderRadius: '0.75rem', backgroundColor: ind.bg, color: ind.color, flexShrink: 0 }}>{ind.icon}</div>
                 <div>
-                  <h4 style={{ fontWeight: 700, marginBottom: '0.35rem' }}>{ind.name}</h4>
+                  {ind.highlight && <span className="badge badge-green" style={{ marginBottom: '0.4rem' }}>Foco principal</span>}
+                  <h3 style={{ fontWeight: 700, fontSize: '1rem', marginBottom: '0.35rem' }}>{ind.name}</h3>
                   <p style={{ fontSize: '0.86rem', color: '#475569', lineHeight: 1.6 }}>{ind.desc}</p>
                 </div>
               </motion.div>

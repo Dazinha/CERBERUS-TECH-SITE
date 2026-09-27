@@ -50,6 +50,7 @@ const Navbar = () => {
                   fontWeight: isActive ? '600' : '400',
                   fontSize: '0.9rem',
                   padding: '0.3rem 0',
+                  whiteSpace: 'nowrap',
                   borderBottom: isActive ? '2px solid var(--accent-primary)' : '2px solid transparent',
                   transition: 'all 0.2s',
                 }}
@@ -58,7 +59,7 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <Link to="/soporte" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem' }}>Soporte</Link>
+          <Link to="/soporte" aria-current={location.pathname === '/soporte' ? 'page' : undefined} className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem' }}>Soporte</Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -100,12 +101,20 @@ const Navbar = () => {
               </Link>
               );
             })}
-            <a href="#contacto" className="btn btn-primary text-center" style={{ marginTop: '0.5rem' }}>Contactar</a>
+            <Link
+              to="/soporte"
+              onClick={() => setIsOpen(false)}
+              aria-current={location.pathname === '/soporte' ? 'page' : undefined}
+              className="btn btn-primary text-center"
+              style={{ marginTop: '0.5rem' }}
+            >
+              Soporte
+            </Link>
           </div>
         )}
       </div>
       <style>{`
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
           #desktop-menu { display: flex !important; }
           #mobile-toggle { display: none !important; }
         }
