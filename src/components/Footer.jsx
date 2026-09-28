@@ -3,16 +3,25 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contacto" aria-label="Pie de página — Cerberus Tech" style={{ backgroundColor: '#09090b', borderTop: '1px solid rgba(255,255,255,0.1)', padding: 'var(--space-12) 0' }}>
+    <footer id="contacto" aria-label="Pie de página — Cerberus Tech" style={{ background: 'var(--hex-pattern), linear-gradient(160deg, #0f3d7a 0%, #0a1a33 55%)', borderTop: '4px solid #22c3e6', padding: 'var(--space-12) 0' }}>
       <div className="container grid grid-cols-3 md:grid-cols-1 gap-8" style={{ gap: '6rem' }}>
 
         {/* Column 1: Brand */}
         <div className="flex flex-col gap-6">
           <Link to="/" className="flex items-center gap-2 mb-2" aria-label="Cerberus Tech — Ir al inicio">
-            <img src="/CERBERUSTECHLOGO.png" alt="Cerberus Tech — Soluciones tecnológicas de misión crítica para el sector salud" style={{ height: '150px', width: 'auto', objectFit: 'contain', borderRadius: '8px' }} />
+            <img src="/brand/cerberus-emblema.jpg" alt="" style={{ height: '64px', width: 'auto', borderRadius: '8px', border: '1px solid rgba(34,195,230,0.4)' }} />
+            <span style={{ fontWeight: 700, fontSize: '1.2rem', letterSpacing: '0.18em', color: '#ffffff' }}>
+              CERBERUS <span style={{ color: '#22c3e6' }}>TECH</span>
+            </span>
           </Link>
-          <p className="text-sm leading-relaxed mb-2" style={{ color: '#a1a1aa' }}>
+          <p style={{ color: '#22c3e6', fontWeight: 600, fontSize: '0.95rem', margin: 0 }}>
+            Construimos y operamos: no entregamos y nos vamos.
+          </p>
+          <p className="text-sm leading-relaxed mb-2" style={{ color: '#c3cfdf', fontSize: '0.875rem' }}>
             El socio tecnológico confiable para la operación continua en salud. Garantizamos resiliencia, seguridad e interoperabilidad bajo los más altos estándares.
+          </p>
+          <p style={{ color: '#e8f1fb', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.14em' }}>
+            VALPARAÍSO · TEMUCO · SOC/NOC 24/7
           </p>
         </div>
 
@@ -104,7 +113,7 @@ const Footer = () => {
           text-decoration: none;
         }
         .contact-card:hover {
-          border-color: rgba(99, 102, 241, 0.5);
+          border-color: rgba(31, 111, 235, 0.5);
           background-color: rgba(255, 255, 255, 0.1);
         }
       `}</style>

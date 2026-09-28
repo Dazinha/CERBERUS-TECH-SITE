@@ -18,7 +18,7 @@ const Nosotros = () => {
       certNum: 'SI-CL24/81923', verification: 'SGS-VRF-81923-7QK4',
       validity: '15/05/2028',
       type: 'Seguridad',
-      color: '#4f46e5',
+      color: '#1f6feb',
     },
     {
       norm: 'ISO 9001:2015',
@@ -27,7 +27,7 @@ const Nosotros = () => {
       certNum: 'ER-0345/2023', verification: 'AENOR-ER0345-2023-M8TD',
       validity: '22/08/2027',
       type: 'Calidad',
-      color: '#3b82f6',
+      color: '#0f3d7a',
     },
     {
       norm: 'ISO/IEC 27701:2019',
@@ -36,7 +36,7 @@ const Nosotros = () => {
       certNum: 'PIMS-743210', verification: 'BSI-PIMS-743210-XR2L',
       validity: '10/11/2027',
       type: 'Privacidad',
-      color: '#10b981',
+      color: '#12a37f',
     },
     {
       norm: 'ISO 22301:2019',
@@ -45,7 +45,7 @@ const Nosotros = () => {
       certNum: 'TR-BCM-2025-091', verification: 'TUV-BCM-091-5HNP',
       validity: '05/02/2028',
       type: 'Continuidad',
-      color: '#f59e0b',
+      color: '#f4a524',
     },
     {
       norm: 'CMMI-DEV Nivel 3',
@@ -54,7 +54,7 @@ const Nosotros = () => {
       certNum: 'APP-49283', verification: 'CMMI-APP-49283-QW7E',
       validity: '30/09/2027',
       type: 'Madurez SW',
-      color: '#ec4899',
+      color: '#22c3e6',
     },
   ];
 
@@ -71,7 +71,7 @@ const Nosotros = () => {
       role: 'Organización Miembro',
       badge: 'Membresía N.º HL7-ORG-20417',
       desc: 'Participación formal en el desarrollo y la adopción de los estándares de interoperabilidad clínica HL7 v2.x y FHIR R4. Vigencia acreditada hasta el 31/12/2027.',
-      color: '#d97706', text: '#92400e',
+      color: '#f4a524', text: '#9a5b00',
     },
   ];
 
@@ -108,13 +108,13 @@ const Nosotros = () => {
             <span className="badge badge-indigo">Presentación de la Empresa</span>
           </motion.div>
           <motion.h1
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0f172a' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0a1a33' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
           >
             Tecnología al servicio de la <span className="text-gradient">salud crítica</span>
           </motion.h1>
           <motion.p
-            style={{ fontSize: '1.1rem', color: '#475569', maxWidth: '640px', margin: '0 auto' }}
+            style={{ fontSize: '1.1rem', color: '#55657b', maxWidth: '640px', margin: '0 auto' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
             Cerberus Tech SpA es una compañía chilena de base tecnológica constituida en 2018 y con casa matriz en Valparaíso, que diseña, construye y opera plataformas digitales de misión crítica para el sector salud.
@@ -128,13 +128,13 @@ const Nosotros = () => {
           <div className="grid grid-cols-1 nosotros-grid-giro gap-8" style={{ alignItems: 'start' }}>
             <div>
               <h2 id="giro-heading" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '1rem' }}>Giro Principal</h2>
-              <p style={{ color: '#475569', lineHeight: 1.7, marginBottom: '1rem' }}>
+              <p style={{ color: '#55657b', lineHeight: 1.7, marginBottom: '1rem' }}>
                 Diseño, construcción y operación de plataformas digitales de misión crítica para el sector salud. Un sistema es de misión crítica cuando su interrupción no genera sólo una pérdida económica, sino un riesgo para la atención de las personas, y esa condición define la forma en que la empresa diseña, compromete y opera cada solución.
               </p>
-              <p style={{ color: '#475569', lineHeight: 1.7, marginBottom: '1rem' }}>
+              <p style={{ color: '#55657b', lineHeight: 1.7, marginBottom: '1rem' }}>
                 La oferta se organiza en cuatro líneas de negocio: plataformas clínicas e identidad del paciente; interoperabilidad e ingeniería de datos; ciberseguridad y operaciones defensivas; y operación gestionada y confiabilidad. Sobre ellas, la compañía presta consultoría y arquitectura de solución, desarrollo de software a medida, integración de sistemas, migración de datos clínicos, despliegue de infraestructura híbrida, operación continua bajo acuerdos de nivel de servicio, e implantación y gestión del cambio.
               </p>
-              <p style={{ color: '#475569', lineHeight: 1.7 }}>
+              <p style={{ color: '#55657b', lineHeight: 1.7 }}>
                 A diferencia de un proveedor que entrega el software y se retira, Cerberus Tech asume la operación de lo que construye, con centros propios de operación de red (NOC) y de seguridad (SOC) activos las 24 horas, los 365 días del año.
               </p>
             </div>
@@ -148,8 +148,8 @@ const Nosotros = () => {
                 ['Cartera', 'Proyectos activos en más de quince organizaciones del sector salud'],
               ].map(([k, v]) => (
                 <div key={k} style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.75rem' }}>
-                  <dt style={{ fontSize: '0.75rem', fontWeight: 700, color: '#475569', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>{k}</dt>
-                  <dd style={{ margin: 0, fontSize: '0.92rem', color: '#0f172a', fontWeight: 500 }}>{v}</dd>
+                  <dt style={{ fontSize: '0.75rem', fontWeight: 700, color: '#55657b', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>{k}</dt>
+                  <dd style={{ margin: 0, fontSize: '0.92rem', color: '#0a1a33', fontWeight: 500 }}>{v}</dd>
                 </div>
               ))}
             </dl>
@@ -164,12 +164,12 @@ const Nosotros = () => {
             {
               icon: <Target size={26} />, title: 'Misión',
               content: 'Proveer infraestructuras tecnológicas resilientes, seguras y centradas en el usuario, que reduzcan de forma medible el riesgo clínico y administrativo de la organización que las adopta.',
-              color: '#4f46e5', bg: '#eef2ff',
+              color: '#1f6feb', bg: '#e8f1fb',
             },
             {
               icon: <Eye size={26} />, title: 'Visión',
               content: 'Ser el socio tecnológico de referencia en la transformación digital del sector salud en Chile y Latinoamérica, eliminando la fragmentación de la información clínica.',
-              color: '#3b82f6', bg: '#eff6ff',
+              color: '#0f3d7a', bg: '#e8f1fb',
             },
             {
               icon: <Shield size={26} />, title: 'Valores y Principios',
@@ -180,7 +180,7 @@ const Nosotros = () => {
                 { label: 'Trazabilidad íntegra', desc: 'Cada acceso, cambio y decisión estructural queda registrado y puede ser auditado por el cliente.' },
                 { label: 'Ética de datos sensibles', desc: 'Minimización estricta, control de finalidad y gestión del consentimiento sobre la información clínica.' },
               ],
-              color: '#10b981', bg: '#ecfdf5',
+              color: '#12a37f', bg: '#e3f5ee',
             },
           ].map((item, i) => (
             <motion.div
@@ -201,14 +201,14 @@ const Nosotros = () => {
                   {item.items.map(v => (
                     <li key={v.label} style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
                       <span style={{ color: item.color, marginTop: '0.1rem', flexShrink: 0 }}>▸</span>
-                      <span style={{ fontSize: '0.86rem', color: '#475569' }}>
-                        <strong style={{ color: '#0f172a' }}>{v.label}:</strong> {v.desc}
+                      <span style={{ fontSize: '0.86rem', color: '#55657b' }}>
+                        <strong style={{ color: '#0a1a33' }}>{v.label}:</strong> {v.desc}
                       </span>
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.7 }}>{item.content}</p>
+                <p style={{ fontSize: '0.9rem', color: '#55657b', lineHeight: 1.7 }}>{item.content}</p>
               )}
             </motion.div>
           ))}
@@ -219,12 +219,12 @@ const Nosotros = () => {
       <section className="section">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2.5rem' }}>
-            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#4f46e5' }}>
+            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#e8f1fb', color: '#1f6feb' }}>
               <Calendar size={22} />
             </div>
             <div>
               <h2 style={{ fontSize: '1.75rem', fontWeight: 700 }}>Trayectoria y Evolución</h2>
-              <p style={{ color: '#475569', fontSize: '0.9rem', margin: 0 }}>En ocho años, la empresa ha pasado de un equipo fundador enfocado en infraestructura sanitaria a una organización con presencia en dos regiones y proyectos activos en más de quince organizaciones de salud.</p>
+              <p style={{ color: '#55657b', fontSize: '0.9rem', margin: 0 }}>En ocho años, la empresa ha pasado de un equipo fundador enfocado en infraestructura sanitaria a una organización con presencia en dos regiones y proyectos activos en más de quince organizaciones de salud.</p>
             </div>
           </div>
           <div className="timeline">
@@ -239,8 +239,8 @@ const Nosotros = () => {
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                   <span className="pill pill-indigo" style={{ fontSize: '0.8rem', flexShrink: 0 }}>{item.year}</span>
                   <div>
-                    <h4 style={{ fontWeight: 700, marginBottom: '0.25rem', color: '#0f172a' }}>{item.title}</h4>
-                    <p style={{ fontSize: '0.88rem', color: '#475569', lineHeight: 1.6 }}>{item.desc}</p>
+                    <h4 style={{ fontWeight: 700, marginBottom: '0.25rem', color: '#0a1a33' }}>{item.title}</h4>
+                    <p style={{ fontSize: '0.88rem', color: '#55657b', lineHeight: 1.6 }}>{item.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -253,19 +253,19 @@ const Nosotros = () => {
       <section className="section bg-section-alt">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
-            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#4f46e5' }}>
+            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#e8f1fb', color: '#1f6feb' }}>
               <Award size={22} />
             </div>
             <div>
               <h2 style={{ fontSize: '1.75rem', fontWeight: 700 }}>Certificaciones Institucionales Vigentes</h2>
-              <p style={{ color: '#475569', fontSize: '0.9rem', margin: 0 }}>Acreditaciones con alcance corporativo emitidas por organismos internacionales independientes.</p>
+              <p style={{ color: '#55657b', fontSize: '0.9rem', margin: 0 }}>Acreditaciones con alcance corporativo emitidas por organismos internacionales independientes.</p>
             </div>
           </div>
 
           <div style={{ marginTop: '1.5rem', overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.88rem', backgroundColor: '#ffffff', borderRadius: '0.75rem', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)' }}>
               <thead>
-                <tr style={{ backgroundColor: '#f8fafc', borderBottom: '2px solid #e2e8f0', color: '#0f172a' }}>
+                <tr style={{ backgroundColor: '#f3f6fa', borderBottom: '2px solid #d5e1ef', color: '#0a1a33' }}>
                   <th style={{ padding: '0.85rem 1rem', fontWeight: 700 }}>Norma</th>
                   <th style={{ padding: '0.85rem 1rem', fontWeight: 700 }}>Alcance Certificado</th>
                   <th style={{ padding: '0.85rem 1rem', fontWeight: 700 }}>Organismo Certificador</th>
@@ -276,30 +276,30 @@ const Nosotros = () => {
               </thead>
               <tbody>
                 {officialCerts.map((c, idx) => (
-                  <tr key={c.norm} style={{ borderBottom: idx < officialCerts.length - 1 ? '1px solid #f1f5f9' : 'none' }}>
-                    <td style={{ padding: '0.85rem 1rem', fontWeight: 700, color: '#0f172a' }}>
+                  <tr key={c.norm} style={{ borderBottom: idx < officialCerts.length - 1 ? '1px solid #f3f6fa' : 'none' }}>
+                    <td style={{ padding: '0.85rem 1rem', fontWeight: 700, color: '#0a1a33' }}>
                       <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
                         <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: c.color }}></span>
                         {c.norm}
                       </span>
                     </td>
-                    <td style={{ padding: '0.85rem 1rem', color: '#475569' }}>{c.scope}</td>
-                    <td style={{ padding: '0.85rem 1rem', fontWeight: 600, color: '#334155' }}>{c.entity}</td>
-                    <td style={{ padding: '0.85rem 1rem', fontFamily: 'monospace', color: '#4f46e5', fontSize: '0.82rem' }}>{c.certNum}</td>
-                    <td style={{ padding: '0.85rem 1rem', color: '#15803d', fontWeight: 600 }}>{c.validity}</td>
-                    <td style={{ padding: '0.85rem 1rem', fontFamily: 'monospace', color: '#334155', fontSize: '0.78rem' }}>{c.verification}</td>
+                    <td style={{ padding: '0.85rem 1rem', color: '#55657b' }}>{c.scope}</td>
+                    <td style={{ padding: '0.85rem 1rem', fontWeight: 600, color: '#1f2a37' }}>{c.entity}</td>
+                    <td style={{ padding: '0.85rem 1rem', fontFamily: 'monospace', color: '#1f6feb', fontSize: '0.82rem' }}>{c.certNum}</td>
+                    <td style={{ padding: '0.85rem 1rem', color: '#0b7a5e', fontWeight: 600 }}>{c.validity}</td>
+                    <td style={{ padding: '0.85rem 1rem', fontFamily: 'monospace', color: '#1f2a37', fontSize: '0.78rem' }}>{c.verification}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p style={{ fontSize: '0.8rem', color: '#64748b', marginTop: '0.75rem', fontStyle: 'italic' }}>
+          <p style={{ fontSize: '0.8rem', color: '#55657b', marginTop: '0.75rem', fontStyle: 'italic' }}>
             Todas las certificaciones cuentan con ciclos regulares de renovación y vigencia continua entre 2027 y 2028. Cada certificado puede verificarse ante su organismo emisor con el código indicado.
           </p>
 
           {/* Alianzas Tecnológicas Oficiales */}
           <div style={{ marginTop: '2.5rem' }}>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: '#0f172a' }}>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: '#0a1a33' }}>
               Alianzas Tecnológicas
             </h3>
             <div className="grid grid-cols-1 nosotros-grid-2 gap-6">
@@ -310,7 +310,7 @@ const Nosotros = () => {
                     <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: `${a.color}15`, color: a.text, borderColor: `${a.color}30` }}>{a.badge}</span>
                   </div>
                   <p style={{ fontSize: '0.78rem', color: a.text, fontWeight: 600, marginBottom: '0.5rem' }}>{a.role}</p>
-                  <p style={{ fontSize: '0.85rem', color: '#475569', lineHeight: 1.6, margin: 0 }}>{a.desc}</p>
+                  <p style={{ fontSize: '0.85rem', color: '#55657b', lineHeight: 1.6, margin: 0 }}>{a.desc}</p>
                 </div>
               ))}
             </div>
@@ -325,18 +325,18 @@ const Nosotros = () => {
             <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.5rem' }}>
               Modelo de Gobierno Interno
             </h2>
-            <p style={{ color: '#475569', maxWidth: '650px', margin: '0 auto', fontSize: '0.92rem' }}>
+            <p style={{ color: '#55657b', maxWidth: '650px', margin: '0 auto', fontSize: '0.92rem' }}>
               Dependencia directa de la Dirección Ejecutiva con responsables y comités independientes para asegurar que ninguna unidad se controle a sí misma.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="card-premium" style={{ borderTop: '3px solid #3b82f6' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#3b82f6' }}>
+            <div className="card-premium" style={{ borderTop: '3px solid #0f3d7a' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#0f3d7a' }}>
                 <CheckCircle2 size={22} />
-                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0, color: '#0f172a' }}>Gobierno de Calidad</h3>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0, color: '#0a1a33' }}>Gobierno de Calidad</h3>
               </div>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#475569' }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#55657b' }}>
                 <li><strong>Política:</strong> ISO 9001:2015.</li>
                 <li><strong>Responsable:</strong> Dirección de Operaciones (revisión semestral).</li>
                 <li><strong>Estándares:</strong> Calidad de producto ISO/IEC 25010 y pruebas bajo ISO/IEC/IEEE 29119.</li>
@@ -344,12 +344,12 @@ const Nosotros = () => {
               </ul>
             </div>
 
-            <div className="card-premium" style={{ borderTop: '3px solid #4f46e5' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#4f46e5' }}>
+            <div className="card-premium" style={{ borderTop: '3px solid #1f6feb' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#1f6feb' }}>
                 <Lock size={22} />
-                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0, color: '#0f172a' }}>Seguridad de la Información</h3>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0, color: '#0a1a33' }}>Seguridad de la Información</h3>
               </div>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#475569' }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#55657b' }}>
                 <li><strong>Políticas:</strong> ISO/IEC 27001:2022 y privacidad ISO/IEC 27701:2019.</li>
                 <li><strong>Responsable:</strong> Oficial de Seguridad (CISO), reporta a Dirección de Tecnología.</li>
                 <li><strong>Instancia:</strong> Comité de Seguridad mensual con informe formal a la contraparte del cliente.</li>
@@ -357,12 +357,12 @@ const Nosotros = () => {
               </ul>
             </div>
 
-            <div className="card-premium" style={{ borderTop: '3px solid #10b981' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#10b981' }}>
+            <div className="card-premium" style={{ borderTop: '3px solid #12a37f' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: '#12a37f' }}>
                 <BookOpen size={22} />
-                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0, color: '#0f172a' }}>Conocimiento y Continuidad</h3>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0, color: '#0a1a33' }}>Conocimiento y Continuidad</h3>
               </div>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#475569' }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.85rem', color: '#55657b' }}>
                 <li><strong>Continuidad:</strong> ISO 22301:2019 de continuidad del negocio.</li>
                 <li><strong>Responsable:</strong> Dirección y gestión de proyectos, con el Comité de Arquitectura como instancia de revisión.</li>
                 <li><strong>Principio:</strong> El conocimiento es un activo del cliente (código, infraestructura como código y documentación transferibles sin dependencia de proveedor).</li>
@@ -378,15 +378,15 @@ const Nosotros = () => {
       <section className="section bg-section-alt">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
-            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#4f46e5' }}>
+            <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#e8f1fb', color: '#1f6feb' }}>
               <Globe size={22} />
             </div>
             <div>
               <h2 style={{ fontSize: '1.75rem', fontWeight: 700 }}>Presencia Geográfica y Operativa</h2>
-              <p style={{ color: '#475569', fontSize: '0.9rem', margin: 0 }}>Tres emplazamientos con funciones claramente delimitadas para asegurar cobertura y soporte continuo.</p>
+              <p style={{ color: '#55657b', fontSize: '0.9rem', margin: 0 }}>Tres emplazamientos con funciones claramente delimitadas para asegurar cobertura y soporte continuo.</p>
             </div>
           </div>
-          <p style={{ color: '#475569', marginBottom: '2rem', marginTop: '0.5rem' }}>
+          <p style={{ color: '#55657b', marginBottom: '2rem', marginTop: '0.5rem' }}>
             La compañía opera desde tres emplazamientos para asegurar soporte directo en terreno y vigilancia ininterrumpida los 365 días del año.
           </p>
           <div className="grid grid-cols-1 nosotros-grid-3 gap-4">
@@ -398,13 +398,13 @@ const Nosotros = () => {
                 whileHover={{ y: -4 }}
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
               >
-                <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#eef2ff', color: '#4f46e5', flexShrink: 0 }}>
+                <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: '#e8f1fb', color: '#1f6feb', flexShrink: 0 }}>
                   {o.icon}
                 </div>
                 <div>
                   <h4 style={{ fontWeight: 700, marginBottom: '0.2rem', fontSize: '0.95rem' }}>{o.name}</h4>
-                  <p style={{ fontSize: '0.78rem', color: '#4f46e5', fontWeight: 600, marginBottom: '0.35rem' }}>{o.address}</p>
-                  <p style={{ fontSize: '0.85rem', color: '#475569', lineHeight: 1.5 }}>{o.desc}</p>
+                  <p style={{ fontSize: '0.78rem', color: '#1f6feb', fontWeight: 600, marginBottom: '0.35rem' }}>{o.address}</p>
+                  <p style={{ fontSize: '0.85rem', color: '#55657b', lineHeight: 1.5 }}>{o.desc}</p>
                 </div>
               </motion.div>
             ))}

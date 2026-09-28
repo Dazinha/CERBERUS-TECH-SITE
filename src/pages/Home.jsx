@@ -5,108 +5,124 @@ import { ArrowRight, Award, Zap, HeartPulse, RefreshCw, Network, FileText } from
 const Home = () => {
   return (
     <div className="w-full">
-      {/* Hero Section */}
-      <section
-        style={{
-          minHeight: '92vh',
-          position: 'relative',
-          overflow: 'hidden',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-          background: 'linear-gradient(160deg, #ffffff 0%, #f0f4ff 50%, #e8ecff 100%)',
-          padding: '4rem 1rem',
-        }}
-      >
-        {/* Fondo sutil con logo — decorativo */}
-        <div aria-hidden="true" role="presentation" style={{
-          position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-          width: '150%', height: '150%',
-          backgroundImage: 'url(/logoblanco.jpg)',
-          backgroundSize: 'max(600px, 62vw)', /* Tamaño del logo aumentado */
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center calc(50% + 30px)',
-          zIndex: 0, opacity: 0.06,
-          borderRadius: '8px',
-        }}></div>
+      {/* Hero — estilo portada de la plantilla: azul noche, patrón hexagonal, franja cian e ilustración Cerberus */}
+      <section className="home-hero">
+        <div className="container home-hero-grid">
+          <div>
+            <motion.p
+              className="home-hero-kicker"
+              initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}
+            >
+              <Zap size={14} aria-hidden="true" /> Plataformas de misión crítica para salud
+            </motion.p>
 
-        {/* Glow acentuado — decorativo */}
-        <div aria-hidden="true" style={{
-          position: 'absolute', top: '30%', left: '50%', transform: 'translate(-50%, -50%)',
-          width: '700px', height: '700px',
-          background: 'radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%)',
-          zIndex: 0,
-        }}></div>
+            <motion.h1
+              className="home-hero-title"
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              Construimos y operamos:{' '}
+              <span className="home-hero-accent">no entregamos y nos vamos.</span>
+            </motion.h1>
 
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          {/* Badge top */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            style={{ marginBottom: '1.5rem' }}
-          >
-            <span className="pill pill-indigo" style={{ fontSize: '0.75rem', padding: '0.4rem 1rem' }}>
-              <Zap size={12} /> Plataformas de Misión Crítica para Salud
-            </span>
-          </motion.div>
+            <motion.p
+              className="home-hero-lead"
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              Ocho años diseñando, construyendo y operando plataformas donde la tecnología no puede fallar. Especialistas en salud, desde la ficha clínica hasta el SOC 24/7.
+            </motion.p>
 
-          <motion.h1
-            style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 800, color: '#0f172a', maxWidth: '860px', margin: '0 auto 1.5rem', lineHeight: 1.1 }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            Construimos y operamos:{' '}
-            <span className="text-gradient" style={{ fontSize: '0.75em' }}>no entregamos y nos vamos.</span>
-          </motion.h1>
+            <motion.div
+              className="flex gap-4 flex-wrap"
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.35 }}
+            >
+              <Link to="/capacidades" className="btn btn-primary gap-2" style={{ padding: '0.8rem 2rem', fontSize: '1rem' }}>
+                Nuestras Soluciones <ArrowRight size={18} />
+              </Link>
+              <Link to="/casos-exito" className="btn home-hero-secondary" style={{ padding: '0.8rem 2rem', fontSize: '1rem' }}>
+                Casos de Éxito
+              </Link>
+            </motion.div>
+          </div>
 
-          <motion.p
-            style={{ fontSize: '1.15rem', color: '#475569', maxWidth: '620px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Ocho años diseñando, construyendo y operando plataformas donde la tecnología no puede fallar. Especialistas en salud, desde la ficha clínica hasta el SOC 24/7.
-          </motion.p>
+          <motion.img
+            src="/brand/cerberus-hero.jpg"
+            alt=""
+            className="home-hero-art"
+            initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }}
+          />
+        </div>
 
-          <motion.div
-            className="flex gap-4 justify-center flex-wrap"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-          >
-            <Link to="/capacidades" className="btn btn-primary gap-2" style={{ padding: '0.8rem 2rem', fontSize: '1rem' }}>
-              Nuestras Soluciones <ArrowRight size={18} />
-            </Link>
-            <Link to="/casos-exito" className="btn btn-secondary" style={{ padding: '0.8rem 2rem', fontSize: '1rem' }}>
-              Casos de Éxito
-            </Link>
-          </motion.div>
-
-          {/* Mini-stats únicos: negocio/contratos, no los que ya están en Equipo o CasosExito */}
-          <motion.div
-            className="flex gap-8 justify-center flex-wrap"
-            style={{ marginTop: '4rem' }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
+        {/* Cifras clave */}
+        <div className="container">
+          <dl className="home-hero-stats">
             {[
               ['8+', 'Años de operación continua'],
               ['3', 'Proyectos acreditados (5 años)'],
               ['98', 'Profesionales en dotación'],
               ['24/7/365', 'NOC y SOC propios'],
             ].map(([num, label]) => (
-              <div key={label} style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#4f46e5', fontFamily: 'Outfit, sans-serif' }}>{num}</div>
-                <div style={{ fontSize: '0.78rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '0.2rem' }}>{label}</div>
+              <div key={label}>
+                <dt>{label}</dt>
+                <dd>{num}</dd>
               </div>
             ))}
-          </motion.div>
+          </dl>
         </div>
+
+        <style>{`
+          .home-hero {
+            position: relative;
+            overflow: hidden;
+            background: var(--hex-pattern), radial-gradient(ellipse at 75% 40%, #12427f 0%, transparent 60%), linear-gradient(160deg, #0f3d7a 0%, #0a1a33 100%);
+            border-left: 10px solid var(--brand-cyan);
+            border-bottom: 4px solid var(--brand-cyan);
+            color: #ffffff;
+            padding: 4.5rem 0 2.5rem;
+          }
+          .home-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
+          }
+          @media (min-width: 1024px) {
+            .home-hero-grid { grid-template-columns: 1.1fr 1fr; }
+          }
+          .home-hero-kicker {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+            color: var(--brand-cyan);
+            border-left: 3px solid var(--brand-cyan);
+            padding-left: 0.75rem;
+            margin-bottom: 1.5rem;
+          }
+          .home-hero-title {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-weight: 800;
+            line-height: 1.1;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+          }
+          .home-hero-accent { display: block; color: var(--brand-cyan); font-size: 0.72em; margin-top: 0.4rem; }
+          .home-hero-lead { font-size: 1.1rem; color: var(--tint); max-width: 560px; line-height: 1.7; margin-bottom: 2.25rem; }
+          .home-hero-secondary { color: #ffffff; border: 1px solid rgba(232,241,251,0.6); background: transparent; }
+          .home-hero-secondary:hover { color: #0a1a33; background: #ffffff; }
+          .home-hero-art {
+            width: 100%; max-width: 560px; justify-self: center;
+            border-radius: 12px;
+            -webkit-mask-image: radial-gradient(ellipse at center, #000 58%, transparent 78%);
+            mask-image: radial-gradient(ellipse at center, #000 58%, transparent 78%);
+          }
+          .home-hero-stats {
+            display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem;
+            margin: 3rem 0 0; padding-top: 1.75rem;
+            border-top: 1px solid rgba(34,195,230,0.3);
+          }
+          @media (min-width: 768px) { .home-hero-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+          .home-hero-stats div { display: flex; flex-direction: column-reverse; justify-content: flex-end; }
+          .home-hero-stats dd { margin: 0; font-size: 1.9rem; font-weight: 800; color: #ffffff; }
+          .home-hero-stats dt { font-size: 0.75rem; color: var(--tint); text-transform: uppercase; letter-spacing: 0.06em; }
+        `}</style>
       </section>
 
       {/* Diferenciadores — por qué elegir Cerberus (no los valores filosóficos, que están en Nosotros) */}
@@ -114,7 +130,7 @@ const Home = () => {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <h2 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.75rem' }}>¿Por qué Cerberus Tech?</h2>
-            <p style={{ color: '#475569', maxWidth: '560px', margin: '0 auto' }}>
+            <p style={{ color: '#55657b', maxWidth: '560px', margin: '0 auto' }}>
               Cuatro diferencias estructurales que separan una empresa de software genérica de un socio especializado en salud crítica.
             </p>
           </div>
@@ -125,32 +141,32 @@ const Home = () => {
                 title: 'Solo salud. Sin excepciones.',
                 desc: 'No somos una consultora genérica con una práctica de salud. Cada proyecto, cada certificación y cada metodología está orientada exclusivamente al sector sanitario.',
                 tag: 'Especialización Vertical',
-                color: '#4f46e5',
-                pillText: '#4338ca',
+                color: '#1f6feb',
+                pillText: '#0f3d7a',
               },
               {
                 icon: <RefreshCw size={30} />,
                 title: 'Operamos lo que construimos.',
                 desc: 'No entregamos el software y nos retiramos. Asumimos la operación gestionada bajo SLA contractuales verificables, con NOC y SOC propios 24/7/365.',
                 tag: 'Responsabilidad Total',
-                color: '#3b82f6',
-                pillText: '#1d4ed8',
+                color: '#0f3d7a',
+                pillText: '#0f3d7a',
               },
               {
                 icon: <Network size={30} />,
                 title: 'Arquitectura híbrida nativa.',
                 desc: 'Nuestras plataformas operan de forma autónoma aunque caiga la conectividad. Los nodos de borde garantizan atención continua en zonas rurales o durante cortes.',
                 tag: 'Resiliencia Territorial',
-                color: '#10b981',
-                pillText: '#047857',
+                color: '#12a37f',
+                pillText: '#0b7a5e',
               },
               {
                 icon: <FileText size={30} />,
                 title: 'El dato es del cliente, siempre.',
                 desc: 'Código fuente, infraestructura como código y documentación de arquitectura son transferibles al cliente en cualquier momento, sin dependencias de proveedor.',
                 tag: 'Sin Lock-in',
-                color: '#f59e0b',
-                pillText: '#b45309',
+                color: '#f4a524',
+                pillText: '#9a5b00',
               },
             ].map((item, i) => (
               <motion.div
@@ -170,7 +186,7 @@ const Home = () => {
                       <h3 style={{ fontSize: '1rem', fontWeight: 700, margin: 0 }}>{item.title}</h3>
                       <span className="pill" style={{ fontSize: '0.7rem', padding: '0.15rem 0.6rem', color: item.pillText, backgroundColor: `${item.color}15`, borderColor: `${item.color}40` }}>{item.tag}</span>
                     </div>
-                    <p style={{ fontSize: '0.88rem', color: '#475569', margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
+                    <p style={{ fontSize: '0.88rem', color: '#55657b', margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -180,14 +196,14 @@ const Home = () => {
       </section>
 
       {/* CTA hacia Casos de Éxito */}
-      <section style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)', padding: '4rem 0' }}>
+      <section style={{ background: 'var(--hex-pattern), linear-gradient(90deg, #0a1a33 0%, #0f3d7a 100%)', borderTop: '4px solid #22c3e6', padding: '4rem 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
-            <p style={{ fontSize: '0.8rem', color: '#818cf8', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1rem' }}>
+            <p style={{ fontSize: '0.8rem', color: '#22c3e6', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1rem' }}>
               <Award size={12} style={{ display: 'inline', marginRight: '0.35rem' }} />
               Resultados verificables con referencias de contacto directo
             </p>
-            <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, color: '#f1f5f9', marginBottom: '1rem' }}>
+            <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, color: '#f3f6fa', marginBottom: '1rem' }}>
               Tres proyectos acreditados en los últimos 5 años
             </h2>
             <p style={{ color: '#94a3b8', maxWidth: '580px', margin: '0 auto 2rem', fontSize: '0.95rem', lineHeight: 1.6 }}>

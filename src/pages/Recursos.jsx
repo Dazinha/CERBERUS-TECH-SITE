@@ -64,13 +64,13 @@ const Recursos = () => {
             <span className="badge badge-indigo">Recursos Técnicos</span>
           </motion.div>
           <motion.h1
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0f172a' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0a1a33' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
           >
             Centro de <span className="text-gradient">Recursos Técnicos</span>
           </motion.h1>
           <motion.p
-            style={{ fontSize: '1.05rem', color: '#475569', maxWidth: '560px', margin: '0 auto' }}
+            style={{ fontSize: '1.05rem', color: '#55657b', maxWidth: '560px', margin: '0 auto' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
             Disponibilidad en tiempo real, calculadora de retorno para consultas médicas y material educativo del ecosistema de salud digital.
@@ -83,10 +83,10 @@ const Recursos = () => {
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.75rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span aria-hidden="true" style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', backgroundColor: site.status === 'down' ? '#f59e0b' : '#22c55e', boxShadow: '0 0 0 3px rgba(34,197,94,0.3)', animation: 'pulse-dot 2s infinite' }}></span>
-              <h2 id="metrics-heading" style={{ color: '#f1f5f9', fontWeight: 700, fontSize: '1rem', margin: 0 }}>Disponibilidad y Desempeño</h2>
+              <span aria-hidden="true" style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', backgroundColor: site.status === 'down' ? '#f4a524' : '#22c55e', boxShadow: '0 0 0 3px rgba(34,197,94,0.3)', animation: 'pulse-dot 2s infinite' }}></span>
+              <h2 id="metrics-heading" style={{ color: '#f3f6fa', fontWeight: 700, fontSize: '1rem', margin: 0 }}>Disponibilidad y Desempeño</h2>
             </div>
-            <span style={{ fontSize: '0.75rem', color: '#cbd5e1' }}>
+            <span style={{ fontSize: '0.75rem', color: '#d5e1ef' }}>
               <Clock size={12} aria-hidden="true" style={{ display: 'inline', marginRight: '0.25rem' }} />
               {site.checkedAt ? `Última verificación: ${site.checkedAt.toLocaleTimeString('es-CL')} · cada 30 s` : 'Verificando…'}
             </span>
@@ -95,14 +95,14 @@ const Recursos = () => {
             <div role="status" aria-live="polite" aria-atomic="true" style={{ textAlign: 'center', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '0.75rem', border: '1px solid rgba(255,255,255,0.08)' }}>
               <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '0.35rem' }}>
                 {site.status === 'down'
-                  ? <AlertCircle size={14} aria-hidden="true" style={{ color: '#f59e0b' }} />
+                  ? <AlertCircle size={14} aria-hidden="true" style={{ color: '#f4a524' }} />
                   : <CheckCircle2 size={14} aria-hidden="true" style={{ color: '#22c55e' }} />}
               </div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#f1f5f9', fontFamily: 'Outfit, sans-serif', lineHeight: 1 }}>
+              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#f3f6fa', fontFamily: 'Poppins, sans-serif', lineHeight: 1 }}>
                 {site.status === 'checking' ? '…' : site.status === 'up' ? `${site.latency} ms` : 'Sin respuesta'}
               </div>
-              <div style={{ fontSize: '0.72rem', color: '#f1f5f9', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 700 }}>Sitio corporativo</div>
-              <div style={{ fontSize: '0.7rem', color: '#cbd5e1', marginTop: '0.15rem' }}>
+              <div style={{ fontSize: '0.72rem', color: '#f3f6fa', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 700 }}>Sitio corporativo</div>
+              <div style={{ fontSize: '0.7rem', color: '#d5e1ef', marginTop: '0.15rem' }}>
                 En vivo{sessionUptime ? ` · ${sessionUptime} % de respuestas OK en esta visita` : ''}
               </div>
             </div>
@@ -111,13 +111,13 @@ const Recursos = () => {
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '0.35rem' }}>
                   <CheckCircle2 size={14} aria-hidden="true" style={{ color: '#22c55e' }} />
                 </div>
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#f1f5f9', fontFamily: 'Outfit, sans-serif', lineHeight: 1 }}>{m.value}</div>
-                <div style={{ fontSize: '0.72rem', color: '#f1f5f9', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 700 }}>{m.label}</div>
-                <div style={{ fontSize: '0.7rem', color: '#cbd5e1', marginTop: '0.15rem' }}>{m.sub}</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#f3f6fa', fontFamily: 'Poppins, sans-serif', lineHeight: 1 }}>{m.value}</div>
+                <div style={{ fontSize: '0.72rem', color: '#f3f6fa', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.04em', fontWeight: 700 }}>{m.label}</div>
+                <div style={{ fontSize: '0.7rem', color: '#d5e1ef', marginTop: '0.15rem' }}>{m.sub}</div>
               </div>
             ))}
           </div>
-          <p style={{ fontSize: '0.75rem', color: '#cbd5e1', marginTop: '1rem', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.75rem', color: '#d5e1ef', marginTop: '1rem', textAlign: 'center' }}>
             El estado del sitio se mide en vivo desde su navegador. Los indicadores de plataformas corresponden a los niveles de servicio medidos y comprometidos en cada contrato; el detalle mensual se entrega al cliente en el Comité de Seguridad.
           </p>
         </div>
@@ -128,11 +128,11 @@ const Recursos = () => {
         <div className="container">
           <div className="card-premium" style={{ maxWidth: '920px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-              <div aria-hidden="true" style={{ padding: '0.75rem', backgroundColor: '#eef2ff', color: '#4f46e5', borderRadius: '0.75rem', display: 'inline-flex', marginBottom: '1rem' }}>
+              <div aria-hidden="true" style={{ padding: '0.75rem', backgroundColor: '#e8f1fb', color: '#1f6feb', borderRadius: '0.75rem', display: 'inline-flex', marginBottom: '1rem' }}>
                 <Calculator size={32} />
               </div>
               <h2 id="roi-heading" style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>Calculadora de Retorno: Ausentismo en Consultas Médicas</h2>
-              <p style={{ color: '#475569', fontSize: '0.9rem', maxWidth: '600px', margin: '0 auto' }}>
+              <p style={{ color: '#55657b', fontSize: '0.9rem', maxWidth: '600px', margin: '0 auto' }}>
                 Estime cuántas consultas agendadas recupera su red al automatizar la confirmación y el recordatorio de horas, y el ingreso asociado. Ingrese los datos de su institución.
               </p>
             </div>
@@ -146,7 +146,7 @@ const Recursos = () => {
                   { id: 'valor', label: 'Valor promedio de la consulta (CLP)', value: valorConsulta, set: setValorConsulta, min: 5000, max: 150000, step: 1000, suffix: '' },
                 ].map(f => (
                   <div key={f.id}>
-                    <label htmlFor={`roi-${f.id}`} style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: '#0f172a', marginBottom: '0.4rem' }}>{f.label}</label>
+                    <label htmlFor={`roi-${f.id}`} style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: '#0a1a33', marginBottom: '0.4rem' }}>{f.label}</label>
                     <input
                       id={`roi-${f.id}`}
                       type="number"
@@ -157,29 +157,29 @@ const Recursos = () => {
                         const v = Number(e.target.value);
                         if (!Number.isNaN(v)) f.set(Math.min(f.max, Math.max(0, v)));
                       }}
-                      style={{ width: '100%', minHeight: '44px', padding: '0.6rem 0.8rem', border: '1px solid #94a3b8', borderRadius: '0.5rem', fontSize: '1rem', color: '#0f172a', background: '#ffffff' }}
+                      style={{ width: '100%', minHeight: '44px', padding: '0.6rem 0.8rem', border: '1px solid #94a3b8', borderRadius: '0.5rem', fontSize: '1rem', color: '#0a1a33', background: '#ffffff' }}
                     />
                   </div>
                 ))}
-                <p style={{ fontSize: '0.78rem', color: '#475569', lineHeight: 1.5, margin: 0 }}>
+                <p style={{ fontSize: '0.78rem', color: '#55657b', lineHeight: 1.5, margin: 0 }}>
                   Los valores iniciales son de ejemplo. La reducción de 45 % es la obtenida en Clínica Ambulatoria Ribera Norte; el valor de la consulta es referencial: ajústelo a su arancel.
                 </p>
               </div>
 
-              <div aria-live="polite" style={{ padding: '1.75rem', borderRadius: '1rem', background: 'linear-gradient(135deg, #eef2ff, #e0e7ff)', border: '1px solid #c7d2fe', display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
+              <div aria-live="polite" style={{ padding: '1.75rem', borderRadius: '1rem', background: 'linear-gradient(135deg, #e8f1fb, #d5e1ef)', border: '1px solid #b9d3f2', display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
                 <div>
-                  <p style={{ fontSize: '0.78rem', color: '#4338ca', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>Consultas recuperadas al mes</p>
-                  <p style={{ fontSize: '2.25rem', fontWeight: 800, color: '#0f172a', fontFamily: 'Outfit, sans-serif', lineHeight: 1.1, margin: 0 }}>{Math.round(recuperadas).toLocaleString('es-CL')}</p>
-                  <p style={{ fontSize: '0.8rem', color: '#475569', margin: 0 }}>de {Math.round(perdidasActual).toLocaleString('es-CL')} horas perdidas hoy por inasistencia</p>
+                  <p style={{ fontSize: '0.78rem', color: '#0f3d7a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>Consultas recuperadas al mes</p>
+                  <p style={{ fontSize: '2.25rem', fontWeight: 800, color: '#0a1a33', fontFamily: 'Poppins, sans-serif', lineHeight: 1.1, margin: 0 }}>{Math.round(recuperadas).toLocaleString('es-CL')}</p>
+                  <p style={{ fontSize: '0.8rem', color: '#55657b', margin: 0 }}>de {Math.round(perdidasActual).toLocaleString('es-CL')} horas perdidas hoy por inasistencia</p>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.78rem', color: '#4338ca', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>Ausentismo resultante</p>
-                  <p style={{ fontSize: '1.5rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>{ausentismoNuevo.toFixed(1).replace('.', ',')} %</p>
+                  <p style={{ fontSize: '0.78rem', color: '#0f3d7a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>Ausentismo resultante</p>
+                  <p style={{ fontSize: '1.5rem', fontWeight: 800, color: '#0a1a33', margin: 0 }}>{ausentismoNuevo.toFixed(1).replace('.', ',')} %</p>
                 </div>
-                <div style={{ borderTop: '1px solid #c7d2fe', paddingTop: '1rem' }}>
-                  <p style={{ fontSize: '0.78rem', color: '#4338ca', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>Ingreso recuperado estimado</p>
-                  <p style={{ fontSize: '1.5rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>{formatCLP(ingresoMensual)} <span style={{ fontSize: '0.85rem', fontWeight: 500, color: '#475569' }}>CLP / mes</span></p>
-                  <p style={{ fontSize: '1.05rem', fontWeight: 700, color: '#0f172a', margin: 0 }}>{formatCLP(ingresoMensual * 12)} <span style={{ fontSize: '0.8rem', fontWeight: 500, color: '#475569' }}>CLP / año</span></p>
+                <div style={{ borderTop: '1px solid #b9d3f2', paddingTop: '1rem' }}>
+                  <p style={{ fontSize: '0.78rem', color: '#0f3d7a', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>Ingreso recuperado estimado</p>
+                  <p style={{ fontSize: '1.5rem', fontWeight: 800, color: '#0a1a33', margin: 0 }}>{formatCLP(ingresoMensual)} <span style={{ fontSize: '0.85rem', fontWeight: 500, color: '#55657b' }}>CLP / mes</span></p>
+                  <p style={{ fontSize: '1.05rem', fontWeight: 700, color: '#0a1a33', margin: 0 }}>{formatCLP(ingresoMensual * 12)} <span style={{ fontSize: '0.8rem', fontWeight: 500, color: '#55657b' }}>CLP / año</span></p>
                 </div>
               </div>
             </div>
@@ -191,10 +191,10 @@ const Recursos = () => {
       <section className="section">
         <div className="container">
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem', justifyContent: 'center', textAlign: 'center' }}>
-            <BookOpen size={20} style={{ color: '#4f46e5' }} />
+            <BookOpen size={20} style={{ color: '#1f6feb' }} />
             Material Educativo y Seminarios
           </h2>
-          <p style={{ textAlign: 'center', color: '#64748b', marginBottom: '2.5rem', fontSize: '0.9rem' }}>
+          <p style={{ textAlign: 'center', color: '#55657b', marginBottom: '2.5rem', fontSize: '0.9rem' }}>
             Recursos públicos de organismos reconocidos del ecosistema de salud digital.
           </p>
           <div className="grid grid-cols-1 rec-grid-3 gap-6">
@@ -208,7 +208,7 @@ const Recursos = () => {
                 desc: 'Curso gratuito oficial de la Organización Panamericana de la Salud. Cubre los fundamentos del estándar HL7 FHIR R4 y su integración en redes asistenciales.',
                 href: 'https://campus.paho.org/',
                 action: 'Acceder al Curso',
-                color: '#4f46e5', textColor: '#4338ca',
+                color: '#1f6feb', textColor: '#0f3d7a',
               },
               {
                 type: 'Guía Técnica',
@@ -219,7 +219,7 @@ const Recursos = () => {
                 desc: 'Guías técnicas de lectura y aplicación práctica del estándar HL7 FHIR, publicadas por la representación chilena oficial de HL7 International.',
                 href: 'https://hl7chile.cl/',
                 action: 'Ver Recursos',
-                color: '#10b981', textColor: '#047857',
+                color: '#12a37f', textColor: '#0b7a5e',
               },
               {
                 type: 'Programa Académico',
@@ -230,7 +230,7 @@ const Recursos = () => {
                 desc: 'Programa de formación especializada en sistemas de información clínica, estándares HL7 FHIR y gobierno de datos en el sector sanitario chileno.',
                 href: 'https://cens.cl/',
                 action: 'Ver Programas',
-                color: '#f59e0b', textColor: '#92400e',
+                color: '#f4a524', textColor: '#9a5b00',
               },
             ].map((r, i) => (
               <motion.div
@@ -250,8 +250,8 @@ const Recursos = () => {
                 </div>
                 <span className={`badge ${r.typeClass}`} style={{ marginBottom: '0.5rem' }}>{r.type}</span>
                 <h4 style={{ fontWeight: 700, marginBottom: '0.25rem', fontSize: '0.92rem' }}>{r.title}</h4>
-                <p style={{ fontSize: '0.72rem', color: '#4338ca', fontWeight: 600, marginBottom: '0.5rem' }}>{r.org}</p>
-                <p style={{ fontSize: '0.84rem', color: '#475569', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.25rem' }}>{r.desc}</p>
+                <p style={{ fontSize: '0.72rem', color: '#0f3d7a', fontWeight: 600, marginBottom: '0.5rem' }}>{r.org}</p>
+                <p style={{ fontSize: '0.84rem', color: '#55657b', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.25rem' }}>{r.desc}</p>
                 <a
                   href={r.href}
                   target="_blank"
