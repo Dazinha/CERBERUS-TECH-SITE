@@ -7,14 +7,14 @@ const Capacidades = () => {
       icon: <ShieldCheck size={30} />,
       title: 'Plataformas Clínicas e Identidad del Paciente',
       desc: 'Comprende el registro clínico electrónico, el índice maestro de pacientes, el agendamiento y la gestión de la demanda ambulatoria. Resuelve el problema de la ficha única y del reconocimiento inequívoco a lo largo de una red multisede.',
-      color: '#1f6feb', pillText: '#0f3d7a', bg: '#e8f1fb',
+      color: '#6b2f73', pillText: '#2c1330', bg: '#f3ecf4',
       tags: ['Registro Clínico', 'Índice Maestro', 'Agendamiento'],
     },
     {
       icon: <Database size={30} />,
       title: 'Interoperabilidad e Ingeniería de Datos',
       desc: 'Abarca la integración entre sistemas bajo los estándares HL7 v2.x y HL7 FHIR R4, motores de mensajería clínica, gestión de terminologías clínicas como SNOMED CT y LOINC, migración y saneamiento de datos históricos, y la separación de las cargas transaccionales respecto de las analíticas.',
-      color: '#0f3d7a', pillText: '#0f3d7a', bg: '#e8f1fb',
+      color: '#2c1330', pillText: '#2c1330', bg: '#f3ecf4',
       tags: ['HL7 FHIR R4', 'SNOMED CT', 'LOINC', 'Migración y Saneamiento'],
     },
     {
@@ -53,10 +53,10 @@ const Capacidades = () => {
   ];
 
   const methodologies = [
-    { title: 'DevSecOps', desc: 'Integración continua de seguridad en todo el ciclo de vida del desarrollo: análisis estático, dinámico, de composición y gestión de secretos.', color: '#1f6feb' },
-    { title: 'Scrum & SAFe', desc: 'Agilidad escalada para entregar valor de forma iterativa y predecible en proyectos corporativos.', color: '#0f3d7a' },
+    { title: 'DevSecOps', desc: 'Integración continua de seguridad en todo el ciclo de vida del desarrollo: análisis estático, dinámico, de composición y gestión de secretos.', color: '#6b2f73' },
+    { title: 'Scrum & SAFe', desc: 'Agilidad escalada para entregar valor de forma iterativa y predecible en proyectos corporativos.', color: '#2c1330' },
     { title: 'ITIL 4', desc: 'Gestión de servicios de TI alineada a las mejores prácticas globales para operaciones eficientes.', color: '#0b7a5e' },
-    { title: 'CMMI-DEV Nivel 3 · ISO 9001:2015', desc: 'Procesos de desarrollo y de calidad certificados por ISACA (CMMI Institute, APP-49283) y AENOR (ER-0345/2023).', color: '#0f3d7a' },
+    { title: 'CMMI-DEV Nivel 3 · ISO 9001:2015', desc: 'Procesos de desarrollo y de calidad certificados por ISACA (CMMI Institute, APP-49283) y AENOR (ER-0345/2023).', color: '#2c1330' },
   ];
 
   const infraItems = [
@@ -74,13 +74,13 @@ const Capacidades = () => {
             <span className="badge badge-indigo">Líneas de Negocio</span>
           </motion.div>
           <motion.h1
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0a1a33' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0b0a0c' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
           >
             Capacidades <span className="text-gradient">Técnicas</span>
           </motion.h1>
           <motion.p
-            style={{ fontSize: '1.05rem', color: '#55657b', maxWidth: '560px', margin: '0 auto' }}
+            style={{ fontSize: '1.05rem', color: '#5e5660', maxWidth: '560px', margin: '0 auto' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
             Las 4 líneas de negocio fundamentales que concurren en el alcance de nuestros proyectos.
@@ -107,7 +107,7 @@ const Capacidades = () => {
                   </div>
                   <h3 style={{ fontWeight: 700, fontSize: '1rem', lineHeight: 1.4, paddingTop: '0.5rem' }}>{line.title}</h3>
                 </div>
-                <p style={{ fontSize: '0.88rem', color: '#55657b', lineHeight: 1.7, marginBottom: '1rem' }}>{line.desc}</p>
+                <p style={{ fontSize: '0.88rem', color: '#5e5660', lineHeight: 1.7, marginBottom: '1rem' }}>{line.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {line.tags.map(tag => (
                     <span key={tag} className="pill" style={{ fontSize: '0.72rem', color: line.pillText, backgroundColor: line.bg, borderColor: `${line.color}40` }}>{tag}</span>
@@ -123,13 +123,13 @@ const Capacidades = () => {
       <section className="section bg-section-alt">
         <div className="container">
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <Code2 size={20} style={{ color: '#1f6feb' }} />
+            <Code2 size={20} style={{ color: '#6b2f73' }} />
             Conjunto Tecnológico Dominado
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {Object.entries(techStack).map(([category, { pills, color }]) => (
               <div key={category}>
-                <p style={{ fontSize: '0.75rem', fontWeight: 700, color: '#55657b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>{category}</p>
+                <p style={{ fontSize: '0.75rem', fontWeight: 700, color: '#5e5660', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>{category}</p>
                 <div className="flex flex-wrap gap-2">
                   {pills.map(p => (
                     <span key={p} className={`pill pill-${color}`}>{p}</span>
@@ -147,12 +147,12 @@ const Capacidades = () => {
           <div className="grid grid-cols-1 cap-grid-2 gap-12">
             <div>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.75rem' }}>Catálogo de Servicios Acreditables</h2>
-              <p style={{ color: '#55657b', marginBottom: '1.5rem', fontSize: '0.9rem' }}>Nuestros servicios prestados de forma habitual y acreditables mediante contratos vigentes o finalizados incluyen:</p>
+              <p style={{ color: '#5e5660', marginBottom: '1.5rem', fontSize: '0.9rem' }}>Nuestros servicios prestados de forma habitual y acreditables mediante contratos vigentes o finalizados incluyen:</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {services.map((s, i) => (
                   <li key={i} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-                    <CheckCircle size={16} style={{ color: '#1f6feb', flexShrink: 0, marginTop: '0.2rem' }} />
-                    <span style={{ fontSize: '0.88rem', color: '#55657b' }}>{s}</span>
+                    <CheckCircle size={16} style={{ color: '#6b2f73', flexShrink: 0, marginTop: '0.2rem' }} />
+                    <span style={{ fontSize: '0.88rem', color: '#5e5660' }}>{s}</span>
                   </li>
                 ))}
               </ul>
@@ -164,7 +164,7 @@ const Capacidades = () => {
                 {methodologies.map(m => (
                   <div key={m.title} className="card-premium" style={{ marginBottom: '0.75rem', borderLeft: `3px solid ${m.color}`, borderRadius: '0 0.75rem 0.75rem 0' }}>
                     <h4 style={{ fontWeight: 700, color: m.color, marginBottom: '0.3rem', fontSize: '0.92rem' }}>{m.title}</h4>
-                    <p style={{ fontSize: '0.85rem', color: '#55657b' }}>{m.desc}</p>
+                    <p style={{ fontSize: '0.85rem', color: '#5e5660' }}>{m.desc}</p>
                   </div>
                 ))}
               </div>
@@ -174,9 +174,9 @@ const Capacidades = () => {
                 <div className="card-premium" style={{ marginBottom: '0.75rem', borderLeft: '3px solid #0078d4', borderRadius: '0 0.75rem 0.75rem 0' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '0.25rem' }}>
                     <h4 style={{ fontWeight: 700, color: '#005a9e', margin: 0, fontSize: '0.92rem' }}>Microsoft Azure</h4>
-                    <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: '#e8f1fb', color: '#0f3d7a' }}>Solutions Partner</span>
+                    <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: '#f3ecf4', color: '#2c1330' }}>Solutions Partner</span>
                   </div>
-                  <p style={{ fontSize: '0.82rem', color: '#55657b', margin: 0, lineHeight: 1.5 }}>
+                  <p style={{ fontSize: '0.82rem', color: '#5e5660', margin: 0, lineHeight: 1.5 }}>
                     Solutions Partner for Digital & App Innovation, ID de socio 6128457, vigente hasta el 30/06/2027. Soporte directo del fabricante y acceso a sus arquitecturas de referencia.
                   </p>
                 </div>
@@ -185,7 +185,7 @@ const Capacidades = () => {
                     <h4 style={{ fontWeight: 700, color: '#9a5b00', margin: 0, fontSize: '0.92rem' }}>HL7 International</h4>
                     <span className="pill" style={{ fontSize: '0.68rem', backgroundColor: '#fff3d9', color: '#9a5b00' }}>Membresía HL7-ORG-20417</span>
                   </div>
-                  <p style={{ fontSize: '0.82rem', color: '#55657b', margin: 0, lineHeight: 1.5 }}>
+                  <p style={{ fontSize: '0.82rem', color: '#5e5660', margin: 0, lineHeight: 1.5 }}>
                     Organización miembro activa en la definición y adopción de estándares de interoperabilidad clínica HL7 v2.x y FHIR R4 (vigencia hasta 31/12/2027).
                   </p>
                 </div>
@@ -204,12 +204,12 @@ const Capacidades = () => {
               <motion.div
                 key={item.title}
                 className="card-premium"
-                style={{ borderTop: '3px solid #1f6feb' }}
+                style={{ borderTop: '3px solid #6b2f73' }}
                 whileHover={{ y: -4 }}
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
               >
-                <h4 style={{ fontWeight: 700, marginBottom: '0.6rem', fontSize: '0.95rem', color: '#0a1a33' }}>{item.title}</h4>
-                <p style={{ fontSize: '0.85rem', color: '#55657b', lineHeight: 1.6 }}>{item.desc}</p>
+                <h4 style={{ fontWeight: 700, marginBottom: '0.6rem', fontSize: '0.95rem', color: '#0b0a0c' }}>{item.title}</h4>
+                <p style={{ fontSize: '0.85rem', color: '#5e5660', lineHeight: 1.6 }}>{item.desc}</p>
               </motion.div>
             ))}
           </div>

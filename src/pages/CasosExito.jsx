@@ -24,7 +24,7 @@ const CasosExito = () => {
         { icon: <Building size={12} />, label: 'TB imagenología', value: '62 TB' },
       ],
       ref: 'Ricardo Salgado Peña — Director de Tecnologías de Información', email: 'r.salgado@vallequilen.cl', phone: '+56 2 2478 9100',
-      accentColor: '#1f6feb', accentText: '#0f3d7a',
+      accentColor: '#6b2f73', accentText: '#2c1330',
     },
     {
       title: 'Plataforma Nacional de Interoperabilidad e Índice Maestro de Pacientes',
@@ -40,7 +40,7 @@ const CasosExito = () => {
         { icon: <BarChart3 size={12} />, label: 'Peak mensajería', value: '40 msg/s' },
       ],
       ref: 'Carolina Vergara Ríos — Gerenta Transformación Digital', email: 'c.vergara@cordilleraaustral.cl', phone: '+56 2 2630 4400',
-      accentColor: '#0f3d7a', accentText: '#0f3d7a',
+      accentColor: '#2c1330', accentText: '#2c1330',
     },
     {
       title: 'Plataforma de Coordinación de Atención Ambulatoria y Domiciliaria',
@@ -63,14 +63,14 @@ const CasosExito = () => {
   // Industrias atendidas, con énfasis en atención ambulatoria — RT-23.02
   const industries = [
     { icon: <Truck size={22} />, name: 'Atención Ambulatoria y Consultas de Especialidad', desc: 'Agendamiento omnicanal, confirmación de horas, reducción del ausentismo, triaje digital y coordinación de prestadores en terreno.', color: '#12a37f', bg: '#e3f5ee', highlight: true },
-    { icon: <Stethoscope size={22} />, name: 'Red Hospitalaria de Alta Complejidad', desc: 'Registro clínico electrónico, identidad de paciente y operación gestionada en redes multisede.', color: '#1f6feb', bg: '#e8f1fb' },
-    { icon: <Building size={22} />, name: 'Salud Ocupacional y Mutualidades', desc: 'Interoperabilidad nacional, índice maestro de pacientes y gobierno de identidad a escala.', color: '#0f3d7a', bg: '#e8f1fb' },
+    { icon: <Stethoscope size={22} />, name: 'Red Hospitalaria de Alta Complejidad', desc: 'Registro clínico electrónico, identidad de paciente y operación gestionada en redes multisede.', color: '#6b2f73', bg: '#f3ecf4' },
+    { icon: <Building size={22} />, name: 'Salud Ocupacional y Mutualidades', desc: 'Interoperabilidad nacional, índice maestro de pacientes y gobierno de identidad a escala.', color: '#2c1330', bg: '#f3ecf4' },
     { icon: <Globe size={22} />, name: 'Redes de Salud con Dispersión Territorial', desc: 'Arquitecturas con nodos de borde para operación autónoma en zonas rurales o con conectividad limitada.', color: '#f4a524', bg: '#fff3d9' },
   ];
 
   const contextItems = [
-    { icon: <ShieldCheck size={26} />, title: 'Datos Personales Sensibles', color: '#1f6feb', bg: '#e8f1fb', desc: 'Operamos bajo la Ley N° 21.719 de protección de datos personales, Ley N° 20.584 y Ley N° 21.663 Marco sobre Ciberseguridad, con controles verificables de consentimiento, minimización, trazabilidad de accesos y retención certificada ISO/IEC 27701. El registro de la atención se diseña conforme al Decreto N° 41 de 2012 sobre fichas clínicas.' },
-    { icon: <UserX size={26} />, title: 'Identidad del Paciente como Riesgo Clínico', color: '#0f3d7a', bg: '#e8f1fb', desc: 'Prevenimos errores de asignación clínica mediante flujos de arbitraje manual obligatorio para pares con baja confianza en el índice maestro de pacientes (MPI).' },
+    { icon: <ShieldCheck size={26} />, title: 'Datos Personales Sensibles', color: '#6b2f73', bg: '#f3ecf4', desc: 'Operamos bajo la Ley N° 21.719 de protección de datos personales, Ley N° 20.584 y Ley N° 21.663 Marco sobre Ciberseguridad, con controles verificables de consentimiento, minimización, trazabilidad de accesos y retención certificada ISO/IEC 27701. El registro de la atención se diseña conforme al Decreto N° 41 de 2012 sobre fichas clínicas.' },
+    { icon: <UserX size={26} />, title: 'Identidad del Paciente como Riesgo Clínico', color: '#2c1330', bg: '#f3ecf4', desc: 'Prevenimos errores de asignación clínica mediante flujos de arbitraje manual obligatorio para pares con baja confianza en el índice maestro de pacientes (MPI).' },
     { icon: <FileCheck size={26} />, title: 'Acreditación de Prestadores Institucionales', color: '#12a37f', bg: '#e3f5ee', desc: 'Acompañamos la acreditación ante la Superintendencia de Salud de la Red Hospitalaria Valle Quilén, incorporando desde el diseño la evidencia y los registros que exige el estándar.' },
     { icon: <MapPin size={26} />, title: 'Pertinencia Territorial e Intercultural', color: '#f4a524', bg: '#fff3d9', desc: 'Diseño preparado para la realidad de La Araucanía y Los Ríos: conectividad rural asistida por nodos de borde y consideración de la interculturalidad de los pacientes.' },
   ];
@@ -102,13 +102,13 @@ const CasosExito = () => {
             <span className="badge badge-indigo">Portafolio</span>
           </motion.div>
           <motion.h1
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0a1a33' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0b0a0c' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
           >
             Experiencia y <span className="text-gradient">Casos de Éxito</span>
           </motion.h1>
           <motion.p
-            style={{ fontSize: '1.05rem', color: '#55657b', maxWidth: '580px', margin: '0 auto' }}
+            style={{ fontSize: '1.05rem', color: '#5e5660', maxWidth: '580px', margin: '0 auto' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
             Tres proyectos de misión crítica finalizados y en operación dentro de los últimos cinco años, acreditados con métricas verificables y referencias de contacto directo.
@@ -124,8 +124,8 @@ const CasosExito = () => {
               <motion.div key={m.label} style={{ textAlign: 'center' }}
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
               >
-                <div style={{ color: '#22c3e6', marginBottom: '0.5rem', display: 'flex', justifyContent: 'center' }}>{m.icon}</div>
-                <div style={{ fontSize: '2.25rem', fontWeight: 800, color: '#f3f6fa', fontFamily: 'Poppins, sans-serif', lineHeight: 1 }}>{m.num}</div>
+                <div style={{ color: '#c58fd6', marginBottom: '0.5rem', display: 'flex', justifyContent: 'center' }}>{m.icon}</div>
+                <div style={{ fontSize: '2.25rem', fontWeight: 800, color: '#f7f4f7', fontFamily: 'Poppins, sans-serif', lineHeight: 1 }}>{m.num}</div>
                 <div style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.4rem' }}>{m.label}</div>
               </motion.div>
             ))}
@@ -137,7 +137,7 @@ const CasosExito = () => {
       <section className="section">
         <div className="container">
           <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <Briefcase size={22} style={{ color: '#1f6feb' }} /> Proyectos Principales
+            <Briefcase size={22} style={{ color: '#6b2f73' }} /> Proyectos Principales
           </h2>
           <div className="grid grid-cols-1 cases-grid-3 gap-6">
             {projects.map((p, i) => (
@@ -149,31 +149,31 @@ const CasosExito = () => {
                 {/* Client pill + industry */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', marginBottom: '0.75rem' }}>
                   <span className="pill" style={{ fontSize: '0.72rem', color: p.accentText, backgroundColor: `${p.accentColor}12`, borderColor: `${p.accentColor}40`, width: 'fit-content' }}>{p.client}</span>
-                  <span style={{ fontSize: '0.72rem', color: '#55657b' }}>{p.industry}</span>
+                  <span style={{ fontSize: '0.72rem', color: '#5e5660' }}>{p.industry}</span>
                 </div>
 
                 <h3 style={{ fontSize: '1rem', fontWeight: 700, margin: '0 0 0.25rem' }}>{p.title}</h3>
                 <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
-                  <span style={{ fontSize: '0.75rem', color: '#55657b' }}>{p.period}</span>
-                  <span style={{ fontSize: '0.75rem', color: '#55657b' }}>·</span>
-                  <span style={{ fontSize: '0.75rem', color: '#55657b' }}>{p.budget}</span>
+                  <span style={{ fontSize: '0.75rem', color: '#5e5660' }}>{p.period}</span>
+                  <span style={{ fontSize: '0.75rem', color: '#5e5660' }}>·</span>
+                  <span style={{ fontSize: '0.75rem', color: '#5e5660' }}>{p.budget}</span>
                 </div>
-                <p style={{ fontSize: '0.86rem', color: '#55657b', lineHeight: 1.65, flexGrow: 1, marginBottom: '1rem' }}>{p.desc}</p>
+                <p style={{ fontSize: '0.86rem', color: '#5e5660', lineHeight: 1.65, flexGrow: 1, marginBottom: '1rem' }}>{p.desc}</p>
 
                 <div className="grid grid-cols-2 gap-2" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '0.875rem', marginBottom: '0.875rem' }}>
                   {p.stats.map(s => (
                     <div key={s.label}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.7rem', color: '#55657b', marginBottom: '0.2rem' }}>{s.icon} {s.label}</div>
-                      <strong style={{ fontSize: '1.1rem', color: '#0a1a33', fontFamily: 'Poppins, sans-serif' }}>{s.value}</strong>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.7rem', color: '#5e5660', marginBottom: '0.2rem' }}>{s.icon} {s.label}</div>
+                      <strong style={{ fontSize: '1.1rem', color: '#0b0a0c', fontFamily: 'Poppins, sans-serif' }}>{s.value}</strong>
                     </div>
                   ))}
                 </div>
 
                 <div style={{ borderTop: '1px dashed var(--border-color)', paddingTop: '0.75rem' }}>
-                  <p style={{ fontSize: '0.7rem', color: '#55657b', marginBottom: '0.2rem' }}>Referencia verificable</p>
-                  <p style={{ fontSize: '0.82rem', color: '#55657b', fontWeight: 500, marginBottom: '0.1rem' }}>{p.ref}</p>
-                  <a href={`mailto:${p.email}`} style={{ fontSize: '0.75rem', color: '#0f3d7a', textDecoration: 'underline', display: 'block' }}>{p.email}</a>
-                  <a href={`tel:${p.phone.replace(/\s/g, '')}`} style={{ fontSize: '0.75rem', color: '#0f3d7a', textDecoration: 'underline' }}>{p.phone}</a>
+                  <p style={{ fontSize: '0.7rem', color: '#5e5660', marginBottom: '0.2rem' }}>Referencia verificable</p>
+                  <p style={{ fontSize: '0.82rem', color: '#5e5660', fontWeight: 500, marginBottom: '0.1rem' }}>{p.ref}</p>
+                  <a href={`mailto:${p.email}`} style={{ fontSize: '0.75rem', color: '#2c1330', textDecoration: 'underline', display: 'block' }}>{p.email}</a>
+                  <a href={`tel:${p.phone.replace(/\s/g, '')}`} style={{ fontSize: '0.75rem', color: '#2c1330', textDecoration: 'underline' }}>{p.phone}</a>
                 </div>
               </motion.div>
             ))}
@@ -188,7 +188,7 @@ const CasosExito = () => {
             <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>
               Industrias <span className="text-gradient">Atendidas</span>
             </h2>
-            <p style={{ color: '#55657b', maxWidth: '560px', margin: '0 auto', fontSize: '0.95rem' }}>
+            <p style={{ color: '#5e5660', maxWidth: '560px', margin: '0 auto', fontSize: '0.95rem' }}>
               Nuestra especialización está concentrada en el sector salud, con énfasis en la atención ambulatoria y las consultas de especialidad.
             </p>
           </div>
@@ -203,7 +203,7 @@ const CasosExito = () => {
                 <div>
                   {ind.highlight && <span className="badge badge-green" style={{ marginBottom: '0.4rem' }}>Foco principal</span>}
                   <h3 style={{ fontWeight: 700, fontSize: '1rem', marginBottom: '0.35rem' }}>{ind.name}</h3>
-                  <p style={{ fontSize: '0.86rem', color: '#55657b', lineHeight: 1.6 }}>{ind.desc}</p>
+                  <p style={{ fontSize: '0.86rem', color: '#5e5660', lineHeight: 1.6 }}>{ind.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -218,7 +218,7 @@ const CasosExito = () => {
             <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>
               Comprensión Acreditada del <span className="text-gradient">Contexto Sectorial</span>
             </h2>
-            <p style={{ color: '#55657b', maxWidth: '560px', margin: '0 auto', fontSize: '0.95rem' }}>
+            <p style={{ color: '#5e5660', maxWidth: '560px', margin: '0 auto', fontSize: '0.95rem' }}>
               No somos solo desarrolladores de software; entendemos la criticidad del ecosistema de salud y sus normativas vigentes.
             </p>
           </div>
@@ -233,7 +233,7 @@ const CasosExito = () => {
                   <div style={{ padding: '0.6rem', borderRadius: '0.6rem', backgroundColor: item.bg, color: item.color, flexShrink: 0 }}>{item.icon}</div>
                   <div>
                     <h4 style={{ fontWeight: 700, marginBottom: '0.4rem' }}>{item.title}</h4>
-                    <p style={{ fontSize: '0.88rem', color: '#55657b', lineHeight: 1.65 }}>{item.desc}</p>
+                    <p style={{ fontSize: '0.88rem', color: '#5e5660', lineHeight: 1.65 }}>{item.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -249,7 +249,7 @@ const CasosExito = () => {
             <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.5rem' }}>
               Testimonios y <span className="text-gradient">Referencias</span>
             </h2>
-            <p style={{ color: '#55657b', fontSize: '0.95rem' }}>Testimonios con autorización de publicación de clientes con contratos vigentes o finalizados.</p>
+            <p style={{ color: '#5e5660', fontSize: '0.95rem' }}>Testimonios con autorización de publicación de clientes con contratos vigentes o finalizados.</p>
           </div>
           <div className="grid grid-cols-1 cases-grid-3 gap-6">
             {testimonials.map((t, i) => (
@@ -264,13 +264,13 @@ const CasosExito = () => {
                     {[...Array(5)].map((_, j) => <Star key={j} size={14} fill="currentColor" />)}
                   </div>
                   <span className="sr-only">Valoración: 5 de 5 estrellas</span>
-                  <p style={{ fontSize: '0.9rem', color: '#55657b', lineHeight: 1.7, fontStyle: 'italic', marginBottom: '1.5rem' }}>"{t.quote}"</p>
+                  <p style={{ fontSize: '0.9rem', color: '#5e5660', lineHeight: 1.7, fontStyle: 'italic', marginBottom: '1.5rem' }}>"{t.quote}"</p>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                   <div className={`team-avatar ${t.avatarClass}`} style={{ width: '40px', height: '40px', fontSize: '0.9rem', marginBottom: 0 }}>{t.initial}</div>
                   <div>
                     <h4 style={{ fontSize: '0.88rem', fontWeight: 700, marginBottom: '0.1rem' }}>{t.name}</h4>
-                    <p style={{ fontSize: '0.75rem', color: '#55657b' }}>{t.role}</p>
+                    <p style={{ fontSize: '0.75rem', color: '#5e5660' }}>{t.role}</p>
                   </div>
                 </div>
               </motion.div>

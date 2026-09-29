@@ -25,17 +25,17 @@ const Navbar = () => {
   return (
     <nav aria-label="Navegación principal" style={{
       position: 'sticky', top: 0, zIndex: 50,
-      // Encabezado de la plantilla: degradé azul noche → azul marino con línea cian
-      background: 'linear-gradient(90deg, #0a1a33 0%, #0f3d7a 100%)',
-      borderBottom: '3px solid #22c3e6',
-      boxShadow: scrolled ? '0 4px 16px -4px rgba(10,26,51,0.5)' : 'none',
+      // Encabezado de la plantilla: degradé negro ciruela → ciruela oscuro con línea lila
+      background: 'linear-gradient(90deg, #0b0a0c 0%, #2c1330 100%)',
+      borderBottom: '3px solid #c58fd6',
+      boxShadow: scrolled ? '0 4px 16px -4px rgba(11, 10, 12,0.5)' : 'none',
       transition: 'box-shadow 0.3s'
     }}>
       <div className="container flex justify-between items-center" style={{ padding: '0.75rem 1rem' }}>
         <Link to="/" className="flex items-center gap-2" style={{ zIndex: 51 }} aria-label="Cerberus Tech — Ir al inicio">
-          <img src="/brand/cerberus-emblema.jpg" alt="" style={{ height: '46px', width: 'auto', borderRadius: '6px', border: '1px solid rgba(34,195,230,0.4)' }} />
+          <img src="/brand/cerberus-emblema.jpg" alt="" style={{ height: '46px', width: 'auto', borderRadius: '6px', border: '1px solid rgba(197, 143, 214,0.4)' }} />
           <span style={{ fontWeight: 700, fontSize: '1.05rem', letterSpacing: '0.18em', color: '#ffffff', whiteSpace: 'nowrap' }}>
-            CERBERUS <span style={{ color: '#22c3e6' }}>TECH</span>
+            CERBERUS <span style={{ color: '#c58fd6' }}>TECH</span>
           </span>
         </Link>
 
@@ -49,12 +49,12 @@ const Navbar = () => {
                 to={link.path}
                 aria-current={isActive ? 'page' : undefined}
                 style={{
-                  color: isActive ? '#22c3e6' : '#e8f1fb',
+                  color: isActive ? '#c58fd6' : '#f3ecf4',
                   fontWeight: isActive ? '600' : '400',
                   fontSize: '0.9rem',
                   padding: '0.3rem 0',
                   whiteSpace: 'nowrap',
-                  borderBottom: isActive ? '2px solid #22c3e6' : '2px solid transparent',
+                  borderBottom: isActive ? '2px solid #c58fd6' : '2px solid transparent',
                   transition: 'all 0.2s',
                 }}
               >
@@ -68,7 +68,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <button
           className="btn-secondary"
-          style={{ padding: '0.5rem', display: 'flex', color: '#ffffff', background: 'transparent', border: '1px solid rgba(232,241,251,0.4)', borderRadius: '6px', cursor: 'pointer' }}
+          style={{ padding: '0.5rem', display: 'flex', color: '#ffffff', background: 'transparent', border: '1px solid rgba(243, 236, 244,0.4)', borderRadius: '6px', cursor: 'pointer' }}
           id="mobile-toggle"
           aria-label={isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'}
           aria-expanded={isOpen}
@@ -94,7 +94,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 aria-current={isCurrent ? 'page' : undefined}
                 style={{
-                  color: isCurrent ? '#1f6feb' : 'var(--text-primary)',
+                  color: isCurrent ? '#6b2f73' : 'var(--text-primary)',
                   fontWeight: isCurrent ? '600' : '400',
                   padding: '0.5rem 0',
                   borderBottom: '1px solid var(--border-color)'
@@ -122,8 +122,8 @@ const Navbar = () => {
           #mobile-toggle { display: none !important; }
         }
         #desktop-menu a:not(.btn):hover {
-          color: #22c3e6 !important;
-          border-bottom-color: #22c3e6 !important;
+          color: #c58fd6 !important;
+          border-bottom-color: #c58fd6 !important;
         }
       `}</style>
     </nav>

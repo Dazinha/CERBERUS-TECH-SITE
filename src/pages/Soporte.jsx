@@ -21,24 +21,24 @@ const Soporte = () => {
       label: 'Teléfono Central',
       value: '+56 32 255 1000',
       href: 'tel:+56322551000',
-      color: '#1f6feb',
-      bg: '#e8f1fb',
+      color: '#6b2f73',
+      bg: '#f3ecf4',
     },
     {
       icon: <Mail size={20} />,
       label: 'Soporte Técnico',
       value: 'soporte@cerberustech.cl',
       href: 'mailto:soporte@cerberustech.cl',
-      color: '#0f3d7a',
-      bg: '#e8f1fb',
+      color: '#2c1330',
+      bg: '#f3ecf4',
     },
     {
       icon: <Mail size={20} />,
       label: 'Contacto Licitaciones',
       value: 'licitaciones@cerberustech.cl',
       href: 'mailto:licitaciones@cerberustech.cl',
-      color: '#22c3e6',
-      bg: '#e8f1fb',
+      color: '#c58fd6',
+      bg: '#f3ecf4',
     },
     {
       icon: <MapPin size={20} />,
@@ -53,8 +53,8 @@ const Soporte = () => {
       label: 'Sucursal Sur',
       value: 'Temuco, Región de La Araucanía',
       href: null,
-      color: '#22c3e6',
-      bg: '#e6f8fc',
+      color: '#c58fd6',
+      bg: '#f2eaf3',
     },
     {
       icon: <Clock size={20} />,
@@ -69,11 +69,11 @@ const Soporte = () => {
   const inputStyle = {
     width: '100%',
     padding: '0.65rem 0.875rem',
-    border: '1px solid #d5e1ef',
+    border: '1px solid #e2d6e4',
     borderRadius: '0.5rem',
     fontSize: '0.9rem',
-    color: '#0a1a33',
-    background: '#f3f6fa',
+    color: '#0b0a0c',
+    background: '#f7f4f7',
     transition: 'border-color 0.2s, box-shadow 0.2s',
   };
 
@@ -86,13 +86,13 @@ const Soporte = () => {
             <span className="badge badge-indigo">Atención al Cliente</span>
           </motion.div>
           <motion.h1
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0a1a33' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0b0a0c' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
           >
             Portal de <span className="text-gradient">Soporte Técnico</span>
           </motion.h1>
           <motion.p
-            style={{ fontSize: '1.05rem', color: '#55657b', maxWidth: '560px', margin: '0 auto' }}
+            style={{ fontSize: '1.05rem', color: '#5e5660', maxWidth: '560px', margin: '0 auto' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
             Registre un incidente, solicite un cambio o contáctenos directamente. Nuestro equipo NOC/SOC opera de forma continua.
@@ -104,7 +104,7 @@ const Soporte = () => {
       <section className="section bg-section-alt">
         <div className="container">
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <LifeBuoy size={20} style={{ color: '#1f6feb' }} />
+            <LifeBuoy size={20} style={{ color: '#6b2f73' }} />
             Canales de Contacto
           </h2>
           <div className="grid grid-cols-1 soporte-grid-cards gap-4" style={{ maxWidth: '1050px' }}>
@@ -120,18 +120,18 @@ const Soporte = () => {
                   {item.icon}
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.72rem', fontWeight: 600, color: '#55657b', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>{item.label}</p>
+                  <p style={{ fontSize: '0.72rem', fontWeight: 600, color: '#5e5660', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.2rem' }}>{item.label}</p>
                   {item.href ? (
                     <a
                       href={item.href}
                       target={item.href.startsWith('http') ? '_blank' : undefined}
                       rel="noopener noreferrer"
-                      style={{ fontSize: '0.95rem', fontWeight: 600, color: '#0a1a33', textDecoration: 'none' }}
+                      style={{ fontSize: '0.95rem', fontWeight: 600, color: '#0b0a0c', textDecoration: 'none' }}
                     >
                       {item.value}
                     </a>
                   ) : (
-                    <p style={{ fontSize: '0.95rem', fontWeight: 600, color: '#0a1a33' }}>{item.value}</p>
+                    <p style={{ fontSize: '0.95rem', fontWeight: 600, color: '#0b0a0c' }}>{item.value}</p>
                   )}
                 </div>
               </motion.div>
@@ -144,7 +144,7 @@ const Soporte = () => {
       <section className="section">
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>Formulario de Solicitud</h2>
-          <p style={{ color: '#55657b', marginBottom: '2rem', fontSize: '0.9rem' }}>
+          <p style={{ color: '#5e5660', marginBottom: '2rem', fontSize: '0.9rem' }}>
             Complete el formulario y nuestro equipo de operaciones se comunicará en el menor tiempo posible.
           </p>
 
@@ -159,10 +159,10 @@ const Soporte = () => {
               <div style={{ display: 'inline-flex', padding: '1rem', borderRadius: '50%', backgroundColor: '#e3f5ee', color: '#12a37f', marginBottom: '1.25rem' }}>
                 <CheckCircle size={40} />
               </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.75rem', color: '#0a1a33' }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.75rem', color: '#0b0a0c' }}>
                 ¡Solicitud enviada con éxito!
               </h3>
-              <p style={{ color: '#55657b', maxWidth: '440px', margin: '0 auto', lineHeight: 1.7 }}>
+              <p style={{ color: '#5e5660', maxWidth: '440px', margin: '0 auto', lineHeight: 1.7 }}>
                 Hemos recibido su solicitud. Un agente de soporte se comunicará con usted dentro del SLA acordado. El número de ticket será enviado a su correo.
               </p>
               <button
@@ -182,7 +182,7 @@ const Soporte = () => {
             >
               <div className="grid grid-cols-1 soporte-grid-2 gap-4">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  <label htmlFor="nombre" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1f2a37' }}>Nombre completo *</label>
+                  <label htmlFor="nombre" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1a1a1a' }}>Nombre completo *</label>
                   <input
                     id="nombre" name="nombre" type="text" required aria-required="true"
                     value={form.nombre} onChange={handleChange}
@@ -192,7 +192,7 @@ const Soporte = () => {
                   />
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  <label htmlFor="organizacion" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1f2a37' }}>Organización *</label>
+                  <label htmlFor="organizacion" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1a1a1a' }}>Organización *</label>
                   <input
                     id="organizacion" name="organizacion" type="text" required aria-required="true"
                     value={form.organizacion} onChange={handleChange}
@@ -204,7 +204,7 @@ const Soporte = () => {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                <label htmlFor="correo" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1f2a37' }}>Correo electrónico *</label>
+                <label htmlFor="correo" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1a1a1a' }}>Correo electrónico *</label>
                 <input
                   id="correo" name="correo" type="email" required aria-required="true"
                   value={form.correo} onChange={handleChange}
@@ -215,7 +215,7 @@ const Soporte = () => {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                <label htmlFor="tipo" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1f2a37' }}>Tipo de solicitud *</label>
+                <label htmlFor="tipo" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1a1a1a' }}>Tipo de solicitud *</label>
                 <select
                   id="tipo" name="tipo" required aria-required="true"
                   value={form.tipo} onChange={handleChange}
@@ -230,7 +230,7 @@ const Soporte = () => {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                <label htmlFor="descripcion" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1f2a37' }}>Descripción *</label>
+                <label htmlFor="descripcion" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#1a1a1a' }}>Descripción *</label>
                 <textarea
                   id="descripcion" name="descripcion" required aria-required="true"
                   value={form.descripcion} onChange={handleChange}
@@ -255,8 +255,8 @@ const Soporte = () => {
         }
         input:focus, select:focus, textarea:focus {
           outline: none;
-          border-color: #1f6feb !important;
-          box-shadow: 0 0 0 3px rgba(31, 111, 235,0.15);
+          border-color: #6b2f73 !important;
+          box-shadow: 0 0 0 3px rgba(107, 47, 115,0.15);
         }
       `}</style>
     </div>

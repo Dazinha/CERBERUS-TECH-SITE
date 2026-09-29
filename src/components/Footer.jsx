@@ -3,24 +3,24 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contacto" aria-label="Pie de página — Cerberus Tech" style={{ background: 'var(--hex-pattern), linear-gradient(160deg, #0f3d7a 0%, #0a1a33 55%)', borderTop: '4px solid #22c3e6', padding: 'var(--space-12) 0' }}>
+    <footer id="contacto" aria-label="Pie de página — Cerberus Tech" style={{ background: 'var(--hex-pattern), linear-gradient(160deg, #2c1330 0%, #0b0a0c 55%)', borderTop: '4px solid #c58fd6', padding: 'var(--space-12) 0' }}>
       <div className="container grid grid-cols-3 md:grid-cols-1 gap-8" style={{ gap: '6rem' }}>
 
         {/* Column 1: Brand */}
         <div className="flex flex-col gap-6">
           <Link to="/" className="flex items-center gap-2 mb-2" aria-label="Cerberus Tech — Ir al inicio">
-            <img src="/brand/cerberus-emblema.jpg" alt="" style={{ height: '64px', width: 'auto', borderRadius: '8px', border: '1px solid rgba(34,195,230,0.4)' }} />
+            <img src="/brand/cerberus-emblema.jpg" alt="" style={{ height: '64px', width: 'auto', borderRadius: '8px', border: '1px solid rgba(197, 143, 214,0.4)' }} />
             <span style={{ fontWeight: 700, fontSize: '1.2rem', letterSpacing: '0.18em', color: '#ffffff' }}>
-              CERBERUS <span style={{ color: '#22c3e6' }}>TECH</span>
+              CERBERUS <span style={{ color: '#c58fd6' }}>TECH</span>
             </span>
           </Link>
-          <p style={{ color: '#22c3e6', fontWeight: 600, fontSize: '0.95rem', margin: 0 }}>
+          <p style={{ color: '#c58fd6', fontWeight: 600, fontSize: '0.95rem', margin: 0 }}>
             Construimos y operamos: no entregamos y nos vamos.
           </p>
-          <p className="text-sm leading-relaxed mb-2" style={{ color: '#c3cfdf', fontSize: '0.875rem' }}>
+          <p className="text-sm leading-relaxed mb-2" style={{ color: '#d6c9d9', fontSize: '0.875rem' }}>
             El socio tecnológico confiable para la operación continua en salud. Garantizamos resiliencia, seguridad e interoperabilidad bajo los más altos estándares.
           </p>
-          <p style={{ color: '#e8f1fb', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.14em' }}>
+          <p style={{ color: '#f3ecf4', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.14em' }}>
             VALPARAÍSO · TEMUCO · SOC/NOC 24/7
           </p>
         </div>
@@ -113,7 +113,7 @@ const Footer = () => {
           text-decoration: none;
         }
         .contact-card:hover {
-          border-color: rgba(31, 111, 235, 0.5);
+          border-color: rgba(107, 47, 115, 0.5);
           background-color: rgba(255, 255, 255, 0.1);
         }
       `}</style>

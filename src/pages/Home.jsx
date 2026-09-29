@@ -5,7 +5,7 @@ import { ArrowRight, Award, Zap, HeartPulse, RefreshCw, Network, FileText } from
 const Home = () => {
   return (
     <div className="w-full">
-      {/* Hero — estilo portada de la plantilla: azul noche, patrón hexagonal, franja cian e ilustración Cerberus */}
+      {/* Hero — estilo portada de la plantilla: negro ciruela, patrón hexagonal, franja lila e ilustración Cerberus */}
       <section className="home-hero">
         <div className="container home-hero-grid">
           <div>
@@ -73,9 +73,9 @@ const Home = () => {
           .home-hero {
             position: relative;
             overflow: hidden;
-            background: var(--hex-pattern), radial-gradient(ellipse at 75% 40%, #12427f 0%, transparent 60%), linear-gradient(160deg, #0f3d7a 0%, #0a1a33 100%);
-            border-left: 10px solid var(--brand-cyan);
-            border-bottom: 4px solid var(--brand-cyan);
+            background: var(--hex-pattern), radial-gradient(ellipse at 75% 40%, #3d1a44 0%, transparent 60%), linear-gradient(160deg, #2c1330 0%, #0b0a0c 100%);
+            border-left: 10px solid var(--brand-lilac);
+            border-bottom: 4px solid var(--brand-lilac);
             color: #ffffff;
             padding: 4.5rem 0 2.5rem;
           }
@@ -91,8 +91,8 @@ const Home = () => {
           .home-hero-kicker {
             display: inline-flex; align-items: center; gap: 0.5rem;
             font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
-            color: var(--brand-cyan);
-            border-left: 3px solid var(--brand-cyan);
+            color: var(--brand-lilac);
+            border-left: 3px solid var(--brand-lilac);
             padding-left: 0.75rem;
             margin-bottom: 1.5rem;
           }
@@ -103,10 +103,10 @@ const Home = () => {
             color: #ffffff;
             margin-bottom: 1.5rem;
           }
-          .home-hero-accent { display: block; color: var(--brand-cyan); font-size: 0.72em; margin-top: 0.4rem; }
+          .home-hero-accent { display: block; color: var(--brand-lilac); font-size: 0.72em; margin-top: 0.4rem; }
           .home-hero-lead { font-size: 1.1rem; color: var(--tint); max-width: 560px; line-height: 1.7; margin-bottom: 2.25rem; }
-          .home-hero-secondary { color: #ffffff; border: 1px solid rgba(232,241,251,0.6); background: transparent; }
-          .home-hero-secondary:hover { color: #0a1a33; background: #ffffff; }
+          .home-hero-secondary { color: #ffffff; border: 1px solid rgba(243, 236, 244,0.6); background: transparent; }
+          .home-hero-secondary:hover { color: #0b0a0c; background: #ffffff; }
           .home-hero-art {
             width: 100%; max-width: 560px; justify-self: center;
             border-radius: 12px;
@@ -116,7 +116,7 @@ const Home = () => {
           .home-hero-stats {
             display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem;
             margin: 3rem 0 0; padding-top: 1.75rem;
-            border-top: 1px solid rgba(34,195,230,0.3);
+            border-top: 1px solid rgba(197, 143, 214,0.3);
           }
           @media (min-width: 768px) { .home-hero-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
           .home-hero-stats div { display: flex; flex-direction: column-reverse; justify-content: flex-end; }
@@ -130,7 +130,7 @@ const Home = () => {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <h2 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.75rem' }}>¿Por qué Cerberus Tech?</h2>
-            <p style={{ color: '#55657b', maxWidth: '560px', margin: '0 auto' }}>
+            <p style={{ color: '#5e5660', maxWidth: '560px', margin: '0 auto' }}>
               Cuatro diferencias estructurales que separan una empresa de software genérica de un socio especializado en salud crítica.
             </p>
           </div>
@@ -141,16 +141,16 @@ const Home = () => {
                 title: 'Solo salud. Sin excepciones.',
                 desc: 'No somos una consultora genérica con una práctica de salud. Cada proyecto, cada certificación y cada metodología está orientada exclusivamente al sector sanitario.',
                 tag: 'Especialización Vertical',
-                color: '#1f6feb',
-                pillText: '#0f3d7a',
+                color: '#6b2f73',
+                pillText: '#2c1330',
               },
               {
                 icon: <RefreshCw size={30} />,
                 title: 'Operamos lo que construimos.',
                 desc: 'No entregamos el software y nos retiramos. Asumimos la operación gestionada bajo SLA contractuales verificables, con NOC y SOC propios 24/7/365.',
                 tag: 'Responsabilidad Total',
-                color: '#0f3d7a',
-                pillText: '#0f3d7a',
+                color: '#2c1330',
+                pillText: '#2c1330',
               },
               {
                 icon: <Network size={30} />,
@@ -186,7 +186,7 @@ const Home = () => {
                       <h3 style={{ fontSize: '1rem', fontWeight: 700, margin: 0 }}>{item.title}</h3>
                       <span className="pill" style={{ fontSize: '0.7rem', padding: '0.15rem 0.6rem', color: item.pillText, backgroundColor: `${item.color}15`, borderColor: `${item.color}40` }}>{item.tag}</span>
                     </div>
-                    <p style={{ fontSize: '0.88rem', color: '#55657b', margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
+                    <p style={{ fontSize: '0.88rem', color: '#5e5660', margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -196,14 +196,14 @@ const Home = () => {
       </section>
 
       {/* CTA hacia Casos de Éxito */}
-      <section style={{ background: 'var(--hex-pattern), linear-gradient(90deg, #0a1a33 0%, #0f3d7a 100%)', borderTop: '4px solid #22c3e6', padding: '4rem 0' }}>
+      <section style={{ background: 'var(--hex-pattern), linear-gradient(90deg, #0b0a0c 0%, #2c1330 100%)', borderTop: '4px solid #c58fd6', padding: '4rem 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
-            <p style={{ fontSize: '0.8rem', color: '#22c3e6', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1rem' }}>
+            <p style={{ fontSize: '0.8rem', color: '#c58fd6', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1rem' }}>
               <Award size={12} style={{ display: 'inline', marginRight: '0.35rem' }} />
               Resultados verificables con referencias de contacto directo
             </p>
-            <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, color: '#f3f6fa', marginBottom: '1rem' }}>
+            <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, color: '#f7f4f7', marginBottom: '1rem' }}>
               Tres proyectos acreditados en los últimos 5 años
             </h2>
             <p style={{ color: '#94a3b8', maxWidth: '580px', margin: '0 auto 2rem', fontSize: '0.95rem', lineHeight: 1.6 }}>

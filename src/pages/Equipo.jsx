@@ -129,13 +129,13 @@ const Equipo = () => {
             <span className="badge badge-indigo">Estructura Organizacional</span>
           </motion.div>
           <motion.h1
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0a1a33' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#0b0a0c' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
           >
             El equipo detrás de la <span className="text-gradient">misión crítica</span>
           </motion.h1>
           <motion.p
-            style={{ fontSize: '1.05rem', color: '#55657b', maxWidth: '580px', margin: '0 auto' }}
+            style={{ fontSize: '1.05rem', color: '#5e5660', maxWidth: '580px', margin: '0 auto' }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
           >
             Cerberus Tech opera bajo una estructura matricial, orientada a la operación continua y al aseguramiento de misión crítica.
@@ -146,8 +146,8 @@ const Equipo = () => {
       {/* Dotación total */}
       <div className="stats-band">
         <div className="container" style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: '4rem', fontWeight: 800, color: '#f3f6fa', fontFamily: 'Poppins, sans-serif', lineHeight: 1 }}>98</div>
-          <div style={{ color: '#22c3e6', fontSize: '1rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0.5rem 0 1rem' }}>Profesionales en Dotación Total (al 31 de agosto de 2026)</div>
+          <div style={{ fontSize: '4rem', fontWeight: 800, color: '#f7f4f7', fontFamily: 'Poppins, sans-serif', lineHeight: 1 }}>98</div>
+          <div style={{ color: '#c58fd6', fontSize: '1rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', margin: '0.5rem 0 1rem' }}>Profesionales en Dotación Total (al 31 de agosto de 2026)</div>
           <p style={{ color: '#94a3b8', fontSize: '0.88rem', maxWidth: '640px', margin: '0 auto', lineHeight: 1.6 }}>
             Estructura matricial con 8 unidades funcionales permanentes. La mayor parte de la dotación (60 de 98 profesionales) se concentra en ingeniería de software, operación continua (NOC) y ciberseguridad (SOC).
           </p>
@@ -159,7 +159,7 @@ const Equipo = () => {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>Distribución por Unidades Funcionales</h2>
-            <p style={{ color: '#55657b', fontSize: '0.88rem' }}>8 unidades permanentes que asignan especialistas de forma matricial a las células de proyecto.</p>
+            <p style={{ color: '#5e5660', fontSize: '0.88rem' }}>8 unidades permanentes que asignan especialistas de forma matricial a las células de proyecto.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {depts.map((d, i) => (
@@ -168,11 +168,11 @@ const Equipo = () => {
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}
               >
                 <div>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', color: '#1f6feb', marginBottom: '0.5rem' }}>{d.icon}</div>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', color: '#6b2f73', marginBottom: '0.5rem' }}>{d.icon}</div>
                   <div className="stat-number">{d.count}</div>
                   <div className="stat-label" style={{ fontWeight: 700, marginBottom: '0.4rem' }}>{d.area}</div>
                 </div>
-                <div style={{ fontSize: '0.72rem', color: '#55657b', borderTop: '1px dashed var(--border-color)', paddingTop: '0.4rem', marginTop: '0.4rem', lineHeight: 1.4 }}>
+                <div style={{ fontSize: '0.72rem', color: '#5e5660', borderTop: '1px dashed var(--border-color)', paddingTop: '0.4rem', marginTop: '0.4rem', lineHeight: 1.4 }}>
                   {d.detail}
                 </div>
               </motion.div>
@@ -180,21 +180,21 @@ const Equipo = () => {
           </div>
 
           {/* Fundamento de la Dotación */}
-          <div className="card-premium" style={{ marginTop: '2.5rem', backgroundColor: '#ffffff', borderLeft: '4px solid #1f6feb' }}>
-            <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.75rem', color: '#0a1a33' }}>
+          <div className="card-premium" style={{ marginTop: '2.5rem', backgroundColor: '#ffffff', borderLeft: '4px solid #6b2f73' }}>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.75rem', color: '#0b0a0c' }}>
               Fundamento de la Dotación Operativa
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ fontSize: '0.85rem', color: '#55657b', lineHeight: 1.6 }}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ fontSize: '0.85rem', color: '#5e5660', lineHeight: 1.6 }}>
               <div>
-                <strong style={{ color: '#0a1a33', display: 'block', marginBottom: '0.25rem' }}>Turnos Continuos 24/7 (NOC y SOC)</strong>
+                <strong style={{ color: '#0b0a0c', display: 'block', marginBottom: '0.25rem' }}>Turnos Continuos 24/7 (NOC y SOC)</strong>
                 <p>1 puesto sin interrupción todo el año requiere 8.760 h. Con ~1.700 h efectivas anuales por profesional, cada puesto continuo demanda 5,15 profesionales equivalentes. Con 2 puestos continuos por centro (10,3 requeridos), se asignan 11 profesionales a cada uno con margen para reemplazos.</p>
               </div>
               <div>
-                <strong style={{ color: '#0a1a33', display: 'block', marginBottom: '0.25rem' }}>Implantación y Terreno (5 prof.)</strong>
+                <strong style={{ color: '#0b0a0c', display: 'block', marginBottom: '0.25rem' }}>Implantación y Terreno (5 prof.)</strong>
                 <p>Los centros de una red entran de a uno, por olas sucesivas, con acompañamiento presencial en mesón y box durante las primeras semanas. Como sólo un centro entra a la vez, la unidad se dimensiona en 5 profesionales: el acompañamiento de los centros anteriores sigue a distancia y con visitas programadas, y la unidad sostiene además la capacitación continua.</p>
               </div>
               <div>
-                <strong style={{ color: '#0a1a33', display: 'block', marginBottom: '0.25rem' }}>Cartera Activa (71 prof.)</strong>
+                <strong style={{ color: '#0b0a0c', display: 'block', marginBottom: '0.25rem' }}>Cartera Activa (71 prof.)</strong>
                 <p>Los 71 profesionales restantes sostienen las unidades de dirección, arquitectura de soluciones, construcción de software, datos e interoperabilidad, calidad y soporte especializado según los proyectos vigentes.</p>
               </div>
             </div>
@@ -206,42 +206,42 @@ const Equipo = () => {
       <section className="section">
         <div className="container">
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <Users size={20} style={{ color: '#1f6feb' }} />
+            <Users size={20} style={{ color: '#6b2f73' }} />
             Equipo Directivo
           </h2>
 
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
             {/* Nodo CEO */}
-            <div className="card-premium" style={{ width: 'fit-content', textAlign: 'center', padding: '1.25rem 2rem', borderTop: '3px solid #1f6feb', minWidth: '220px', maxWidth: '400px' }}>
+            <div className="card-premium" style={{ width: 'fit-content', textAlign: 'center', padding: '1.25rem 2rem', borderTop: '3px solid #6b2f73', minWidth: '220px', maxWidth: '400px' }}>
               <div className={`team-avatar ${directors[0].avatar}`} style={{ width: '52px', height: '52px', fontSize: '1.1rem', margin: '0 auto 0.5rem' }}>{directors[0].initials}</div>
               <h4 style={{ fontWeight: 700, fontSize: '0.95rem' }}>{directors[0].name}</h4>
-              <p style={{ fontSize: '0.78rem', color: '#1f6feb', fontWeight: 600, marginBottom: '0.75rem' }}>{directors[0].role}</p>
-              <p style={{ fontSize: '0.82rem', color: '#55657b', lineHeight: 1.6, marginBottom: '1rem' }}>{directors[0].bio}</p>
+              <p style={{ fontSize: '0.78rem', color: '#6b2f73', fontWeight: 600, marginBottom: '0.75rem' }}>{directors[0].role}</p>
+              <p style={{ fontSize: '0.82rem', color: '#5e5660', lineHeight: 1.6, marginBottom: '1rem' }}>{directors[0].bio}</p>
               <div className="flex flex-wrap gap-2 justify-center">
                 {directors[0].certs.map(c => <span key={c} className="pill pill-indigo" style={{ fontSize: '0.68rem' }}><Award size={10} /> {c}</span>)}
               </div>
             </div>
 
             {/* Línea vertical */}
-            <div style={{ width: '2px', height: '2rem', backgroundColor: '#b9d3f2' }}></div>
+            <div style={{ width: '2px', height: '2rem', backgroundColor: '#d9c3de' }}></div>
 
             {/* Línea horizontal */}
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0', position: 'relative', width: '100%', maxWidth: '800px' }}>
-              <div style={{ position: 'absolute', top: 0, left: '25%', right: '25%', height: '2px', backgroundColor: '#b9d3f2' }}></div>
+              <div style={{ position: 'absolute', top: 0, left: '25%', right: '25%', height: '2px', backgroundColor: '#d9c3de' }}></div>
               {directors.slice(1).map((d) => (
                 <div key={d.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}>
-                  <div style={{ width: '2px', height: '2rem', backgroundColor: '#b9d3f2' }}></div>
-                  <div className="card-premium" style={{ textAlign: 'center', padding: '1rem 1.25rem', borderTop: '3px solid #1f6feb', width: '90%', maxWidth: '350px' }}>
+                  <div style={{ width: '2px', height: '2rem', backgroundColor: '#d9c3de' }}></div>
+                  <div className="card-premium" style={{ textAlign: 'center', padding: '1rem 1.25rem', borderTop: '3px solid #6b2f73', width: '90%', maxWidth: '350px' }}>
                     <div className={`team-avatar ${d.avatar}`} style={{ width: '44px', height: '44px', fontSize: '1rem', margin: '0 auto 0.5rem' }}>{d.initials}</div>
                     <h4 style={{ fontWeight: 700, fontSize: '0.88rem' }}>{d.name}</h4>
-                    <p style={{ fontSize: '0.72rem', color: '#1f6feb', fontWeight: 600, marginBottom: '0.75rem' }}>{d.role}</p>
-                    <p style={{ fontSize: '0.82rem', color: '#55657b', lineHeight: 1.6, marginBottom: '1rem' }}>{d.bio}</p>
+                    <p style={{ fontSize: '0.72rem', color: '#6b2f73', fontWeight: 600, marginBottom: '0.75rem' }}>{d.role}</p>
+                    <p style={{ fontSize: '0.82rem', color: '#5e5660', lineHeight: 1.6, marginBottom: '1rem' }}>{d.bio}</p>
                     <div className="flex flex-wrap gap-2 justify-center">
                       {d.certs.map(c => <span key={c} className="pill pill-indigo" style={{ fontSize: '0.68rem' }}><Award size={10} /> {c}</span>)}
                     </div>
                     <ul aria-label={`Unidades a cargo de ${d.role}`} style={{ listStyle: 'none', padding: 0, margin: '1rem 0 0', borderTop: '1px dashed var(--border-color)', paddingTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.35rem', textAlign: 'left' }}>
                       {d.units.map(u => (
-                        <li key={u} style={{ fontSize: '0.76rem', color: '#1f2a37', background: '#f3f6fa', border: '1px solid var(--border-color)', borderRadius: '0.4rem', padding: '0.3rem 0.5rem' }}>{u}</li>
+                        <li key={u} style={{ fontSize: '0.76rem', color: '#1a1a1a', background: '#f7f4f7', border: '1px solid var(--border-color)', borderRadius: '0.4rem', padding: '0.3rem 0.5rem' }}>{u}</li>
                       ))}
                     </ul>
                   </div>
@@ -249,7 +249,7 @@ const Equipo = () => {
               ))}
             </div>
           </div>
-          <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', background: '#f3f6fa', borderRadius: '0.5rem', border: '1px solid var(--border-color)', fontSize: '0.8rem', color: '#55657b', textAlign: 'center' }}>
+          <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', background: '#f7f4f7', borderRadius: '0.5rem', border: '1px solid var(--border-color)', fontSize: '0.8rem', color: '#5e5660', textAlign: 'center' }}>
             Cada dirección conduce cuatro unidades funcionales. Los jefes de proyecto pertenecen a Dirección y gestión de proyectos, que depende de Operaciones, pero reportan a Tecnología durante la construcción de la solución y a Operaciones durante su operación.
           </div>
         </div>
@@ -259,7 +259,7 @@ const Equipo = () => {
       <section className="section bg-section-alt">
         <div className="container">
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', textAlign: 'center' }}>Equipo Técnico Clave</h2>
-          <p style={{ color: '#55657b', fontSize: '0.88rem', textAlign: 'center', marginBottom: '2rem' }}>Currículos resumidos y certificaciones profesionales de los líderes técnicos de la compañía.</p>
+          <p style={{ color: '#5e5660', fontSize: '0.88rem', textAlign: 'center', marginBottom: '2rem' }}>Currículos resumidos y certificaciones profesionales de los líderes técnicos de la compañía.</p>
           <div className="grid grid-cols-1 team-grid-2 gap-4">
             {teamMembers.map((m, i) => (
               <motion.div key={m.name} className="card-premium"
@@ -270,12 +270,12 @@ const Equipo = () => {
                 <div className={`team-avatar ${m.avatar}`} style={{ width: '52px', height: '52px', fontSize: '1.1rem', marginBottom: 0, flexShrink: 0 }}>{m.initials}</div>
                 <div style={{ flex: 1 }}>
                   <h3 style={{ fontWeight: 700, fontSize: '0.92rem', marginBottom: '0.1rem' }}>{m.name}</h3>
-                  <p style={{ fontSize: '0.78rem', color: '#1f6feb', fontWeight: 600, marginBottom: '0.15rem' }}>{m.role}</p>
-                  <p style={{ fontSize: '0.73rem', color: '#55657b', marginBottom: '0.5rem' }}>Experiencia: {m.experience}</p>
-                  <dl style={{ margin: '0 0 0.6rem', fontSize: '0.8rem', color: '#55657b', lineHeight: 1.5, display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                  <p style={{ fontSize: '0.78rem', color: '#6b2f73', fontWeight: 600, marginBottom: '0.15rem' }}>{m.role}</p>
+                  <p style={{ fontSize: '0.73rem', color: '#5e5660', marginBottom: '0.5rem' }}>Experiencia: {m.experience}</p>
+                  <dl style={{ margin: '0 0 0.6rem', fontSize: '0.8rem', color: '#5e5660', lineHeight: 1.5, display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
                     {[['Formación', m.education], ['Trayectoria', m.career], ['Proyectos', m.projects]].map(([k, v]) => (
                       <div key={k}>
-                        <dt style={{ display: 'inline', fontWeight: 700, color: '#0a1a33' }}>{k}: </dt>
+                        <dt style={{ display: 'inline', fontWeight: 700, color: '#0b0a0c' }}>{k}: </dt>
                         <dd style={{ display: 'inline', margin: 0 }}>{v}</dd>
                       </div>
                     ))}
@@ -294,21 +294,21 @@ const Equipo = () => {
       <section className="section">
         <div className="container" style={{ maxWidth: '1000px' }}>
           <div className="card-premium" style={{ backgroundColor: '#ffffff' }}>
-            <h2 style={{ fontWeight: 700, fontSize: '1.25rem', marginBottom: '1rem', color: '#0a1a33' }}>
+            <h2 style={{ fontWeight: 700, fontSize: '1.25rem', marginBottom: '1rem', color: '#0b0a0c' }}>
               Mecanismos Formales de Coordinación con el Cliente
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4" style={{ fontSize: '0.85rem' }}>
-              <div style={{ padding: '0.75rem', background: '#f3f6fa', borderRadius: '0.5rem' }}>
-                <strong style={{ color: '#0f3d7a', display: 'block', marginBottom: '0.25rem' }}>Comité de Seguridad</strong>
-                <p style={{ color: '#55657b', margin: 0, lineHeight: 1.5 }}>Sesiona mensualmente para informar formalmente a la contraparte técnica los hallazgos de seguridad y el avance de su mitigación.</p>
+              <div style={{ padding: '0.75rem', background: '#f7f4f7', borderRadius: '0.5rem' }}>
+                <strong style={{ color: '#2c1330', display: 'block', marginBottom: '0.25rem' }}>Comité de Seguridad</strong>
+                <p style={{ color: '#5e5660', margin: 0, lineHeight: 1.5 }}>Sesiona mensualmente para informar formalmente a la contraparte técnica los hallazgos de seguridad y el avance de su mitigación.</p>
               </div>
-              <div style={{ padding: '0.75rem', background: '#f3f6fa', borderRadius: '0.5rem' }}>
-                <strong style={{ color: '#0f3d7a', display: 'block', marginBottom: '0.25rem' }}>Comité de Arquitectura</strong>
-                <p style={{ color: '#55657b', margin: 0, lineHeight: 1.5 }}>Registra y valida decisiones estructurales de diseño (ADR) con criterios de selección y consecuencias a disposición del cliente.</p>
+              <div style={{ padding: '0.75rem', background: '#f7f4f7', borderRadius: '0.5rem' }}>
+                <strong style={{ color: '#2c1330', display: 'block', marginBottom: '0.25rem' }}>Comité de Arquitectura</strong>
+                <p style={{ color: '#5e5660', margin: 0, lineHeight: 1.5 }}>Registra y valida decisiones estructurales de diseño (ADR) con criterios de selección y consecuencias a disposición del cliente.</p>
               </div>
-              <div style={{ padding: '0.75rem', background: '#f3f6fa', borderRadius: '0.5rem' }}>
+              <div style={{ padding: '0.75rem', background: '#f7f4f7', borderRadius: '0.5rem' }}>
                 <strong style={{ color: '#0b7a5e', display: 'block', marginBottom: '0.25rem' }}>Espacio Colaborativo</strong>
-                <p style={{ color: '#55657b', margin: 0, lineHeight: 1.5 }}>Repositorio compartido y accesible en todo momento con documentación, entregables, actas, matriz de riesgos y registro de cambios.</p>
+                <p style={{ color: '#5e5660', margin: 0, lineHeight: 1.5 }}>Repositorio compartido y accesible en todo momento con documentación, entregables, actas, matriz de riesgos y registro de cambios.</p>
               </div>
             </div>
           </div>

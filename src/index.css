@@ -7,7 +7,7 @@
   position: absolute;
   top: -9999px;
   left: 0;
-  background: #1f6feb;
+  background: #6b2f73;
   color: white;
   padding: 0.75rem 1.25rem;
   border-radius: 0 0 0.5rem 0;
@@ -26,21 +26,21 @@
 
 /* ─── Focus visible global para navegación por teclado ─── */
 :focus-visible {
-  outline: 3px solid #1f6feb;
+  outline: 3px solid #6b2f73;
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 /* Focus visible — botones */
 .btn:focus-visible {
-  outline: 3px solid #1f6feb;
+  outline: 3px solid #6b2f73;
   outline-offset: 3px;
-  box-shadow: 0 0 0 6px rgba(31, 111, 235, 0.2);
+  box-shadow: 0 0 0 6px rgba(107, 47, 115, 0.2);
 }
 
 /* Focus visible — enlaces de navegación */
 nav a:focus-visible {
-  outline: 2px solid #1f6feb;
+  outline: 2px solid #6b2f73;
   outline-offset: 4px;
   border-radius: 4px;
 }
@@ -48,9 +48,9 @@ nav a:focus-visible {
 /* Focus visible — cards interactivas */
 .card-premium:focus-visible,
 .card:focus-visible {
-  outline: 3px solid #1f6feb;
+  outline: 3px solid #6b2f73;
   outline-offset: 2px;
-  box-shadow: 0 0 0 6px rgba(31, 111, 235, 0.15);
+  box-shadow: 0 0 0 6px rgba(107, 47, 115, 0.15);
 }
 
 /* Focus visible — inputs y selects del formulario */
@@ -58,8 +58,8 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
   outline: none;
-  border-color: #1f6feb !important;
-  box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.25);
+  border-color: #6b2f73 !important;
+  box-shadow: 0 0 0 3px rgba(107, 47, 115, 0.25);
 }
 
 /* Focus visible — pills y badges (no interactivos, quitar outline) */
@@ -67,7 +67,7 @@ textarea:focus-visible {
 
 /* Focus visible — enlaces del footer */
 .contact-card:focus-visible {
-  outline: 2px solid #22c3e6;
+  outline: 2px solid #c58fd6;
   outline-offset: 2px;
 }
 
@@ -117,8 +117,8 @@ textarea:focus-visible {
 /* ─── Soporte para preferencia de contraste alto ─── */
 @media (prefers-contrast: more) {
   :root {
-    --text-secondary: #1f2a37;
-    --text-muted: #1f2a37;
+    --text-secondary: #1a1a1a;
+    --text-muted: #1a1a1a;
     --border-color: rgba(15, 23, 42, 0.3);
   }
 }
@@ -133,29 +133,29 @@ textarea:focus-visible {
 :root {
   /* Colors */
   --bg-primary: #ffffff;
-  --bg-secondary: #f3f6fa;
+  --bg-secondary: #f7f4f7;
   --bg-card: rgba(255, 255, 255, 0.8);
   /* Paleta de la plantilla corporativa Cerberus Tech */
-  --navy-900: #0a1a33;   /* azul noche: fondos oscuros, pie de página */
-  --navy-700: #0f3d7a;   /* azul marino: títulos H2, bandas de sección */
-  --brand-blue: #1f6feb; /* azul de marca: acciones y acentos */
-  --brand-cyan: #22c3e6; /* cian: líneas de acento sobre fondo oscuro */
-  --ink: #1f2a37;        /* texto principal */
-  --muted: #55657b;      /* texto secundario */
-  --tint: #e8f1fb;       /* fondo celeste suave */
-  --surface: #f3f6fa;    /* fondo alterno */
-  --line: #d5e1ef;       /* bordes */
+  --plum-950: #0b0a0c;   /* negro ciruela: fondos oscuros, pie de página */
+  --plum-800: #2c1330;   /* ciruela oscuro: títulos H2, bandas de sección */
+  --brand-plum: #6b2f73; /* ciruela de marca: acciones y acentos */
+  --brand-lilac: #c58fd6; /* lila: líneas de acento sobre fondo oscuro */
+  --ink: #1a1a1a;        /* texto principal */
+  --muted: #5e5660;      /* texto secundario */
+  --tint: #f3ecf4;       /* fondo lila suave */
+  --surface: #f7f4f7;    /* fondo alterno */
+  --line: #e2d6e4;       /* bordes */
 
   --text-primary: var(--ink);
   --text-secondary: var(--muted);
   --text-muted: var(--muted); /* WCAG AA — ratio ≥ 4.5:1 sobre blanco */
 
-  --accent-primary: var(--brand-blue);
-  --accent-secondary: var(--navy-700);
-  --accent-glow: rgba(31, 111, 235, 0.25);
+  --accent-primary: var(--brand-plum);
+  --accent-secondary: var(--plum-800);
+  --accent-glow: rgba(107, 47, 115, 0.25);
 
   /* Patrón hexagonal de la portada de la plantilla */
-  --hex-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98' viewBox='0 0 56 98'%3E%3Cpath d='M28 66L0 50V17L28 1l28 16v33L28 66zm0 32L0 82V66l28 16 28-16v16L28 98z' fill='none' stroke='%2322c3e6' stroke-opacity='0.09' stroke-width='1'/%3E%3C/svg%3E");
+  --hex-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98' viewBox='0 0 56 98'%3E%3Cpath d='M28 66L0 50V17L28 1l28 16v33L28 66zm0 32L0 82V66l28 16 28-16v16L28 98z' fill='none' stroke='%23c58fd6' stroke-opacity='0.09' stroke-width='1'/%3E%3C/svg%3E");
 
   --border-color: var(--line);
   --border-highlight: rgba(15, 23, 42, 0.2);
@@ -217,8 +217,8 @@ h6 {
   color: var(--text-primary);
 }
 
-/* H2 en azul marino, como en la plantilla */
-h2 { color: var(--navy-700); }
+/* H2 en ciruela oscuro, como en la plantilla */
+h2 { color: var(--plum-800); }
 
 a {
   color: inherit;
@@ -358,13 +358,13 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--brand-blue);
+  background: var(--brand-plum);
   color: white;
   box-shadow: 0 4px 15px -3px var(--accent-glow);
 }
 
 .btn-primary:hover {
-  background: var(--navy-700);
+  background: var(--plum-800);
   color: #ffffff;
   transform: scale(1.02);
   box-shadow: 0 8px 25px -5px var(--accent-glow);
@@ -393,8 +393,8 @@ a:hover {
 
 /* Header de sección interna con degradé índigo suave */
 .section-header {
-  background: var(--hex-pattern), linear-gradient(90deg, var(--navy-900) 0%, var(--navy-700) 100%);
-  border-bottom: 4px solid var(--brand-cyan);
+  background: var(--hex-pattern), linear-gradient(90deg, var(--plum-950) 0%, var(--plum-800) 100%);
+  border-bottom: 4px solid var(--brand-lilac);
   padding: var(--space-24) 0 var(--space-24) 0;
   text-align: center;
   color: #ffffff;
@@ -403,14 +403,14 @@ a:hover {
 .section-header p { color: var(--tint) !important; }
 .section-header .text-gradient,
 .stats-band .text-gradient {
-  background: linear-gradient(90deg, var(--brand-cyan), #8fdcf0);
+  background: linear-gradient(90deg, var(--brand-lilac), #e3c6ec);
   -webkit-background-clip: text;
   background-clip: text;
 }
 .section-header .badge-indigo {
-  background: rgba(34, 195, 230, 0.15);
-  color: var(--brand-cyan);
-  border: 1px solid rgba(34, 195, 230, 0.4);
+  background: rgba(197, 143, 214, 0.15);
+  color: var(--brand-lilac);
+  border: 1px solid rgba(197, 143, 214, 0.4);
 }
 
 /* Stat card — número grande con acento */
@@ -420,13 +420,13 @@ a:hover {
   border-radius: var(--radius-lg);
   padding: var(--space-8) var(--space-6);
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px -2px rgba(31, 111, 235,0.08);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px -2px rgba(107, 47, 115,0.08);
   transition: all var(--transition-normal);
 }
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px -4px rgba(31, 111, 235,0.18);
-  border-color: rgba(31, 111, 235, 0.3);
+  box-shadow: 0 8px 24px -4px rgba(107, 47, 115,0.18);
+  border-color: rgba(107, 47, 115, 0.3);
 }
 .stat-card .stat-number {
   font-family: var(--font-display);
@@ -459,17 +459,17 @@ a:hover {
   white-space: nowrap;
 }
 .pill-indigo {
-  color: #0f3d7a;
-  background-color: #e8f1fb;
-  border-color: #b9d3f2;
+  color: #2c1330;
+  background-color: #f3ecf4;
+  border-color: #d9c3de;
 }
-.pill-indigo:hover { background-color: #d5e1ef; }
+.pill-indigo:hover { background-color: #e2d6e4; }
 .pill-slate {
-  color: #55657b;
-  background-color: #f3f6fa;
-  border-color: #d5e1ef;
+  color: #5e5660;
+  background-color: #f7f4f7;
+  border-color: #e2d6e4;
 }
-.pill-slate:hover { background-color: #d5e1ef; }
+.pill-slate:hover { background-color: #e2d6e4; }
 .pill-green {
   color: #0b7a5e;
   background-color: #e3f5ee;
@@ -483,11 +483,11 @@ a:hover {
 }
 .pill-amber:hover { background-color: #ffe9b8; }
 .pill-blue {
-  color: #0f3d7a;
-  background-color: #e8f1fb;
-  border-color: #b9d3f2;
+  color: #2c1330;
+  background-color: #f3ecf4;
+  border-color: #d9c3de;
 }
-.pill-blue:hover { background-color: #d5e1ef; }
+.pill-blue:hover { background-color: #e2d6e4; }
 
 /* Avatar de equipo con iniciales */
 .team-avatar {
@@ -504,11 +504,11 @@ a:hover {
   flex-shrink: 0;
   margin-bottom: 1rem;
 }
-.avatar-indigo { background: linear-gradient(135deg, #1f6feb, #0f3d7a); }
-.avatar-violet { background: linear-gradient(135deg, #22c3e6, #1f6feb); }
-.avatar-blue   { background: linear-gradient(135deg, #0f3d7a, #0f3d7a); }
+.avatar-indigo { background: linear-gradient(135deg, #6b2f73, #2c1330); }
+.avatar-violet { background: linear-gradient(135deg, #c58fd6, #6b2f73); }
+.avatar-blue   { background: linear-gradient(135deg, #2c1330, #2c1330); }
 .avatar-teal   { background: linear-gradient(135deg, #12a37f, #0b7a5e); }
-.avatar-rose   { background: linear-gradient(135deg, #0f3d7a, #0a1a33); }
+.avatar-rose   { background: linear-gradient(135deg, #2c1330, #0b0a0c); }
 .avatar-amber  { background: linear-gradient(135deg, #f4a524, #9a5b00); }
 
 /* Card premium (reemplaza .card con sombra más fina y elegante) */
@@ -522,8 +522,8 @@ a:hover {
 }
 .card-premium:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 32px -8px rgba(31, 111, 235,0.16);
-  border-color: rgba(31, 111, 235, 0.25);
+  box-shadow: 0 8px 32px -8px rgba(107, 47, 115,0.16);
+  border-color: rgba(107, 47, 115, 0.25);
 }
 
 /* Borde izquierdo de color para cards de contexto */
@@ -568,7 +568,7 @@ a:hover {
   border-radius: 50%;
   background: var(--accent-primary);
   border: 2px solid white;
-  box-shadow: 0 0 0 3px rgba(31, 111, 235,0.2);
+  box-shadow: 0 0 0 3px rgba(107, 47, 115,0.2);
 }
 
 /* Badge de categoría */
@@ -581,14 +581,14 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-.badge-indigo { background: #e8f1fb; color: #0f3d7a; }
+.badge-indigo { background: #f3ecf4; color: #2c1330; }
 .badge-green  { background: #e3f5ee; color: #0b7a5e; }
 .badge-amber  { background: #fff3d9; color: #9a5b00; }
 
 /* Banda de stats horizontal */
 .stats-band {
-  background: var(--hex-pattern), linear-gradient(90deg, var(--navy-900) 0%, var(--navy-700) 100%);
-  border-top: 4px solid var(--brand-cyan);
+  background: var(--hex-pattern), linear-gradient(90deg, var(--plum-950) 0%, var(--plum-800) 100%);
+  border-top: 4px solid var(--brand-lilac);
   padding: var(--space-16) 0;
   color: white;
 }
